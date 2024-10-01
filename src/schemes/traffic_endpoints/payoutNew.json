@@ -1,0 +1,66 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "SelectField",
+            "data": "country_code",
+            "props": {
+                "label": "Country",
+                "default": false,
+                "required": true,
+                "options": {
+                    "dictionary": "countries"
+                }
+            }
+        },
+        {
+            "component": "ToggleBlock",
+            "data": "language",
+            "props": {
+                "label": "Language",
+                "big": true
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "language_code",
+                    "props": {
+                        "label": "",
+                        "default": false,
+                        "required": true,
+                        "options": {
+                            "dictionary": "languages"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "component": "InputField",
+            "data": "payout",
+            "props": {
+                "label": "Payout",
+                "type": "number"
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "cost_type",
+            "props": {
+                "label": "Cost Type",
+                "default": false,
+                "required": true,
+                "options": [
+                    {
+                        "value": 1,
+                        "label": "CPA"
+                    },
+                    {
+                        "value": 2,
+                        "label": "CPL"
+                    }
+                ]
+            }
+        }
+    ]
+}

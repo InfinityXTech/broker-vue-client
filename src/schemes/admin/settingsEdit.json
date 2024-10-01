@@ -1,0 +1,26 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "cdn_url",
+            "props": {
+                "label": "CDN Url"
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "marketing_suite_domain_url",
+            "props": {
+                "label": "Marketing Suite domain URL"
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "marketing_suite_tracking_url",
+            "props": {
+                "label": "Marketing Suite tracking domain"
+            }
+        }
+    ]
+}

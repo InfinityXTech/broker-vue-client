@@ -1,0 +1,32 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Traffic Endpoint Classification"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "company_type",
+                    "props": {
+                        "label": "Endpoint Type",
+                        "default": false,
+                        "required": true,
+                        "options": [
+                            {
+                                "value": "1",
+                                "label": "Affiliate"
+                            },
+                            {
+                                "value": "2",
+                                "label": "Network"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

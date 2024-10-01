@@ -1,0 +1,66 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "name",
+                    "props": {
+                        "label": "Name"
+                    }
+                },
+                {
+                    "component": "SelectField",
+                    "data": "permission",
+                    "props": {
+                        "label": "Permission",
+                        "default": false,
+                        "options": [
+                            {
+                                "value": "0",
+                                "label": "All"
+                            },
+                            {
+                                "value": "1",
+                                "label": "Broker Only"
+                            },
+                            {
+                                "value": "2",
+                                "label": "Endpoint Only"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "color",
+                    "props": {
+                        "label": "Color",
+                        "type": "color"
+                    }
+                },
+                {
+                    "component": "StatusField",
+                    "data": "status",
+                    "props": {
+                        "label": "Status",
+                        "values": [
+                            {
+                                "value": "1",
+                                "color": "primary",
+                                "label": "Active"
+                            },
+                            {
+                                "value": "0",
+                                "color": "warning",
+                                "label": "Inactive"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

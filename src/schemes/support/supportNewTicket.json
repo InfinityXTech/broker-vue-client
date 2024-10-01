@@ -1,0 +1,337 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "SelectField",
+            "data": "type",
+            "props": {
+                "layout": "12",
+                "label": "Request Category",
+                "default": false,
+                "required": false,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "Request Integration"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Report A Bug"
+                    }
+                ]
+            }
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "type",
+            "props": {
+                "values": [
+                    "1"
+                ]
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "integration",
+                    "props": {
+                        "label": "Choose Integration Type",
+                        "default": false,
+                        "options": [
+                            {
+                                "value": "1",
+                                "label": "Broker"
+                            },
+                            {
+                                "value": "2",
+                                "label": "Traffic Endpoint"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "integration",
+                    "props": {
+                        "values": [
+                            "1"
+                        ]
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "broker",
+                            "props": {
+                                "layout": "6",
+                                "label": "Broker",
+                                "required": false,
+                                "options": {
+                                    "dictionary": "brokers"
+                                }
+                            }
+                        },
+                        {
+                            "component": "InputField",
+                            "data": "broker_api_documentstion",
+                            "props": {
+                                "layout": "6",
+                                "label": "API Documentation"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "integration",
+                    "props": {
+                        "values": [
+                            "2"
+                        ]
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "traffic_endpoint",
+                            "props": {
+                                "layout": "12",
+                                "label": "Traffic Endpoint",
+                                "required": false,
+                                "options": {
+                                    "dictionary": "traffic_endpoints"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "integration",
+                    "props": {
+                        "values": [
+                            "1",
+                            "2"
+                        ]
+                    },
+                    "children": [
+                        {
+                            "component": "TextAreaField",
+                            "data": "note",
+                            "props": {
+                                "label": "Specify Credentials",
+                                "rows": 3
+                            }
+                        },
+                        {
+                            "component": "FilesField",
+                            "data": "files",
+                            "props": {
+                                "label": "Supporting Files:"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "type",
+            "props": {
+                "values": [
+                    "2"
+                ]
+            },
+            "children": [
+                {
+                    "component": "TextAreaField",
+                    "data": "note",
+                    "props": {
+                        "label": "Description",
+                        "rows": 3
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "files",
+                    "props": {
+                        "label": "Supporting Files:"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "type",
+            "props": {
+                "values": [
+                    "3"
+                ]
+            },
+            "children": [
+                {
+                    "component": "TextAreaField",
+                    "data": "note",
+                    "props": {
+                        "label": "Description",
+                        "rows": 3
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "files",
+                    "props": {
+                        "label": "Supporting Files:"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "type",
+            "props": {
+                "values": [
+                    "4"
+                ]
+            },
+            "children": [
+                {
+                    "component": "TextAreaField",
+                    "data": "note",
+                    "props": {
+                        "label": "Description",
+                        "rows": 3
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "files",
+                    "props": {
+                        "label": "Supporting Files:"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "type",
+            "props": {
+                "values": [
+                    "5"
+                ]
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "integration",
+                    "props": {
+                        "label": "Choose Type",
+                        "default": false,
+                        "options": [
+                            {
+                                "value": "1",
+                                "label": "Broker"
+                            },
+                            {
+                                "value": "2",
+                                "label": "Traffic Endpoint"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "integration",
+                    "props": {
+                        "values": [
+                            "1"
+                        ]
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "broker",
+                            "props": {
+                                "layout": "12",
+                                "label": "Broker",
+                                "required": false,
+                                "options": {
+                                    "dictionary": "brokers"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "integration",
+                    "props": {
+                        "values": [
+                            "2"
+                        ]
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "traffic_endpoint",
+                            "props": {
+                                "layout": "12",
+                                "label": "Traffic Endpoint",
+                                "required": false,
+                                "options": {
+                                    "dictionary": "traffic_endpoints"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "InputField",
+                    "data": "subject",
+                    "props": {
+                        "layout": "12",
+                        "label": "Subject"
+                    }
+                },
+                {
+                    "component": "TextAreaField",
+                    "data": "note",
+                    "props": {
+                        "label": "Specify Issue",
+                        "rows": 3
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "files",
+                    "props": {
+                        "label": "Supporting Files:"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "type",
+            "props": {
+                "values": [
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "assigned_to",
+                    "props": {
+                        "label": "Assigned to",
+                        "required": false,
+                        "default": true,
+                        "mode": "multiple",
+                        "options": {
+                            "dictionary": "users"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "type": "Datatable",
+    "title": "Dynamic Integration IDs",
+    "uri": "/traffic_endpoint/dynamic_integration_ids",
+    "columns": {
+        "_id": {
+            "label": "ID",
+            "sortable": false,
+            "styles": [
+                {
+                    "textAlign": "center"
+                }
+            ],
+            "renderCell": "simple.Index"
+        },
+        "status": {
+            "label": "Status",
+            "sortable": false,
+            "renderCell": "simple.StatusTag"
+        },
+        "broker_data.partner_name_secure": {
+            "label": "Broker"
+        },
+        "integration_data.name": {
+            "label": "Integration"
+        },
+        "hits_today": {
+            "label": "Hits Today"
+        },
+        "hits_lifetime": {
+            "label": "Hits Lifetime"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

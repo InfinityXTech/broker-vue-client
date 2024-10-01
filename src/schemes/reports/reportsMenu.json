@@ -1,0 +1,41 @@
+{
+    "title": "Reports",
+    "children": [
+        {
+            "title": "BI Dashboard",
+            "permission_name": "reports",
+            "access": [
+                "all",
+                "add",
+                "edit"
+            ],
+            "to": {
+                "name": "report"
+            }
+        },
+        {
+            "title": "Quality Dashboard",
+            "permission_name": "quality_reports",
+            "access": [
+                "all",
+                "add",
+                "edit"
+            ],
+            "to": {
+                "name": "quality_report"
+            }
+        },
+        {
+            "title": "Click Report Dashboard",
+            "permission_name": "click_reports",
+            "access": [
+                "all",
+                "add",
+                "edit"
+            ],
+            "to": {
+                "name": "click_report"
+            }
+        }
+    ]
+}

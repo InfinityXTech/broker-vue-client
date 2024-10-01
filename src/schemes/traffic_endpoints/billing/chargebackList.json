@@ -1,0 +1,35 @@
+{
+    "type": "Datatable",
+    "title": "Chargebacks",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "created_at": {
+            "label": "Timestamp",
+            "renderCell": "simple.DateTime"
+        },
+        "payment_method.title": {
+            "label": "Payment method",
+            "renderCell": "custom.PaymentMethod"
+        },
+        "payment_request.title": {
+            "label": "Payment request"
+        },
+        "amount": {
+            "label": "Sum",
+            "renderCell": "simple.MoneyColor"
+        },
+        "screenshots": {
+            "label": "Screenshots",
+            "renderCell": "simple.Files"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

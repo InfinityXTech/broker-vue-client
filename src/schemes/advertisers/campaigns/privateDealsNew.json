@@ -1,0 +1,53 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "SelectField",
+            "data": "affiliate",
+            "props": {
+                "label": "Affiliate",
+                "default": false,
+                "options": {
+                    "dictionary": "affiliates"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "country_code",
+            "props": {
+                "label": "Country",
+                "default": false,
+                "options": {
+                    "dictionary": "countries"
+                }
+            }
+        },
+        {
+            "component": "ToggleBlock",
+            "props": {
+                "label": "Languages"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "language_codes",
+                    "props": {
+                        "mode": "multiple",
+                        "options": {
+                            "dictionary": "languages"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "component": "InputField",
+            "data": "affiliate_payout",
+            "props": {
+                "label": "Affiliate Payout",
+                "type": "number"
+            }
+        }
+    ]
+}

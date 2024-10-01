@@ -1,0 +1,167 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "ConditionalBlock",
+            "data": "payment_method",
+            "props": {
+                "values": [
+                    "wire"
+                ]
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "payment_method",
+                    "props": {
+                        "layout": "6",
+                        "label": "Payment Method",
+                        "default": false,
+                        "required": false,
+                        "options": [
+                            {
+                                "value": "wire",
+                                "label": "WIRE"
+                            },
+                            {
+                                "value": "crypto",
+                                "label": "Crypto"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "SelectField",
+                    "data": "currency_code",
+                    "props": {
+                        "layout": "6",
+                        "label": "Currency",
+                        "default": false,
+                        "options": [
+                            {
+                                "value": "usd",
+                                "label": "USD"
+                            },
+                            {
+                                "value": "eur",
+                                "label": "EURO"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "bank_name",
+                    "props": {
+                        "layout": "6",
+                        "label": "Bank name"
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "swift",
+                    "props": {
+                        "layout": "6",
+                        "label": "Swift"
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "account_name",
+                    "props": {
+                        "layout": "6",
+                        "label": "Account name"
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "account_number",
+                    "props": {
+                        "layout": "6",
+                        "label": "Account Number"
+                    }
+                },
+                {
+                    "component": "TextAreaField",
+                    "data": "notes",
+                    "props": {
+                        "label": "Notes",
+                        "rows": 3
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "screenshot_image",
+                    "props": {
+                        "label": "Screenshots"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "payment_method",
+            "props": {
+                "values": [
+                    "crypto"
+                ]
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "payment_method",
+                    "props": {
+                        "layout": "6",
+                        "label": "Payment Method",
+                        "default": false,
+                        "required": false,
+                        "options": [
+                            {
+                                "value": "wire",
+                                "label": "WIRE"
+                            },
+                            {
+                                "value": "crypto",
+                                "label": "Crypto"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "SelectField",
+                    "data": "currency_crypto_code",
+                    "props": {
+                        "layout": "6",
+                        "label": "Currency",
+                        "default": false,
+                        "options": [
+                            {
+                                "value": "btc",
+                                "label": "BTC"
+                            },
+                            {
+                                "value": "usdt",
+                                "label": "USDT"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "wallet",
+                    "props": {
+                        "layout": "6",
+                        "label": "Wallet"
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "files",
+                    "props": {
+                        "label": "Screenshots"
+                    }
+                }
+            ]
+        }
+    ]
+}

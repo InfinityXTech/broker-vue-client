@@ -1,0 +1,242 @@
+{
+    "title": "Traffic Endpoint",
+    "permission_name": "traffic_endpoint",
+    "children": [
+        {
+            "title": "Back to Traffic Endpoints",
+            "to": {
+                "name": "traffic_endpoints"
+            }
+        },
+        {
+            "title": "General",
+            "to": {
+                "name": "traffic_endpoints-id"
+            }
+        },
+        {
+            "title": "Feed Visualization",
+            "access": [
+                "feed_visualization"
+            ],
+            "to": {
+                "name": "traffic_endpoints-id-feed_visualization"
+            }
+        },
+        {
+            "id": "payout_private_deals-tabs",
+            "title": "Payouts & Private Deals",
+            "class": "payout_private_deals",
+            "permission_name": "traffic_endpoint",
+            "children_desktop": false,
+            "children": [
+                {
+                    "title": "Payouts",
+                    "access": [
+                        "payouts"
+                    ],
+                    "to": {
+                        "name": "traffic_endpoints-id-payouts"
+                    }
+                },
+                {
+                    "title": "Private Deals",
+                    "access": [
+                        "private_deals"
+                    ],
+                    "to": {
+                        "name": "traffic_endpoints-id-private_deals"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "optimization-tabs",
+            "title": "Optimization",
+            "class": "optimization",
+            "permission_name": "traffic_endpoint",
+            "children_desktop": false,
+            "children": [
+                {
+                    "title": "Restrictions",
+                    "access": [
+                        "restrictions"
+                    ],
+                    "to": {
+                        "name": "traffic_endpoints-id-restrictions"
+                    }
+                },
+                {
+                    "title": "Funnels",
+                    "access": [
+                        "funnels"
+                    ],
+                    "to": {
+                        "name": "traffic_endpoints-id-funnels"
+                    }
+                },
+                {
+                    "title": "Scrub",
+                    "access": [
+                        "is_scrub_permission"
+                    ],
+                    "to": {
+                        "name": "traffic_endpoints-id-scrub"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "technical-tabs",
+            "title": "Technical",
+            "class": "technical",
+            "permission_name": "traffic_endpoint",
+            "children_desktop": false,
+            "children": [
+                {
+                    "title": "Integration",
+                    "access": [
+                        "integration"
+                    ],
+                    "roles": [
+                        "super_admin",
+                        "admin",
+                        "integration_manager"
+                    ],
+                    "to": {
+                        "name": "traffic_endpoints-id-integrations"
+                    }
+                },
+                {
+                    "title": "Setup",
+                    "access": [
+                        "setup"
+                    ],
+                    "roles": [
+                        "super_admin",
+                        "admin",
+                        "integration_manager"
+                    ],
+                    "to": {
+                        "name": "traffic_endpoints-id-setup"
+                    }
+                },
+                {
+                    "title": "Security",
+                    "access": [
+                        "security"
+                    ],
+                    "roles": [
+                        "super_admin",
+                        "admin",
+                        "integration_manager"
+                    ],
+                    "to": {
+                        "name": "traffic_endpoints-id-security"
+                    }
+                },
+                {
+                    "title": "Dynamic Integration IDs",
+                    "access": [
+                        "integration"
+                    ],
+                    "roles": [
+                        "super_admin",
+                        "admin",
+                        "integration_manager"
+                    ],
+                    "to": {
+                        "name": "traffic_endpoints-id-dynamic_integration_ids"
+                    }
+                },
+                {
+                    "title": "Sub publisher tokens",
+                    "access": [
+                        "integration"
+                    ],
+                    "roles": [
+                        "super_admin",
+                        "admin",
+                        "integration_manager"
+                    ],
+                    "to": {
+                        "name": "traffic_endpoints-id-sub_publisher_tokens"
+                    }
+                },
+                {
+                    "title": "Support Tickets",
+                    "access": [
+                        "integration"
+                    ],
+                    "roles": [
+                        "super_admin",
+                        "admin",
+                        "integration_manager"
+                    ],
+                    "to": {
+                        "name": "traffic_endpoints-id-support_tickets"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "billing-tabs",
+            "title": "Billing",
+            "access": [
+                "is_billing"
+            ],
+            "children_desktop": false,
+            "children": [
+                {
+                    "title": "General & Balances",
+                    "icon": "fas fa-wallet",
+                    "to": {
+                        "name": "traffic_endpoints-id-billing-general"
+                    }
+                },
+                {
+                    "title": "Billing Entities",
+                    "icon": "lnir lnir-postcard",
+                    "to": {
+                        "name": "traffic_endpoints-id-billing-entities"
+                    }
+                },
+                {
+                    "title": "Payment Methods",
+                    "icon": "fas fa-credit-card",
+                    "to": {
+                        "name": "traffic_endpoints-id-billing-methods"
+                    }
+                },
+                {
+                    "title": "Payment Requests",
+                    "icon": "feather:inbox",
+                    "to": {
+                        "name": "traffic_endpoints-id-billing-requests"
+                    }
+                },
+                {
+                    "title": "Completed Transactions",
+                    "icon": "feather:check-circle",
+                    "to": {
+                        "name": "traffic_endpoints-id-billing-completed"
+                    }
+                },
+                {
+                    "title": "Adjustments",
+                    "icon": "lnir lnir-pie-chart-dollar",
+                    "to": {
+                        "name": "traffic_endpoints-id-billing-adjustments"
+                    }
+                },
+                {
+                    "title": "Chargebacks",
+                    "icon": "feather:rotate-ccw",
+                    "to": {
+                        "name": "traffic_endpoints-id-billing-chargebacks"
+                    }
+                }
+            ]
+        }
+    ]
+}

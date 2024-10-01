@@ -1,0 +1,33 @@
+{
+    "type": "Datatable",
+    "title": "Affiliates",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "affiliate.name": {
+            "label": "Affiliate",
+            "renderCell": "custom.AffiliateName"
+        },
+        "timestamp": {
+            "label": "Timestamp"
+        },
+        "from": {
+            "label": "From"
+        },
+        "to": {
+            "label": "To"
+        },
+        "type": {
+            "label": "type"
+        },
+        "total": {
+            "label": "Total",
+            "default": 0,
+            "renderCell": "simple.MoneyColor",
+            "totalCalc": "simple.Sum"
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "type": "Datatable",
+    "title": "",
+    "columns": {
+        "date": {
+            "label": "Date",
+            "renderCell": "simple.DateTime"
+        },
+        "location": {
+            "label": "Location",
+            "renderCell": "custom.Location"
+        },
+        "broker": {
+            "key": "broker.name",
+            "label": "Broker",
+            "renderCell": "custom.BrokerName"
+        },
+        "integration": {
+            "key": "integration.name",
+            "label": "Integration"
+        },
+        "email_id": {
+            "label": "Email , Lead ID",
+            "sortable": false,
+            "renderCell": "custom.email_ID"
+        },
+        "endpoint": {
+            "key": "endpoint.name",
+            "label": "Endpoint",
+            "renderCell": "custom.EndpointName"
+        },
+        "changed_by": {
+            "label": "Changed By"
+        },
+        "deposit_reject": {
+            "label": "Deposit Status",
+            "renderCell": "custom.DepositStatus"
+        }
+    }
+}

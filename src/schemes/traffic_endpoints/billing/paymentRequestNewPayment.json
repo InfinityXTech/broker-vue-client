@@ -1,0 +1,92 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "ColumnBlock",
+            "props": {
+                "layout": "6"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "payment_request_type",
+                    "props": {
+                        "label": "Payment Request Type",
+                        "default": false,
+                        "required": true,
+                        "options": [
+                            {
+                                "value": "payment",
+                                "label": "Payment"
+                            },
+                            {
+                                "value": "prepayment",
+                                "label": "Prepayment"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "DateRangeField",
+                    "data": "timeframe",
+                    "props": {
+                        "label": "Time Frame"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ColumnBlock",
+            "props": {
+                "layout": "6"
+            },
+            "children": [
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Adjustments"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "adjustment_amount_sign",
+                            "props": {
+                                "layout": "6",
+                                "label": "Amount",
+                                "default": false,
+                                "required": true,
+                                "options": [
+                                    {
+                                        "value": "1",
+                                        "default": true,
+                                        "label": "Positive"
+                                    },
+                                    {
+                                        "value": "-1",
+                                        "label": "Negative"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "component": "InputField",
+                            "data": "adjustment_amount_value",
+                            "props": {
+                                "layout": "6",
+                                "label": "\u00A0"
+                            }
+                        },
+                        {
+                            "component": "TextAreaField",
+                            "data": "adjustment_description",
+                            "props": {
+                                "label": "Description",
+                                "rows": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

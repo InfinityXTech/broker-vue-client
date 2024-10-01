@@ -1,0 +1,11 @@
+{
+    "title": "Marketing Suite",
+    "children": [
+        {
+            "title": "All Marketing Suite",
+            "to": {
+                "name": "traffic_endpoints-marketing_suite"
+            }
+        }
+    ]
+}

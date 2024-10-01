@@ -1,0 +1,23 @@
+{
+    "type": "Datatable",
+    "title": "Adjustments",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "amount": {
+            "label": "Sum",
+            "renderCell": "simple.MoneyColor"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "General"
+            },
+            "children": [
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "manual_approve",
+                    "props": {
+                        "layout": "8",
+                        "label": "Manual Approve"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Restrictions"
+            },
+            "children": [
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Offer Restrictions"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "blocked_offers_type",
+                            "props": {
+                                "label": "Type",
+                                "default": true,
+                                "required": false,
+                                "layout": "4",
+                                "options": [
+                                    {
+                                        "value": "black",
+                                        "label": "Black List"
+                                    },
+                                    {
+                                        "value": "white",
+                                        "label": "White List"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "component": "SelectField",
+                            "data": "blocked_offers",
+                            "props": {
+                                "layout": "4",
+                                "label": "Offers",
+                                "options": {
+                                    "custom": "custom_blocked_offers"
+                                },
+                                "mode": "multiple"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Affiliate Postbacks"
+            },
+            "children": [
+                {
+                    "component": "TextAreaField",
+                    "data": "postback",
+                    "props": {
+                        "label": "Postback Conversion",
+                        "rows": 10,
+                        "timeSilence": true
+                    }
+                },
+                {
+                    "component": "TextAreaField",
+                    "data": "event_postback",
+                    "props": {
+                        "label": "Postback Lead",
+                        "rows": 10,
+                        "timeSilence": true
+                    }
+                }
+            ]
+        }
+    ]
+}

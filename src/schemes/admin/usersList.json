@@ -1,0 +1,39 @@
+{
+    "type": "Datatable",
+    "title": "Users",
+    "columns": {
+        "id": {
+            "label": "ID",
+            "sortable": false,
+            "styles": [
+                {
+                    "textAlign": "center"
+                }
+            ],
+            "renderCell": "simple.Index"
+        },
+        "status": {
+            "label": "Status",
+            "renderCell": "simple.StatusTag({1: {color: 'primary', title: 'ACTIVE'}, 0: {color: 'warning', title: 'INACTIVE'}, 2: {color: 'grey', title: 'ARCHIVED'}})"
+        },
+        "name": {
+            "label": "Stuff Name",
+            "renderCell": "custom.StuffName"
+        },
+        "last_auth_time": {
+            "label": "Last Access Date",
+            "renderCell": "simple.DateTime"
+        },
+        "account_email": {
+            "label": "Email"
+        },
+        "qr_img": {
+            "label": "QR Code",
+            "renderCell": "custom.QRCode"
+        },
+        "reset_password": {
+            "label": "Reset Password",
+            "renderCell": "custom.ResetPassword"
+        }
+    }
+}

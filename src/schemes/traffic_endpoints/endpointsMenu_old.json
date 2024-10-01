@@ -1,0 +1,12 @@
+{
+    "title": "Traffic Endpoints",
+    "permission_name": "traffic_endpoint",
+    "children": [
+        {
+            "title": "All Traffic Endpoints",
+            "to": {
+                "name": "traffic_endpoints"
+            }
+        }
+    ]
+}

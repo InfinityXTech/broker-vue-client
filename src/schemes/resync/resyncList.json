@@ -1,0 +1,46 @@
+{
+    "type": "Datatable",
+    "title": "ReSync",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "task": {
+            "label": "Task",
+            "renderCell": "custom.TaskName"
+        },
+        "created_at": {
+            "label": "Created At",
+            "renderCell": "simple.DateTime"
+        },
+        "working": {
+            "label": "Working",
+            "renderCell": "custom.Working"
+        },
+        "finish_at": {
+            "label": "Finish At",
+            "renderCell": "simple.DateTime"
+        },
+        "created_by_user.account_email": {
+            "label": "Created By"
+        },
+        "interval": {
+            "label": "Interval"
+        },
+        "endpoint_data": {
+            "key": "endpoint_data.token",
+            "label": "Assign new Endpoint",
+            "renderCell": "custom.EndpointName"
+        },
+        "leads": {
+            "label": "Leads",
+            "renderCell": "custom.Leads"
+        },
+        "duplicate_leads": {
+            "label": "Duplicate leads",
+            "renderCell": "custom.DuplicateLeads"
+        }
+    }
+}

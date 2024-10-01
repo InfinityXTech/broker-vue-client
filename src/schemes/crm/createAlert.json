@@ -1,0 +1,31 @@
+{
+    "type": "Form",
+    "title": "Leads",
+    "content": [
+        {
+            "component": "SelectField",
+            "data": "category",
+            "props": {
+                "label": "Category",
+                "required": true,
+                "options": [
+                    {
+                        "value": "appointment",
+                        "label": "Appointment"
+                    },
+                    {
+                        "value": "check_declined",
+                        "label": "Check Declined"
+                    }
+                ]
+            }
+        },
+        {
+            "component": "DateTimeField",
+            "data": "execution_at",
+            "props": {
+                "label": "Execution at"
+            }
+        }
+    ]
+}

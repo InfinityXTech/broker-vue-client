@@ -1,0 +1,80 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "DateRangeField",
+            "data": "timeframe",
+            "props": {
+                "layout": "",
+                "required": true,
+                "label": "Time Frame",
+                "menuClassName": "click_report-calendar-menu"
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "broker",
+            "props": {
+                "layout": "",
+                "label": "Broker",
+                "required": false,
+                "mode": "multiselect",
+                "options": {
+                    "dictionary": "brokers"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "traffic_endpoint",
+            "props": {
+                "layout": "",
+                "label": "Traffic Endpoint",
+                "required": false,
+                "mode": "multiselect",
+                "options": {
+                    "dictionary": "traffic_endpoints"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "country",
+            "props": {
+                "layout": "",
+                "label": "Country",
+                "required": false,
+                "mode": "multiselect",
+                "options": {
+                    "dictionary": "countries"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "account_manager",
+            "props": {
+                "layout": "",
+                "label": "Account Managers",
+                "required": false,
+                "mode": "multiselect",
+                "options": {
+                    "dictionary": "account_managers"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "pivot",
+            "props": {
+                "mode": "multiple",
+                "layout": "12",
+                "label": "Pivot",
+                "required": false,
+                "options": {
+                    "custom": "pivot"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "type": "Datatable",
+    "title": "Payouts Management",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "country_name": {
+            "label": "Country"
+        },
+        "advertiser_payout": {
+            "label": "Advertiser Payout",
+            "renderCell": "simple.MoneyColor"
+        },
+        "affiliate_payout": {
+            "label": "Affiliate Payout",
+            "renderCell": "simple.MoneyColor"
+        },
+        "enabled": {
+            "label": "Enabled",
+            "renderCell": "custom.Enabled"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

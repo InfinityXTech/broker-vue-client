@@ -1,0 +1,34 @@
+{
+    "type": "Datatable",
+    "title": "Advertisers",
+    "columns": {
+        "_id": {
+            "label": "ID",
+            "sortable": false,
+            "styles": [
+                {
+                    "textAlign": "center"
+                }
+            ],
+            "renderCell": "simple.Index"
+        },
+        "status": {
+            "label": "Status",
+            "sortable": false,
+            "renderCell": "simple.StatusTag({1: {color: 'primary', title: 'ACTIVE'}, 0: {color: 'warning', title: 'INACTIVE'}, 2: {color: 'grey', title: 'DRAFT'}})"
+        },
+        "name": {
+            "label": "Advertiser Name",
+            "renderCell": "custom.AdvertiserName"
+        },
+        "created_at": {
+            "label": "Created",
+            "renderCell": "simple.DateTime"
+        },
+        "action": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": ""
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "endpoint",
+                    "props": {
+                        "label": "Endpoint",
+                        "default": false,
+                        "required": true,
+                        "options": {
+                            "dictionary": "traffic_endpoints"
+                        }
+                    }
+                },
+                {
+                    "component": "RadioGroupField",
+                    "data": "type",
+                    "props": {
+                        "label": "Query Type",
+                        "options": [
+                            {
+                                "color": "primary",
+                                "label": "Emails",
+                                "value": "emails",
+                                "default": true
+                            },
+                            {
+                                "color": "warning",
+                                "label": "Request ID",
+                                "value": "token"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "data",
+                    "props": {
+                        "layout": "12",
+                        "required": true,
+                        "label": "Value"
+                    }
+                }
+            ]
+        }
+    ]
+}

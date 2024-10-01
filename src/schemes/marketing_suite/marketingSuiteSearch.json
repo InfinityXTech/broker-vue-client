@@ -1,0 +1,33 @@
+{
+    "type": "Search",
+    "columns": [
+        {
+            "type": "toggles",
+            "label": "Status",
+            "value": "status",
+            "options": [
+                {
+                    "value": "1",
+                    "label": "Active",
+                    "color": "primary",
+                    "default": true
+                },
+                {
+                    "value": "0",
+                    "color": "warning",
+                    "label": "Inactive"
+                },
+                {
+                    "value": "2",
+                    "color": "grey",
+                    "label": "Archived"
+                }
+            ]
+        },
+        {
+            "type": "input",
+            "label": "Search",
+            "value": "TEXT"
+        }
+    ]
+}

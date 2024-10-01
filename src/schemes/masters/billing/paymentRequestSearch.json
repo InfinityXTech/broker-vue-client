@@ -1,0 +1,23 @@
+{
+    "type": "Search",
+    "columns": [
+        {
+            "type": "toggles",
+            "label": "Status",
+            "value": "inject:get_row_sub_status",
+            "options": [
+                {
+                    "value": "active",
+                    "label": "Active",
+                    "color": "primary",
+                    "default": true
+                },
+                {
+                    "value": "archive",
+                    "color": "grey",
+                    "label": "Archived"
+                }
+            ]
+        }
+    ]
+}

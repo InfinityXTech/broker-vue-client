@@ -1,0 +1,52 @@
+{
+    "type": "Datatable",
+    "title": "Masters",
+    "columns": {
+        "_id": {
+            "label": "ID",
+            "sortable": false,
+            "styles": [
+                {
+                    "textAlign": "center"
+                }
+            ],
+            "renderCell": "simple.Index"
+        },
+        "token": {
+            "label": "Master Partner",
+            "renderCell": "custom.Token"
+        },
+        "status": {
+            "label": "Status",
+            "sortable": false,
+            "renderCell": "simple.StatusTag({1: {color: 'primary', title: 'ACTIVE'}, 0: {color: 'warning', title: 'INACTIVE'}, 2: {color: 'grey', title: 'ARCHIVED'}})"
+        },
+        "type_name": {
+            "label": "Type"
+        },
+        "today_leads": {
+            "label": "Today Leads",
+            "default": 0
+        },
+        "total_leads": {
+            "label": "Total Leads",
+            "default": 0
+        },
+        "today_ftd": {
+            "label": "Today FTD's",
+            "default": 0
+        },
+        "total_ftd": {
+            "label": "Total FTD's",
+            "default": 0
+        },
+        "assignedto_user": {
+            "label": "Assigned to",
+            "renderCell": "custom.AccountName"
+        },
+        "timestamp": {
+            "label": "Timestamp",
+            "renderCell": "simple.DateTime"
+        }
+    }
+}

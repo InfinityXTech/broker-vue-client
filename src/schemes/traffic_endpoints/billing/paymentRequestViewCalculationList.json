@@ -1,0 +1,24 @@
+{
+    "type": "Datatable",
+    "title": "View Payment Request",
+    "columns": {
+        "nomination": {
+            "label": "Deals",
+            "renderCell": "custom.Nomination",
+            "totalCalc": "title.Total"
+        },
+        "count": {
+            "label": "Total leads",
+            "renderCell": "custom.Exports"
+        },
+        "cost": {
+            "label": "Cost",
+            "renderCell": "simple.MoneyColor"
+        },
+        "total": {
+            "label": "Total",
+            "renderCell": "simple.MoneyColor",
+            "totalCalc": "simple.Sum"
+        }
+    }
+}

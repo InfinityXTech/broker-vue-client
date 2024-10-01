@@ -1,0 +1,46 @@
+{
+    "type": "Search",
+    "columns": [
+        {
+            "type": "toggles",
+            "label": "Status",
+            "value": "status",
+            "options": [
+                {
+                    "value": "1",
+                    "label": "Active",
+                    "color": "primary",
+                    "default": true
+                },
+                {
+                    "value": "0",
+                    "color": "warning",
+                    "label": "Inactive"
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "label": "Country",
+            "value": "country_code",
+            "options": {
+                "dictionary": "countries",
+                "key": "country_code"
+            }
+        },
+        {
+            "type": "select",
+            "label": "Language",
+            "value": "language_code",
+            "options": {
+                "dictionary": "languages",
+                "key": "language_code"
+            }
+        },
+        {
+            "type": "input",
+            "label": "Search",
+            "value": "TEXT"
+        }
+    ]
+}

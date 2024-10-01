@@ -1,0 +1,21 @@
+{
+    "type": "Datatable",
+    "title": "Scrub Management: %",
+    "columns": {
+        "dt": {
+            "label": "Date"
+        },
+        "type.title": {
+            "label": "Type"
+        },
+        "action.value": {
+            "label": "Action"
+        },
+        "data": {
+            "label": "Data"
+        },
+        "changed_by": {
+            "label": "Changed by"
+        }
+    }
+}

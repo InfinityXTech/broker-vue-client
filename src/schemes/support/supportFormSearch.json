@@ -1,0 +1,62 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "TogglesField",
+            "props": {
+                "label": "Status",
+                "layout": "3",
+                "options": [
+                    {
+                        "value": "1,3",
+                        "label": "Open",
+                        "color": "primary",
+                        "default": true
+                    },
+                    {
+                        "value": "2",
+                        "label": "Rejected",
+                        "color": "primary",
+                        "default": false
+                    },
+                    {
+                        "value": "4",
+                        "label": "Completed",
+                        "color": "primary",
+                        "default": false
+                    }
+                ]
+            },
+            "data": "status"
+        },
+        {
+            "component": "DateRangeField",
+            "data": "timeframe",
+            "props": {
+                "layout": "2",
+                "label": "Time Frame"
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "user",
+            "props": {
+                "layout": "2",
+                "label": "Users",
+                "required": false,
+                "default": true,
+                "options": {
+                    "dictionary": "users"
+                }
+            }
+        },
+        {
+            "component": "InputField",
+            "props": {
+                "label": "Search",
+                "layout": "3"
+            },
+            "data": "search"
+        }
+    ]
+}

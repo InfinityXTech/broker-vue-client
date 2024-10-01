@@ -1,0 +1,32 @@
+{
+    "type": "Datatable",
+    "title": "Affiliaates",
+    "uri": "/affiliates",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "token": {
+            "label": "Affiliate",
+            "renderCell": "custom.Token"
+        },
+        "app_country": {
+            "label": "Country",
+            "renderCell": "custom.Country"
+        },
+        "app_ip": {
+            "label": "Ip",
+            "renderCell": "custom.Ip"
+        },
+        "app_timestamp": {
+            "label": "Timestamp",
+            "renderCell": "custom.Timestamp"
+        },
+        "actions": {
+            "label": "Actions",
+            "renderCell": "custom.ActionsIcons"
+        }
+    }
+}

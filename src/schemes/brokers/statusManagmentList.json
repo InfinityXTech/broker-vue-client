@@ -1,0 +1,22 @@
+{
+    "type": "Datatable",
+    "title": "Status Management",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "broker_status": {
+            "label": "Broker Status"
+        },
+        "status_name": {
+            "label": "Linked Status"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

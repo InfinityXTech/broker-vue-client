@@ -1,0 +1,177 @@
+{
+    "title": "Broker",
+    "to": {
+        "name": "brokers"
+    },
+    "permission_name": "brokers",
+    "children": [
+        {
+            "title": "Back to Brokers",
+            "to": {
+                "name": "brokers"
+            }
+        },
+        {
+            "title": "General",
+            "to": {
+                "name": "brokers-id"
+            }
+        },
+        {
+            "title": "Caps Dashboard",
+            "access": [
+                "daily_cap"
+            ],
+            "to": {
+                "name": "brokers-id-caps"
+            }
+        },
+        {
+            "id": "payout_private_deals-tabs",
+            "title": "Payouts & Private Deals",
+            "class": "payout_private_deals",
+            "permission_name": "brokers",
+            "children_desktop": false,
+            "children": [
+                {
+                    "title": "Payouts",
+                    "access": [
+                        "payouts"
+                    ],
+                    "to": {
+                        "name": "brokers-id-payouts"
+                    }
+                },
+                {
+                    "title": "Private Deals",
+                    "access": [
+                        "private_deals"
+                    ],
+                    "to": {
+                        "name": "brokers-id-private_deals"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "technical-tabs",
+            "title": "Technical",
+            "class": "technical",
+            "permission_name": "brokers",
+            "children_desktop": false,
+            "children": [
+                {
+                    "title": "API Integrations",
+                    "access": [
+                        "api_integrations"
+                    ],
+                    "roles": [
+                        "super_admin",
+                        "admin",
+                        "integration_manager"
+                    ],
+                    "to": {
+                        "name": "brokers-id-integrations"
+                    }
+                },
+                {
+                    "title": "Status Management",
+                    "access": [
+                        "status_management"
+                    ],
+                    "private_features": [
+                        "XT30"
+                    ],
+                    "roles": [
+                        "super_admin",
+                        "admin",
+                        "integration_manager"
+                    ],
+                    "to": {
+                        "name": "brokers-id-status_managment"
+                    }
+                },
+                {
+                    "title": "Support Tickets",
+                    "access": [
+                        "api_integrations"
+                    ],
+                    "roles": [
+                        "super_admin",
+                        "admin",
+                        "integration_manager"
+                    ],
+                    "to": {
+                        "name": "brokers-id-support_tickets"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "billing-tabs",
+            "title": "Billing",
+            "access": [
+                "is_billing"
+            ],
+            "children_desktop": false,
+            "children": [
+                {
+                    "title": "General & Balances",
+                    "icon": "fas fa-wallet",
+                    "to": {
+                        "name": "brokers-id-billing-general"
+                    }
+                },
+                {
+                    "title": "Billing Entities",
+                    "icon": "lnir lnir-postcard",
+                    "to": {
+                        "name": "brokers-id-billing-entities"
+                    }
+                },
+                {
+                    "title": "Broker Payment Methods",
+                    "icon": "fas fa-credit-card",
+                    "to": {
+                        "name": "brokers-id-billing-methods"
+                    }
+                },
+                {
+                    "title": "Payment Methods",
+                    "icon": "fas fa-credit-card",
+                    "to": {
+                        "name": "brokers-id-billing-our_methods"
+                    }
+                },
+                {
+                    "title": "Payment Requests",
+                    "icon": "feather:inbox",
+                    "to": {
+                        "name": "brokers-id-billing-requests"
+                    }
+                },
+                {
+                    "title": "Completed Transactions",
+                    "icon": "feather:check-circle",
+                    "to": {
+                        "name": "brokers-id-billing-completed"
+                    }
+                },
+                {
+                    "title": "Adjustments",
+                    "icon": "lnir lnir-pie-chart-dollar",
+                    "to": {
+                        "name": "brokers-id-billing-adjustments"
+                    }
+                },
+                {
+                    "title": "Chargebacks",
+                    "icon": "feather:rotate-ccw",
+                    "to": {
+                        "name": "brokers-id-billing-chargebacks"
+                    }
+                }
+            ]
+        }
+    ]
+}

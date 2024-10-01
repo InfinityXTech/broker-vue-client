@@ -1,0 +1,40 @@
+{
+    "type": "Datatable",
+    "title": "API Integrations",
+    "columns": {
+        "name": {
+            "label": "Integration Name",
+            "renderCell": "custom.IntegrationName"
+        },
+        "status": {
+            "label": "Status",
+            "renderCell": "simple.StatusTag({1: {color: 'primary', title: 'ACTIVE'}, 0: {color: 'warning', title: 'INACTIVE'}, 2: {color: 'grey', title: 'DRAFT'}})"
+        },
+        "last_api_call": {
+            "label": "Last API Call",
+            "sortable": false,
+            "renderCell": "custom.LastAPICall"
+        },
+        "integration": {
+            "key": "integration.name",
+            "label": "API Vendor"
+        },
+        "today_leads": {
+            "label": "Today Leads",
+            "default": 0
+        },
+        "total_leads": {
+            "label": "Total Leads",
+            "default": 0
+        },
+        "total_ftd": {
+            "label": "FTD's",
+            "default": 0
+        },
+        "cr": {
+            "label": "General CR",
+            "default": 0,
+            "renderCell": "simple.Percent"
+        }
+    }
+}

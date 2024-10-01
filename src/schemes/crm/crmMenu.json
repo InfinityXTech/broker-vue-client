@@ -1,0 +1,42 @@
+{
+    "title": "CRM",
+    "permission_name": "crm",
+    "children": [
+        {
+            "title": "Depositors",
+            "access": [
+                "depositors"
+            ],
+            "to": {
+                "name": "crm-type",
+                "params": {
+                    "type": "ftd"
+                }
+            }
+        },
+        {
+            "title": "Leads",
+            "access": [
+                "leads"
+            ],
+            "to": {
+                "name": "crm-type",
+                "params": {
+                    "type": "leads"
+                }
+            }
+        },
+        {
+            "title": "Mismatch",
+            "access": [
+                "mismatch"
+            ],
+            "to": {
+                "name": "crm-type",
+                "params": {
+                    "type": "mismatch"
+                }
+            }
+        }
+    ]
+}

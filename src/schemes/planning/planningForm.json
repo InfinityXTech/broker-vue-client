@@ -1,0 +1,64 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "SelectField",
+            "data": "country",
+            "props": {
+                "layout": "",
+                "label": "Country",
+                "required": false,
+                "options": {
+                    "custom": "custom_countries"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "language",
+            "props": {
+                "layout": "",
+                "label": "Language",
+                "required": false,
+                "options": {
+                    "custom": "custom_languages"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "traffic_sources",
+            "props": {
+                "layout": "",
+                "label": "Traffic Type",
+                "required": false,
+                "options": {
+                    "dictionary": "traffic_sources"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "regulated",
+            "props": {
+                "layout": "",
+                "label": "Regulated",
+                "default": false,
+                "options": [
+                    {
+                        "value": "all",
+                        "label": "All"
+                    },
+                    {
+                        "value": "0",
+                        "label": "Non-Regulated"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Regulated"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "type": "Datatable",
+    "title": "Endpoints",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "endpoint.name": {
+            "label": "Endpoint",
+            "renderCell": "custom.EndpointName"
+        },
+        "timestamp": {
+            "label": "Timestamp"
+        },
+        "from": {
+            "label": "From"
+        },
+        "to": {
+            "label": "To"
+        },
+        "type": {
+            "label": "type"
+        },
+        "total": {
+            "label": "Total",
+            "default": 0,
+            "renderCell": "simple.MoneyColor",
+            "totalCalc": "simple.Sum"
+        }
+    }
+}

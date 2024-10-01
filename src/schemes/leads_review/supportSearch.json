@@ -1,0 +1,39 @@
+{
+    "type": "Search",
+    "columns": [
+        {
+            "type": "toggles",
+            "label": "Status",
+            "value": "status",
+            "options": [
+                {
+                    "value": "",
+                    "label": "All",
+                    "color": "primary"
+                },
+                {
+                    "value": "1",
+                    "label": "Open",
+                    "default": true
+                },
+                {
+                    "value": "2",
+                    "label": "Rejected"
+                },
+                {
+                    "value": "3",
+                    "label": "In Progress"
+                },
+                {
+                    "value": "4",
+                    "label": "Completed"
+                }
+            ]
+        },        
+        {
+            "type": "input",
+            "label": "Search",
+            "value": "TEXT"
+        }
+    ]
+}

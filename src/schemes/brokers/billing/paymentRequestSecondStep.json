@@ -1,0 +1,32 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "AField",
+            "props": {
+                "title": "add new wallet",
+                "click": "add_new_vallet",
+                "styles": [
+                    {
+                        "margin-bottom": "-19px",
+                        "font-size": "12px",
+                        "color": "#283252",
+                        "text-align": "right"
+                    }
+                ]
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "payment_method",
+            "props": {
+                "label": "Payment method *",
+                "default": false,
+                "required": true,
+                "options": {
+                    "custom": "broker_payment_methods"
+                }
+            }
+        }
+    ]
+}

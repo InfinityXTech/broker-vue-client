@@ -1,0 +1,19 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "name",
+            "props": {
+                "label": "Name"
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "email",
+            "props": {
+                "label": "Email"
+            }
+        }
+    ]
+}

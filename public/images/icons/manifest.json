@@ -1,0 +1,9 @@
+{
+    "name": "CRM",
+    "short_name": "CRM",
+    "start_url": "/?utm_source=pwa",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "icons": []
+}

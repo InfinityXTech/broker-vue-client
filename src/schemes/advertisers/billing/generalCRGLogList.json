@@ -1,0 +1,30 @@
+{
+    "type": "Datatable",
+    "title": "Balances Log",
+    "columns": {
+        "timestamp": {
+            "label": "Date",
+            "renderCell": "simple.DateTime"
+        },
+        "primary_key": {
+            "label": "Lead ID",
+            "renderCell": "simple.Id"
+        },
+        "LeadTimestamp": {
+            "label": "Lead Timestamp",
+            "renderCell": "simple.DateTime"
+        },
+        "country": {
+            "label": "Country"
+        },
+        "action_by_data.name": {
+            "label": "Action By"
+        },
+        "crg": {
+            "label": "CRG"
+        },
+        "description": {
+            "label": "Description"
+        }
+    }
+}

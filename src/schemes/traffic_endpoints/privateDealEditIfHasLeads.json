@@ -1,0 +1,308 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "name",
+            "props": {
+                "label": "Deal Name",
+                "layout": "6"
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "type",
+            "props": {
+                "label": "Deal Type",
+                "layout": "",
+                "readonly": true,
+                "default": false,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "Payout Deal"
+                    },
+                    {
+                        "value": "2",
+                        "label": "CRG Deal"
+                    }
+                ],
+                "mode": "single"
+            }
+        },
+        {
+            "component": "ToggleSwitchField",
+            "data": "status",
+            "props": {
+                "label": "Enabled",
+                "layout": "narrow"
+            }
+        },
+        {
+            "component": "TextAreaField",
+            "data": "description",
+            "props": {
+                "label": "Deal Description"
+            }
+        },
+        {
+            "component": "ColumnBlock",
+            "children": [
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Limited to the number of leads"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "limited_leads",
+                            "props": {
+                                "options": [
+                                    {
+                                        "value": "1",
+                                        "label": "Limited Daily"
+                                    },
+                                    {
+                                        "value": "2",
+                                        "label": "Limited Total"
+                                    }
+                                ],
+                                "mode": "single"
+                            }
+                        },
+                        {
+                            "component": "InputField",
+                            "data": "leads",
+                            "props": {
+                                "label": "Number of leads"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "End Date"
+                    },
+                    "children": [
+                        {
+                            "component": "DateField",
+                            "data": "end_date"
+                        }
+                    ]
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "type",
+                    "props": {
+                        "values": [
+                            "2",
+                            "3"
+                        ]
+                    },
+                    "children": [
+                        {
+                            "component": "ToggleBlock",
+                            "props": {
+                                "label": "Ignore Leads Statuses"
+                            },
+                            "children": [
+                                {
+                                    "component": "SelectField",
+                                    "data": "ignore_lead_statuses",
+                                    "props": {
+                                        "options": [],
+                                        "mode": "tags"
+                                    }
+                                },
+                                {
+                                    "component": "AField",
+                                    "props": {
+                                        "title": "add invalid statuses",
+                                        "click": "add_invalid_statuses",
+                                        "styles": [
+                                            {
+                                                "margin-top": "-12px",
+                                                "font-size": "12px",
+                                                "color": "#283252"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Funnel"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "funnel_list",
+                            "props": {
+                                "options": [],
+                                "mode": "tags"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Sub Publisher"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "sub_publisher_list",
+                            "props": {
+                                "options": {
+                                    "custom": "custom_sub_publisher_list"
+                                },
+                                "mode": "multiple"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "component": "ColumnBlock",
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "country_code",
+                    "props": {
+                        "label": "Country",
+                        "default": false,
+                        "readonly": true,
+                        "options": {
+                            "dictionary": "countries"
+                        },
+                        "mode": "multiple"
+                    }
+                },
+                {
+                    "component": "SelectField",
+                    "data": "language_code",
+                    "props": {
+                        "label": "Languages",
+                        "readonly": true,
+                        "options": {
+                            "dictionary": "languages"
+                        },
+                        "mode": "multiple"
+                    }
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "type",
+                    "props": {
+                        "values": [
+                            "2",
+                            "3"
+                        ]
+                    },
+                    "children": [
+                        {
+                            "component": "InputField",
+                            "data": "min_crg",
+                            "props": {
+                                "readonly": true,
+                                "label": "Min CRG"
+                            }
+                        },
+                        {
+                            "component": "ToggleBlock",
+                            "props": {
+                                "label": "Max % invalid"
+                            },
+                            "children": [
+                                {
+                                    "component": "InputField",
+                                    "data": "max_crg_invalid",
+                                    "props": {
+                                        "label": "",
+                                        "type": "number",
+                                        "max": 100
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "component": "SelectField",
+                            "data": "calc_period_crg",
+                            "props": {
+                                "label": "CRG calculation period",
+                                "default": false,
+                                "readonly": true,
+                                "options": [
+                                    {
+                                        "value": "1",
+                                        "label": "Daily"
+                                    },
+                                    {
+                                        "value": "2",
+                                        "label": "Weekly"
+                                    },
+                                    {
+                                        "value": "3",
+                                        "label": "Monthly"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "type",
+                    "props": {
+                        "values": [
+                            "1",
+                            "3"
+                        ]
+                    },
+                    "children": [
+                        {
+                            "component": "InputField",
+                            "data": "payout",
+                            "props": {
+                                "label": "Payout",
+                                "type": "number"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "type",
+            "props": {
+                "values": [
+                    "2",
+                    "3"
+                ]
+            },
+            "children": [
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Schedule"
+                    },
+                    "children": [
+                        {
+                            "component": "ScheduleField",
+                            "data": "blocked_schedule"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

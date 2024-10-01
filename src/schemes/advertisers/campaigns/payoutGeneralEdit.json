@@ -1,0 +1,27 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "advertiser_general_payout",
+            "props": {
+                "label": "Advertiser General Payout",
+                "required": true,
+                "type": "number",
+                "preSymbol": "$",
+                "timeSilence": true
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "affiliate_general_payout",
+            "props": {
+                "label": "Affiliate General Payout",
+                "required": true,
+                "type": "number",
+                "preSymbol": "$",
+                "timeSilence": true
+            }
+        }
+    ]
+}

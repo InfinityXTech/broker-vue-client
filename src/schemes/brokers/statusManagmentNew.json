@@ -1,0 +1,22 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "broker_status",
+            "props": {
+                "label": "Broker Status"
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "status",
+            "props": {
+                "label": "Linked Status",
+                "options": {
+                    "dictionary": "broker_statuses"
+                }
+            }
+        }
+    ]
+}

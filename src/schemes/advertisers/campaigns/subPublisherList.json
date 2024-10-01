@@ -1,0 +1,23 @@
+{
+    "type": "Datatable",
+    "title": "Targeting Locations",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "traffic_endpoint_data.token": {
+            "label": "Traffic Endpoint",
+            "renderCell": "custom.Endpoint"
+        },
+        "parameter": {
+            "label": "Parameter"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

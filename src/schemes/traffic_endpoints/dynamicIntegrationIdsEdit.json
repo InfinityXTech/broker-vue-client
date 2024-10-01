@@ -1,0 +1,74 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "StatusField",
+            "data": "status",
+            "props": {
+                "label": "Status"
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "brokerId",
+            "props": {
+                "label": "Broker",
+                "required": false,
+                "options": {
+                    "dictionary": "brokers"
+                }
+            }
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "brokerId",
+            "props": {
+                "function": "isEmpty",
+                "not": true
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "integrationId",
+                    "props": {
+                        "label": "Integration",
+                        "required": false,
+                        "options": {
+                            "custom": "active_integrations"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "integrationId",
+            "props": {
+                "function": "toBoolean"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "DV1",
+                    "props": {
+                        "label": "DV1"
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "DV2",
+                    "props": {
+                        "label": "DV2"
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "DV3",
+                    "props": {
+                        "label": "DV3"
+                    }
+                }
+            ]
+        }
+    ]
+}

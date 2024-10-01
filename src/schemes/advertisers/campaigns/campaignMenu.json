@@ -1,0 +1,72 @@
+{
+    "title": "Campaign",
+    "to": {
+        "name": "advertisers-advertiserId-campaigns"
+    },
+    "children": [
+        {
+            "title": "Back to Campaigns",
+            "to": {
+                "name": "advertisers-advertiserId-campaigns"
+            }
+        },
+        {
+            "title": "Back to Advertisers",
+            "to": {
+                "name": "advertisers"
+            }
+        },
+        {
+            "id": "campaign-tabs",
+            "title": "Technical",
+            "children_desktop": false,
+            "children": [
+                {
+                    "title": "General",
+                    "to": {
+                        "name": "advertisers-advertiserId-campaign-campaignId-general"
+                    }
+                },
+                {
+                    "title": "Payouts",
+                    "access": [
+                        "payouts"
+                    ],
+                    "to": {
+                        "name": "advertisers-advertiserId-campaign-campaignId-payouts"
+                    }
+                },
+                {
+                    "title": "Private Deals",
+                    "to": {
+                        "name": "advertisers-advertiserId-campaign-campaignId-private_deals"
+                    }
+                },
+                {
+                    "title": "Budget",
+                    "to": {
+                        "name": "advertisers-advertiserId-campaign-campaignId-budget"
+                    }
+                },
+                {
+                    "title": "Targeting",
+                    "to": {
+                        "name": "advertisers-advertiserId-campaign-campaignId-targeting"
+                    }
+                },
+                {
+                    "title": "Limitation",
+                    "to": {
+                        "name": "advertisers-advertiserId-campaign-campaignId-limitation"
+                    }
+                },
+                {
+                    "title": "Endpoint Managment",
+                    "to": {
+                        "name": "advertisers-advertiserId-campaign-campaignId-endpoint_managment"
+                    }
+                }
+            ]
+        }
+    ]
+}

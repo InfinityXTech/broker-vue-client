@@ -1,0 +1,70 @@
+{
+    "type": "Form",
+    "gauth": true,
+    "content": [
+        {
+            "component": "SelectField",
+            "data": "payment_method",
+            "props": {
+                "label": "Payment method",
+                "default": false,
+                "options": {
+                    "custom": "broker_payment_methods"
+                }
+            }
+        },
+        {
+            "component": "ToggleSwitchField",
+            "data": "use_payment_request",
+            "props": {
+                "label": "Payment request",
+                "inline": true
+            }
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "use_payment_request",
+            "props": {
+                "function": "toBoolean"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "payment_request",
+                    "props": {
+                        "options": {
+                            "custom": "broker_payment_requests"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "use_payment_request",
+            "props": {
+                "function": "toBoolean",
+                "values": [
+                    false
+                ]
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "amount",
+                    "props": {
+                        "label": "Amount",
+                        "type": "number"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "FilesField",
+            "data": "screenshots",
+            "props": {
+                "label": "Screenshots"
+            }
+        }
+    ]
+}

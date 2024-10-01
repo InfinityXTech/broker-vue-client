@@ -1,0 +1,37 @@
+{
+    "type": "Datatable",
+    "title": "General",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "name": {
+            "label": "Name",
+            "renderCell": "custom.Name"
+        },
+        "total": {
+            "label": "Total",
+            "default": 0
+        },
+        "match": {
+            "label": "Matches",
+            "default": 0
+        },
+        "reject": {
+            "label": "Rejected",
+            "default": 0
+        },
+        "cr": {
+            "label": "Rejected %",
+            "default": 0,
+            "renderCell": "simple.Percent"
+        },
+        "actions": {
+            "label": "",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

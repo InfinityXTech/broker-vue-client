@@ -1,0 +1,20 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "TextAreaField",
+            "data": "description",
+            "props": {
+                "label": "Note:",
+                "rows": 5
+            }
+        },
+        {
+            "component": "FilesField",
+            "data": "master_approve_files",
+            "props": {
+                "label": "Affiliate Invoice"
+            }
+        }
+    ]
+}

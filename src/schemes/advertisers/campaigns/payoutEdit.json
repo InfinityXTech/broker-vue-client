@@ -1,0 +1,29 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "advertiser_payout",
+            "props": {
+                "label": "Advertiser Payout",
+                "type": "number"
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "affiliate_payout",
+            "props": {
+                "label": "Affiliate Payout",
+                "type": "number"
+            }
+        },
+        {
+            "component": "TextAreaField",
+            "data": "description",
+            "props": {
+                "label": "Why you wanna change payout?",
+                "rows": 5
+            }
+        }
+    ]
+}

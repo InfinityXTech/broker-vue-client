@@ -1,0 +1,38 @@
+{
+    "type": "Form",
+    "gauth": true,
+    "content": [
+        {
+            "component": "DateField",
+            "data": "date_pay",
+            "props": {
+                "label": "Date Pay"
+            }
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "is_request_transaction_id",
+            "props": {
+                "values": [
+                    true
+                ]
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "transaction_id",
+                    "props": {
+                        "label": "Transaction ID"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "FilesField",
+            "data": "final_approve_files",
+            "props": {
+                "label": "Please upload chat screenshot confirmation and payment method confirmation"
+            }
+        }
+    ]
+}

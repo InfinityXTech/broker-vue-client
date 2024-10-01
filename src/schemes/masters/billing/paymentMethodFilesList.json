@@ -1,0 +1,13 @@
+{
+    "type": "Datatable",
+    "title": "Files",
+    "columns": {
+        "title": {
+            "label": "Title"
+        },
+        "files": {
+            "label": "Files",
+            "renderCell": "simple.Files"
+        }
+    }
+}

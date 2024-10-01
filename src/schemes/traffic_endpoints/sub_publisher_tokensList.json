@@ -1,0 +1,12 @@
+{
+    "type": "Datatable",
+    "title": "Sub publisher tokens",
+    "columns": {
+        "token": {
+            "label": "Token"
+        },
+        "sub_publisher": {
+            "label": "Sub Publisher"
+        }
+    }
+}

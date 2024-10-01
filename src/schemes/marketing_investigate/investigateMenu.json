@@ -1,0 +1,16 @@
+{
+    "title": "Investigate",
+    "children_desktop": false,
+    "children": [
+        {
+            "title": "Investigate",
+            "icon": "fas fa-wallet",
+            "to": {
+                "name": "marketing_investigate-type",
+                "params": {
+                    "type": "user"
+                }
+            }
+        }
+    ]
+}

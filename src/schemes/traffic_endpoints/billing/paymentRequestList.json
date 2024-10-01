@@ -1,0 +1,54 @@
+{
+    "type": "Datatable",
+    "title": "Adjustments",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "timestamp": {
+            "label": "Timestamp",
+            "renderCell": "simple.DateTime"
+        },
+        "period.from": {
+            "label": "From"
+        },
+        "period.to": {
+            "label": "To"
+        },
+        "view_calculation": {
+            "label": "Info",
+            "renderCell": "custom.ViewCalculation"
+        },
+        "transaction_id": {
+            "label": "Transaction ID"
+        },
+        "statuses": {
+            "label": "Status",
+            "renderCell": "custom.Status"
+        },
+        "final_status_date_pay": {
+            "label": "Pay Timestamp",
+            "sortable": false,
+            "renderCell": "simple.Date"
+        },
+        "stat.type": {
+            "label": "Type"
+        },
+        "stat.total": {
+            "label": "Total",
+            "renderCell": "custom.Total"
+        },
+        "files": {
+            "label": "Files",
+            "sortable": false,
+            "renderCell": "custom.Files"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

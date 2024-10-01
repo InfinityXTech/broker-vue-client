@@ -1,0 +1,56 @@
+{
+    "type": "Datatable",
+    "title": "Payment Methods",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "timestamp": {
+            "label": "Timestamp",
+            "renderCell": "simple.DateTime"
+        },
+        "from": {
+            "label": "From",
+            "default": "—",
+            "renderCell": "simple.Date"
+        },
+        "to": {
+            "label": "To",
+            "default": "—",
+            "renderCell": "simple.Date"
+        },
+        "details": {
+            "label": "Info",
+            "sortable": false,
+            "renderCell": "custom.Details"
+        },
+        "transaction_id": {
+            "label": "Transaction ID"
+        },
+        "status": {
+            "label": "Status",
+            "sortable": false,
+            "renderCell": "custom.Status"
+        },
+        "type": {
+            "label": "Type",
+            "renderCell": "custom.Type"
+        },
+        "total": {
+            "label": "Total",
+            "renderCell": "custom.Total"
+        },
+        "files": {
+            "label": "Files",
+            "sortable": false,
+            "renderCell": "custom.Files"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

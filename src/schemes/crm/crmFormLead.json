@@ -1,0 +1,194 @@
+{
+    "type": "Form",
+    "title": "Leads",
+    "content": [
+        {
+            "component": "DateRangeField",
+            "data": "timeframe",
+            "props": {
+                "layout": "3",
+                "label": "Time Frame"
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "traffic_endpoint",
+            "props": {
+                "layout": "3",
+                "label": "Traffic Endpoint",
+                "required": false,
+                "options": {
+                    "dictionary": "traffic_endpoints"
+                }
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "first_name",
+            "props": {
+                "layout": "3",
+                "label": "First Name",
+                "required": false
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "last_name",
+            "props": {
+                "layout": "3",
+                "label": "Last Name",
+                "required": false
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "email",
+            "props": {
+                "layout": "3",
+                "label": "Email",
+                "required": false
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "phone",
+            "props": {
+                "layout": "3",
+                "label": "Phone",
+                "required": false
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "country",
+            "props": {
+                "layout": "3",
+                "label": "Country",
+                "required": false,
+                "options": {
+                    "dictionary": "countries"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "language",
+            "props": {
+                "layout": "3",
+                "label": "Languages",
+                "required": false,
+                "options": {
+                    "dictionary": "languages"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "broker",
+            "props": {
+                "layout": "3",
+                "label": "Broker",
+                "required": false,
+                "options": {
+                    "dictionary": "brokers"
+                }
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "broker_lead_id",
+            "props": {
+                "layout": "3",
+                "label": "Broker Lead ID",
+                "required": false
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "lead_id",
+            "props": {
+                "layout": "3",
+                "label": "Lead ID",
+                "required": false
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "click_id",
+            "props": {
+                "layout": "3",
+                "label": "Click ID",
+                "required": false
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "status",
+            "props": {
+                "layout": "3",
+                "label": "Status",
+                "required": false,
+                "options": {
+                    "dictionary": "lead_statuses"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "crg",
+            "props": {
+                "label": "Endpoint CRG",
+                "layout": "3",
+                "default": true,
+                "required": false,
+                "options": [
+                    {
+                        "value": "crg",
+                        "label": "CRG"
+                    },
+                    {
+                        "value": "no_crg",
+                        "label": "No CRG"
+                    },
+                    {
+                        "value": "removed_crg",
+                        "label": "Removed CRG"
+                    }
+                ]
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "broker_crg",
+            "props": {
+                "label": "Broker CRG",
+                "layout": "3",
+                "default": true,
+                "required": false,
+                "options": [
+                    {
+                        "value": "crg",
+                        "label": "CRG"
+                    },
+                    {
+                        "value": "no_crg",
+                        "label": "No CRG"
+                    },
+                    {
+                        "value": "removed_crg",
+                        "label": "Removed CRG"
+                    }
+                ]
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "sub_publisher",
+            "props": {
+                "layout": "3",
+                "label": "Sub publisher",
+                "required": false
+            }
+        }
+    ]
+}

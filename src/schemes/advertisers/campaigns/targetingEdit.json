@@ -1,0 +1,34 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "SelectField",
+            "data": "country_code",
+            "props": {
+                "label": "Country",
+                "default": false,
+                "options": {
+                    "dictionary": "countries"
+                }
+            }
+        },
+        {
+            "component": "ToggleBlock",
+            "props": {
+                "label": "Region"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "region_codes",
+                    "props": {
+                        "mode": "multiple",
+                        "options": {
+                            "custom": "regions"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

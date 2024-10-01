@@ -1,0 +1,63 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "StatusField",
+            "data": "status",
+            "props": {
+                "label": "Status",
+                "default": 1
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "name",
+            "props": {
+                "label": "Stuff Name"
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "account_email",
+            "props": {
+                "label": "Email"
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "skype",
+            "props": {
+                "label": "Skype"
+            }
+        },
+        {
+            "component": "TwoSideMultiSelect",
+            "data": "roles",
+            "props": {
+                "label": "Roles",
+                "options": [
+                    {
+                        "value": "super_admin",
+                        "label": "Super Admin"
+                    },
+                    {
+                        "value": "admin",
+                        "label": "Admin"
+                    },
+                    {
+                        "value": "integration_manager",
+                        "label": "Integration Manager"
+                    },
+                    {
+                        "value": "account_manager",
+                        "label": "Account Manager"
+                    },
+                    {
+                        "value": "financial",
+                        "label": "Financial"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "ToggleBlock",
+            "props": {
+                "label": "Affiliate Restrictions"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "restrict_type",
+                    "props": {
+                        "label": "Affiliate Restriction Type",
+                        "default": false,
+                        "required": true,
+                        "layout": "3",
+                        "options": [
+                            {
+                                "value": "black",
+                                "label": "Black List"
+                            },
+                            {
+                                "value": "white",
+                                "label": "White List"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "SelectField",
+                    "data": "restrict_endpoints",
+                    "props": {
+                        "label": "Affiliates",
+                        "layout": "3",
+                        "default": false,
+                        "required": true,
+                        "options": {
+                            "dictionary": "affiliates"
+                        },
+                        "mode": "multiple"
+                    }
+                }
+            ]
+        }
+    ]
+}

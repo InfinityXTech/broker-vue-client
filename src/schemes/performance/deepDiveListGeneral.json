@@ -1,0 +1,31 @@
+{
+    "type": "Datatable",
+    "title": "DeepDive",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "message": {
+            "label": "Error Name"
+        },
+        "type": {
+            "label": "Error Type"
+        },
+        "count": {
+            "label": "Count",
+            "default": 0
+        },
+        "cr": {
+            "label": "% of Traffic",
+            "default": 0,
+            "renderCell": "simple.Percent"
+        },
+        "actions": {
+            "label": "",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

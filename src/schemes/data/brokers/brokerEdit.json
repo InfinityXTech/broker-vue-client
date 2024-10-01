@@ -1,0 +1,118 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Basic Information"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "partner_name",
+                    "props": {
+                        "label": "Broker Name"
+                    }
+                },
+                {
+                    "component": "StatusField",
+                    "data": "status",
+                    "props": {
+                        "label": "Integration Status"
+                    }
+                },
+                {
+                    "component": "SelectField",
+                    "data": "account_manager",
+                    "props": {
+                        "label": "Account Manager",
+                        "options": {
+                            "dictionary": "account_managers"
+                        }
+                    }
+                },
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Assigned to Master Partner",
+                        "big": true
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "master_partner",
+                            "props": {
+                                "label": "",
+                                "default": true,
+                                "options": {
+                                    "dictionary": "master_brands"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "forbidden_show_traffic_endpoint",
+                    "props": {
+                        "label": "Do not show sub source"
+                    }
+                },
+                {
+                    "component": "SelectField",
+                    "data": "company_type",
+                    "props": {
+                        "label": "Broker Type",
+                        "default": false,
+                        "options": [
+                            {
+                                "value": "1",
+                                "label": "Broker"
+                            },
+                            {
+                                "value": "2",
+                                "label": "Network"
+                            },
+                            {
+                                "value": "3",
+                                "label": "IB"
+                            },
+                            {
+                                "value": "4",
+                                "label": "Premium Network"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Restrictions"
+            },
+            "children": [
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Restricted Endpoints",
+                        "big": true
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "restricted_endpoints",
+                            "props": {
+                                "label": "",
+                                "options": {
+                                    "dictionary": "traffic_endpoints"
+                                },
+                                "mode": "multiple"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

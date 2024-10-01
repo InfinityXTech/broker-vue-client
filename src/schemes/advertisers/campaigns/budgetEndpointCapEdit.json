@@ -1,0 +1,41 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "SelectField",
+            "data": "affiliate",
+            "props": {
+                "layout": "",
+                "label": "Affiliate",
+                "required": true,
+                "default": false,
+                "options": {
+                    "dictionary": "affiliates"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "country_code",
+            "props": {
+                "layout": "",
+                "label": "Country",
+                "required": true,
+                "default": false,
+                "options": {
+                    "dictionary": "countries"
+                }
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "daily_cap",
+            "props": {
+                "label": "Daily Cap",
+                "layout": "6",
+                "required": true,
+                "type": "number"
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "type": "Datatable",
+    "title": "Performance settings",
+    "columns": {
+        "status": {
+            "label": "Error Pattern"
+        },
+        "category": {
+            "label": "Category",
+            "renderCell": "custom.Category"
+        },
+        "priority": {
+            "label": "Priority"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

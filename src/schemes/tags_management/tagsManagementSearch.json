@@ -1,0 +1,53 @@
+{
+    "type": "Search",
+    "columns": [
+        {
+            "type": "toggles",
+            "label": "Status",
+            "value": "status",
+            "options": [
+                {
+                    "value": "1",
+                    "label": "Active",
+                    "color": "primary",
+                    "default": true
+                },
+                {
+                    "value": "0",
+                    "color": "warning",
+                    "label": "Inactive"
+                }
+            ]
+        },
+        {
+            "label": "Permission",
+            "type": "select",
+            "value": "permission",
+            "options": [
+                {
+                    "value": "",
+                    "label": "All",
+                    "default": true
+                },
+                {
+                    "value": "1",
+                    "label": "Broker Only"
+                },
+                {
+                    "value": "2",
+                    "label": "Endpoint Only"
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "label": "Created By",
+            "value": "created_by_user._id",
+            "options": {
+                "field": "created_by_user",
+                "key": "_id",
+                "value": "name"
+            }
+        }
+    ]
+}

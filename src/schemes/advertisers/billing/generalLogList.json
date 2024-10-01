@@ -1,0 +1,22 @@
+{
+    "type": "Datatable",
+    "title": "General Logs",
+    "columns": {
+        "timestamp": {
+            "label": "Date",
+            "renderCell": "simple.DateTime"
+        },
+        "collection": {
+            "label": "Type"
+        },
+        "action": {
+            "label": "Action"
+        },
+        "data": {
+            "label": "Data"
+        },
+        "changed_by": {
+            "label": "Changed by"
+        }
+    }
+}

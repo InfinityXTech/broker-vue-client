@@ -1,0 +1,29 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Platform Credentials"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "token",
+                    "props": {
+                        "label": "Token",
+                        "readonly": true,
+                        "timeSilence": true
+                    }
+                },
+                {
+                    "component": "CustomField",
+                    "props": {
+                        "label": "Reset Password",
+                        "renderFunc": "custom.ResetPassword"
+                    }
+                }
+            ]
+        }
+    ]
+}

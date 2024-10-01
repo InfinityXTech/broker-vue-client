@@ -1,0 +1,58 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Restrictions"
+            },
+            "children": [
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Restricted Brokers",
+                        "big": true
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "restricted_brokers",
+                            "props": {
+                                "label": "",
+                                "mode": "multiselect",
+                                "required": false,
+                                "options": {
+                                    "dictionary": "brokers"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Restricted Brokers By Country",
+                        "big": true
+                    },
+                    "children": [
+                        {
+                            "component": "CountryBlackWhiteList",
+                            "data": "restricted_brokers_by_country",
+                            "props": {
+                                "label": "",
+                                "blackList": true,
+                                "whiteList": true,
+                                "columnName": "Brokers",
+                                "mode": "multiselect",
+                                "required": false,
+                                "options": {
+                                    "dictionary": "brokers"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

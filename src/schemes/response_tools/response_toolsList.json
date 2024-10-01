@@ -1,0 +1,34 @@
+{
+    "type": "Datatable",
+    "title": "",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "ip": {
+            "label": "IP"
+        },
+        "phone": {
+            "label": "Phone"
+        },
+        "location": {
+            "label": "Location",
+            "renderCell": "custom.Location"
+        },
+        "email": {
+            "label": "Email"
+        },
+        "token": {
+            "label": "Token"
+        },
+        "timestamp": {
+            "label": "Timestamp",
+            "renderCell": "simple.DateTime"
+        },
+        "response": {
+            "label": "Response"
+        }
+    }
+}

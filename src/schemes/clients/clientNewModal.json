@@ -1,0 +1,13 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "nickname",
+            "props": {
+                "required": true,
+                "label": "Client Name"
+            }
+        }
+    ]
+}

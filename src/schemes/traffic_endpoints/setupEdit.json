@@ -1,0 +1,149 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Approved leads"
+            },
+            "children": [
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "send_mismatch_again",
+                    "props": {
+                        "label": "Send Mismatch Again"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Reporting"
+            },
+            "children": [
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "statusReporting",
+                    "props": {
+                        "label": "Allow access to reporting"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Deposits"
+            },
+            "children": [
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "statusDeposit",
+                    "props": {
+                        "label": "Report Deposits Manually"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Redirect Logic"
+            },
+            "children": [
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "redirect_24_7",
+                    "props": {
+                        "label": "Redirect 24/7"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Platform Credentials"
+            },
+            "children": [
+                {
+                    "component": "RadioGroupField",
+                    "data": "endpoint_status",
+                    "props": {
+                        "label": "Endpoint Status",
+                        "default": "1",
+                        "options": [
+                            {
+                                "color": "primary",
+                                "label": "Approved",
+                                "value": "1"
+                            },
+                            {
+                                "color": "danger",
+                                "label": "Waiting For Approval",
+                                "value": "0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "token",
+                    "props": {
+                        "label": "Token",
+                        "readonly": true
+                    }
+                },
+                {
+                    "component": "CustomField",
+                    "props": {
+                        "label": "Reset Password",
+                        "renderFunc": "custom.ResetPassword"
+                    }
+                },
+                {
+                    "component": "ImgField",
+                    "data": "login_qr",
+                    "props": {
+                        "label": "Two Factor Authenticator",
+                        "width": 70
+                    }
+                },
+                {
+                    "component": "TwoSideMultiSelect",
+                    "data": "permissions",
+                    "props": {
+                        "label": "Dashboard permissions",
+                        "options": [
+                            {
+                                "value": "intelligence",
+                                "label": "Intelligence"
+                            },
+                            {
+                                "value": "insights",
+                                "label": "Insights"
+                            },
+                            {
+                                "value": "api",
+                                "label": "API"
+                            },
+                            {
+                                "value": "postbacks",
+                                "label": "Postbacks"
+                            },
+                            {
+                                "value": "payouts",
+                                "label": "Payouts"
+                            },
+                            {
+                                "value": "marketing_suite",
+                                "label": "Marketing Suite"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

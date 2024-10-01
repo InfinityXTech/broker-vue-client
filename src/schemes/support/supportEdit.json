@@ -1,0 +1,150 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Basic Information"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "status",
+                    "props": {
+                        "label": "Status",
+                        "layout": "6",
+                        "readonly": true,
+                        "default": false,
+                        "options": [
+                            {
+                                "value": "1",
+                                "label": "Open"
+                            },
+                            {
+                                "value": "2",
+                                "label": "Rejected"
+                            },
+                            {
+                                "value": "3",
+                                "label": "In Progress"
+                            },
+                            {
+                                "value": "4",
+                                "label": "Completed"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "created_by_user_name",
+                    "props": {
+                        "readonly": true,
+                        "layout": "6",
+                        "label": "Created By:",
+                        "timeSilence": true
+                    }
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "type",
+                    "props": {
+                        "values": [
+                            "1",
+                            "2",
+                            "3",
+                            "4"
+                        ]
+                    },
+                    "children": [
+                        {
+                            "component": "InputField",
+                            "data": "type_name",
+                            "props": {
+                                "layout": "6",
+                                "readonly": true,
+                                "label": "Ticket Category:",
+                                "timeSilence": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "SelectField",
+                    "data": "broker",
+                    "props": {
+                        "readonly": true,
+                        "layout": "6",
+                        "label": "Broker",
+                        "required": false,
+                        "options": {
+                            "dictionary": "brokers"
+                        }
+                    }
+                },
+                {
+                    "component": "SelectField",
+                    "data": "traffic_endpoint",
+                    "props": {
+                        "readonly": true,
+                        "layout": "6",
+                        "label": "Traffic Endpoint",
+                        "required": false,
+                        "options": {
+                            "dictionary": "traffic_endpoints"
+                        }
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "broker_api_documentstion",
+                    "props": {
+                        "layout": "6",
+                        "readonly": true,
+                        "label": "API Documentation:",
+                        "timeSilence": true
+                    }
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "type",
+                    "props": {
+                        "values": [
+                            "5"
+                        ]
+                    },
+                    "children": [
+                        {
+                            "component": "InputField",
+                            "data": "subject",
+                            "props": {
+                                "layout": "12",
+                                "readonly": true,
+                                "label": "Subject:",
+                                "timeSilence": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "TextAreaField",
+                    "data": "note",
+                    "props": {
+                        "layout": "12",
+                        "readonly": true,
+                        "rows": 10,
+                        "label": "Ticket Description:",
+                        "timeSilence": true
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "files",
+                    "props": {
+                        "label": "Supporting Files:"
+                    }
+                }
+            ]
+        }
+    ]
+}

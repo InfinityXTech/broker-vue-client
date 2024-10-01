@@ -1,0 +1,15 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "DateRangeField",
+            "data": "timeframe",
+            "props": {
+                "layout": "",
+                "required": false,
+                "label": "Time Frame",
+                "menuClassName": "report-calendar-menu"
+            }
+        }
+    ]
+}

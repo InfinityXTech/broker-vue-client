@@ -1,0 +1,23 @@
+{
+    "title": "Brokers",
+    "permission_name": "brokers",
+    "children": [
+        {
+            "title": "All Brokers",
+            "to": {
+                "name": "brokers"
+            }
+        },
+        {
+            "title": "Add New Broker",
+            "access": [
+                "all",
+                "add",
+                "edit"
+            ],
+            "to": {
+                "name": "brokers-create"
+            }
+        }
+    ]
+}

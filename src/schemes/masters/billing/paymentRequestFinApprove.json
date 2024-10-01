@@ -1,0 +1,73 @@
+{
+    "type": "Form",
+    "gauth": true,
+    "content": [
+        {
+            "component": "ConditionalBlock",
+            "data": "payment_method",
+            "props": {
+                "function": "payment_method_required"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "payment_method",
+                    "props": {
+                        "label": "Payment method",
+                        "default": false,
+                        "required": true,
+                        "options": {
+                            "custom": "custom_payment_methods"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "payment_method",
+            "props": {
+                "function": "transaction_id_required"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "transaction_id",
+                    "props": {
+                        "label": "Transaction ID"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "payment_method",
+            "props": {
+                "function": "transaction_id_required"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "hash_url",
+                    "props": {
+                        "label": "Hash Url"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "DateField",
+            "data": "final_status_date_pay",
+            "props": {
+                "label": "Date Pay"
+            }
+        },
+        {
+            "component": "FilesField",
+            "data": "final_approve_files",
+            "props": {
+                "label": "Please upload chat screenshot confirmation and payment method confirmation"
+            }
+        }
+    ]
+}

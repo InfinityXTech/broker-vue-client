@@ -1,0 +1,41 @@
+{
+    "type": "Form",
+    "gauth": true,
+    "content": [
+        {
+            "component": "SelectField",
+            "data": "amount_sign",
+            "props": {
+                "layout": "6",
+                "label": "Amount",
+                "default": false,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "Positive"
+                    },
+                    {
+                        "value": "-1",
+                        "label": "Negative"
+                    }
+                ]
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "amount_value",
+            "props": {
+                "layout": "6",
+                "label": "\u00A0"
+            }
+        },
+        {
+            "component": "TextAreaField",
+            "data": "description",
+            "props": {
+                "label": "Deal Description",
+                "rows": 4
+            }
+        }
+    ]
+}

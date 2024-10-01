@@ -1,0 +1,13 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "ToggleSwitchField",
+            "data": "collection",
+            "props": {
+                "layout": "8",
+                "label": "Collection"
+            }
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "ToggleBlock",
+            "props": {
+                "layout": "2",
+                "label": "General Cap"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "general_cap",
+                    "props": {
+                        "label": "",
+                        "required": false,
+                        "type": "number",
+                        "timeSilence": true
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "general_cap",
+            "props": {
+                "function": "general_cap_inactive"
+            },
+            "children": [
+                {
+                    "component": "HtmlField",
+                    "props": {
+                        "layout": "2",
+                        "html": "<b style='margin-left:10px;'>Unlimited</b>"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ToggleBlock",
+            "props": {
+                "layout": "12",
+                "label": "Daily Cap"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "daily_cap",
+                    "props": {
+                        "label": "",
+                        "layout": "2",
+                        "required": false,
+                        "type": "number",
+                        "timeSilence": true
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "daily_cap",
+            "props": {
+                "layout": "2",
+                "function": "daily_cap_inactive"
+            },
+            "children": [
+                {
+                    "component": "HtmlField",
+                    "props": {
+                        "layout": "12",
+                        "html": "<b style='margin-left:10px;'>Unlimited</b>"
+                    }
+                }
+            ]
+        }
+    ]
+}

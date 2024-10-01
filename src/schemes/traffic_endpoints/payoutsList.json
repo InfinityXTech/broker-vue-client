@@ -1,0 +1,48 @@
+{
+    "type": "Datatable",
+    "title": "Payouts Management",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "country.code": {
+            "label": "Country",
+            "renderCell": "custom.Country"
+        },
+        "language.code": {
+            "label": "Language",
+            "default": "",
+            "renderCell": "custom.Language"
+        },
+        "cost_type": {
+            "label": "Charged By",
+            "renderCell": "custom.CostType"
+        },
+        "payout": {
+            "label": "Payout",
+            "renderCell": "simple.MoneyColor"
+        },
+        "daily_cap": {
+            "label": "Daily Cap"
+        },
+        "enabled": {
+            "label": "Enabled",
+            "renderCell": "custom.Enabled"
+        },
+        "distributions_crg": {
+            "label": "Distributions CRG",
+            "renderCell": "custom.DistributionsCRG"
+        },
+        "weekend_off_distributions_crg": {
+            "label": "Off Weekend Distributions CRG",
+            "renderCell": "custom.OffWeekendDistributionsCRG"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

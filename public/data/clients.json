@@ -1,0 +1,17 @@
+[
+    {
+        "_id": {
+            "$oid": "633562373712d253c05e7581"
+        },
+        "api_domain": "https://saas_dev-api.albertroi.com",
+        "crm_domain": "https://saas_dev.albertroi.com",
+        "login_background": "/images/clients/albertroi/login/bg5-l.jpg",
+        "logo_url_big": "/images/clients/albertroi/login/logo_450x450.png",
+        "logo_url_small": "/images/clients/albertroi/logo-white.png",
+        "master_domain": "",
+        "nickname": "roibees",
+        "partner_domain": "",
+        "serving_domain": "",
+        "status": true
+    }
+]

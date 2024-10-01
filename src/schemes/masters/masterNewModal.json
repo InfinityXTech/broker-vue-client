@@ -1,0 +1,45 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Basic Information",
+                "style": "border: none; padding: 20px 0;"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "assignedto",
+                    "props": {
+                        "label": "Assigned to",
+                        "required": true,
+                        "default": false,
+                        "options": {
+                            "dictionary": "users"
+                        }
+                    }
+                },
+                {
+                    "component": "SelectField",
+                    "data": "type",
+                    "props": {
+                        "label": "Type",
+                        "required": true,
+                        "default": false,
+                        "options": [
+                            {
+                                "value": "1",
+                                "label": "Master Affiliate"
+                            },
+                            {
+                                "value": "2",
+                                "label": "Master Brand"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

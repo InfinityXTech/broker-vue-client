@@ -1,0 +1,38 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "partner_name",
+            "props": {
+                "label": "Broker Name"
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "company_type",
+            "props": {
+                "label": "Broker Type",
+                "default": false,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "Broker"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Network"
+                    },
+                    {
+                        "value": "3",
+                        "label": "IB"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Premium Network"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "organization_name",
+            "props": {
+                "label": "Company Name",
+                "required": true
+            }
+        },
+        {
+            "component": "TextAreaField",
+            "data": "organization_address",
+            "props": {
+                "label": "Company Address",
+                "rows": 6,
+                "required": true
+            }
+        }
+    ]
+}

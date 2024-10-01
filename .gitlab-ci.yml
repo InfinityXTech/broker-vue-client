@@ -1,0 +1,193 @@
+stages:
+    - build
+    - deploy
+
+cache:
+    paths:
+        - node_modules/
+
+# DEV ----------------------------------------
+build:dev:
+    stage: build
+    before_script:
+        - node -v
+        - npm -v
+    only:
+        - dev
+    tags:
+        - crm
+        - ui
+        - dev
+        - google
+    script:
+        - echo "Building deploy package"
+        #- cd /var/www/html/ui_vue/dist2/
+        #- sudo chown -R root .
+        - export NODE_OPTIONS=--max_old_space_size=4096
+        - npm install --no-audit --legacy-peer-deps
+        - npm run build-dev
+        #- sudo chown gitlab-runner -R .
+        - echo "Build successful"
+    cache:
+        paths:
+            - node_modules/
+    artifacts:
+        paths:
+            # build folder
+            - dist
+            # - /var/www/html/ui_vue/dist2/dist
+        expire_in: 30 hour
+
+deploy dev:google:
+    # image: node
+    stage: deploy
+    only:
+        - dev
+    tags:
+        - crm
+        - ui
+        - dev
+        - google
+    script:
+        - echo "Deploying to server"
+        - find /var/www/html/qa_saas/ui/dist/ -type f ! -name '.htaccess' ! -name 'index.php' -delete
+        - rm -rf /var/www/html/qa_saas/ui/dist/images/clients
+        - rm -f /var/www/html/qa_saas/ui/dist/data/clients.json
+        - cp -rv dist/* /var/www/html/qa_saas/ui/dist
+        - rm -rf /var/www/html/qa_saas/ui/dist/images/clients
+        - rm -f /var/www/html/qa_saas/ui/dist/data/clients.json
+        - ln -s /var/www/html/qa_saas/clients_assets /var/www/html/qa_saas/ui/dist/images/clients
+        - ln -s /var/www/html/qa_saas/api/storage/app/clients.json /var/www/html/qa_saas/ui/dist/data/clients.json
+        - echo "Google 1 Dev Deployed"
+
+# PROD GOOGLE 1 ----------------------------------------
+build:prod-google-1:
+    stage: build
+    before_script:
+        - node -v
+        - npm -v
+    only:
+        - main
+    tags:
+        - crm
+        - ui
+        - vue
+        - prod
+        - saas
+        - google
+        - server-1
+    script:
+        - echo "Building deploy production package"
+        #- cd /var/www/html/saas/vue_ui/dist/
+        #- sudo chown -R root .
+        - pwd
+        - npm install --no-audit --legacy-peer-deps
+        - npm run build
+        #- sudo chown gitlab-runner -R .
+        - echo "Build production successful"
+    cache:
+        paths:
+            - node_modules/
+    artifacts:
+        paths:
+            # build folder
+            - dist
+            # - /var/www/html/saas/ui_vue/dist/dist
+        expire_in: 30 hour
+
+deploy:prod-google-1:
+    # image: node
+    stage: deploy
+    only:
+        - main
+    tags:
+        - crm
+        - ui
+        - vue
+        - prod
+        - saas
+        - google
+        - server-1
+    script:
+        - echo "Deploying to production server"
+        - echo "delete"
+        - find /var/www/html/saas/ui/dist/ -type f ! -name '.htaccess' ! -name 'index.php' -delete
+        - rm -rf /var/www/html/saas/ui/dist/images/clients
+        - rm -f /var/www/html/saas/ui/dist/data/clients.json
+        - echo "copy"
+        - cp -rv dist/* /var/www/html/saas/ui/dist
+        - echo "rm clients"
+        - rm -rf /var/www/html/saas/ui/dist/images/clients
+        - echo "rm clients.json"
+        - rm -f /var/www/html/saas/ui/dist/data/clients.json
+        - echo "ln clients_assets"
+        - ln -s /var/www/html/saas/clients_assets /var/www/html/saas/ui/dist/images/clients
+        - echo "ln clients.json"
+        - ln -s /var/www/html/saas/api/storage/app/clients.json /var/www/html/saas/ui/dist/data/clients.json
+        - echo "Google 1 Prod Deployed"
+
+# PROD GOOGLE 2 ----------------------------------------
+build:prod-google-2:
+    stage: build
+    before_script:
+        - node -v
+        - npm -v
+    only:
+        - main
+    tags:
+        - crm
+        - ui
+        - vue
+        - prod
+        - saas
+        - google
+        - server-2
+    script:
+        - echo "Building deploy production package"
+        #- cd /var/www/html/saas/vue_ui/dist/
+        #- sudo chown -R root .
+        - pwd
+        - npm install --no-audit --legacy-peer-deps
+        - npm run build
+        #- sudo chown gitlab-runner -R .
+        - echo "Build production successful"
+    cache:
+        paths:
+            - node_modules/
+    artifacts:
+        paths:
+            # build folder
+            - dist
+            # - /var/www/html/saas/ui_vue/dist/dist
+        expire_in: 30 hour
+
+deploy:prod-google-2:
+    # image: node
+    stage: deploy
+    only:
+        - main
+    tags:
+        - crm
+        - ui
+        - vue
+        - prod
+        - saas
+        - google
+        - server-2
+    script:
+        - echo "Deploying to production server"
+        - echo "delete"
+        - find /var/www/html/saas/ui/dist/ -type f ! -name '.htaccess' ! -name 'index.php' -delete
+        - rm -rf /var/www/html/saas/ui/dist/images/clients
+        - rm -f /var/www/html/saas/ui/dist/data/clients.json
+        - echo "copy"
+        - cp -rv dist/* /var/www/html/saas/ui/dist
+        - echo "rm clients"
+        - rm -rf /var/www/html/saas/ui/dist/images/clients
+        - echo "rm clients.json"
+        - rm -f /var/www/html/saas/ui/dist/data/clients.json
+        - echo "ln clients_assets"
+        - ln -s /var/www/html/saas/clients_assets /var/www/html/saas/ui/dist/images/clients
+        - echo "ln clients.json"
+        - ln -s /var/www/html/saas/api/storage/app/clients.json /var/www/html/saas/ui/dist/data/clients.json
+        - echo "Google 2 Prod Deployed"

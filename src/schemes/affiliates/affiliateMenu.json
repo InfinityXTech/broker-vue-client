@@ -1,0 +1,101 @@
+{
+    "title": "Affiliates",
+    "to": {
+        "name": "affiliates"
+    },
+    "permission_name": "marketing_affiliates",
+    "children": [
+        {
+            "title": "Back to Affiliates",
+            "to": {
+                "name": "affiliates"
+            }
+        },
+        {
+            "title": "General",
+            "access": [
+                "general"
+            ],
+            "to": {
+                "name": "affiliates-affiliateId"
+            }
+        },
+        {
+            "title": "Credentials",
+            "access": [
+                "credentials"
+            ],
+            "to": {
+                "name": "affiliates-affiliateId-general"
+            }
+        },
+        {
+            "title": "Technical",
+            "access": [
+                "technical"
+            ],
+            "to": {
+                "name": "affiliates-affiliateId-technical"
+            }
+        },
+        {
+            "id": "billing-tabs",
+            "title": "Billing",
+            "access": [
+                "is_billing"
+            ],
+            "children_desktop": false,
+            "children": [
+                {
+                    "title": "General & Balances",
+                    "icon": "fas fa-wallet",
+                    "to": {
+                        "name": "affiliates-affiliateId-billing-general"
+                    }
+                },
+                {
+                    "title": "Billing Entities",
+                    "icon": "lnir lnir-postcard",
+                    "to": {
+                        "name": "affiliates-affiliateId-billing-entities"
+                    }
+                },
+                {
+                    "title": "Payment Methods",
+                    "icon": "fas fa-credit-card",
+                    "to": {
+                        "name": "affiliates-affiliateId-billing-methods"
+                    }
+                },
+                {
+                    "title": "Payment Requests",
+                    "icon": "feather:inbox",
+                    "to": {
+                        "name": "affiliates-affiliateId-billing-requests"
+                    }
+                },
+                {
+                    "title": "Completed Transactions",
+                    "icon": "feather:check-circle",
+                    "to": {
+                        "name": "affiliates-affiliateId-billing-completed"
+                    }
+                },
+                {
+                    "title": "Adjustments",
+                    "icon": "lnir lnir-pie-chart-dollar",
+                    "to": {
+                        "name": "affiliates-affiliateId-billing-adjustments"
+                    }
+                },
+                {
+                    "title": "Chargebacks",
+                    "icon": "feather:rotate-ccw",
+                    "to": {
+                        "name": "affiliates-affiliateId-billing-chargebacks"
+                    }
+                }
+            ]
+        }
+    ]
+}

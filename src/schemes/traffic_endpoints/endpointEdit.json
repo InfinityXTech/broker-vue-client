@@ -1,0 +1,252 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Basic Information"
+            },
+            "children": [
+                {
+                    "component": "StatusField",
+                    "data": "status",
+                    "props": {
+                        "label": "Status"
+                    }
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "status",
+                    "props": {
+                        "values": [
+                            "0"
+                        ]
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "deactivation_reason",
+                            "props": {
+                                "label": "Deactivation reason",
+                                "default": true,
+                                "options": {
+                                    "dictionary": "traffic_deactivation_reasons"
+                                }
+                            }
+                        },
+                        {
+                            "component": "ConditionalBlock",
+                            "data": "deactivation_reason",
+                            "props": {
+                                "values": [
+                                    "Duplicated endpoint"
+                                ]
+                            },
+                            "children": [
+                                {
+                                    "component": "SelectField",
+                                    "data": "deactivation_reason_duplicated",
+                                    "props": {
+                                        "label": "Duplicated Endpoint",
+                                        "default": true,
+                                        "options": {
+                                            "dictionary": "traffic_endpoints"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "component": "ConditionalBlock",
+                            "data": "deactivation_reason",
+                            "props": {
+                                "values": [
+                                    "other"
+                                ]
+                            },
+                            "children": [
+                                {
+                                    "component": "TextAreaField",
+                                    "data": "deactivation_reason_other",
+                                    "props": {
+                                        "label": "Custom Reason"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "UnderReview",
+                    "props": {
+                        "values": [
+                            0,
+                            1,
+                            2
+                        ]
+                    },
+                    "children": [
+                        {
+                            "component": "StatusField",
+                            "data": "UnderReview",
+                            "props": {
+                                "label": "UnderReview Status",
+                                "values": [
+                                    {
+                                        "value": 1,
+                                        "label": "Approve",
+                                        "color": "primary"
+                                    },
+                                    {
+                                        "value": 2,
+                                        "label": "Reject",
+                                        "color": "danger"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "SelectField",
+                    "data": "account_manager",
+                    "props": {
+                        "label": "Account Manager",
+                        "default": true,
+                        "required": false,
+                        "options": {
+                            "dictionary": "account_managers"
+                        },
+                        "only_active": true
+                    }
+                },
+                {
+                    "component": "ToggleBlock",
+                    "data": "is_assigned_master_partner",
+                    "props": {
+                        "label": "Assigned to Master Partner",
+                        "big": true
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "master_partner",
+                            "props": {
+                                "label": "",
+                                "default": true,
+                                "options": {
+                                    "dictionary": "master_affiliates"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "SelectField",
+                    "data": "tags",
+                    "props": {
+                        "label": "Tags",
+                        "mode": "multiple",
+                        "options": {
+                            "dictionary": "endpointTags"
+                        },
+                        "only_active": true
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "API Credentials"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "_id",
+                    "props": {
+                        "label": "Secret",
+                        "readonly": true,
+                        "timeSilence": true
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "api_key",
+                    "props": {
+                        "label": "API Credentials",
+                        "readonly": true,
+                        "timeSilence": true
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Login Credentials"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "account_password",
+                    "props": {
+                        "label": "API Password",
+                        "readonly": true,
+                        "timeSilence": true
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Business Information"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "traffic_sources",
+                    "props": {
+                        "label": "Traffic Sources",
+                        "options": {
+                            "dictionary": "traffic_sources"
+                        },
+                        "mode": "multiple"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Endpoint Classification"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "endpoint_type",
+                    "props": {
+                        "label": "Endpoint Type",
+                        "required": true,
+                        "options": [
+                            {
+                                "value": "1",
+                                "label": "Media Buyer"
+                            },
+                            {
+                                "value": "3",
+                                "label": "Premium Network"
+                            },
+                            {
+                                "value": "4",
+                                "label": "Network"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

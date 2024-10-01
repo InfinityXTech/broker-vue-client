@@ -1,0 +1,39 @@
+{
+    "title": "Gravity",
+    "children_desktop": false,
+    "children": [
+        {
+            "title": "Auto Approve",
+            "uri_title": "/marketing_gravity/leads/title/auto",
+            "icon": "fas fa-wallet",
+            "to": {
+                "name": "marketing_gravity-type",
+                "params": {
+                    "type": "auto"
+                }
+            }
+        },
+        {
+            "title": "Manual Approve",
+            "uri_title": "/marketing_gravity/leads/title/manual",
+            "icon": "lnir lnir-postcard",
+            "to": {
+                "name": "marketing_gravity-type",
+                "params": {
+                    "type": "manual"
+                }
+            }
+        },
+        {
+            "title": "High Risk",
+            "uri_title": "/marketing_gravity/leads/title/high",
+            "icon": "lnir lnir-postcard",
+            "to": {
+                "name": "marketing_gravity-type",
+                "params": {
+                    "type": "high"
+                }
+            }
+        }
+    ]
+}

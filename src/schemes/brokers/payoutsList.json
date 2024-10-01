@@ -1,0 +1,34 @@
+{
+    "type": "Datatable",
+    "title": "Payouts Management",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "country_name": {
+            "label": "Country"
+        },
+        "language_name": {
+            "label": "Language"
+        },
+        "cost_type": {
+            "label": "Charged By",
+            "renderCell": "custom.CostType"
+        },
+        "payout": {
+            "label": "Payout",
+            "renderCell": "simple.MoneyColor"
+        },
+        "enabled": {
+            "label": "Enabled",
+            "renderCell": "custom.Enabled"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

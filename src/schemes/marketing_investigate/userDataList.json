@@ -1,0 +1,43 @@
+{
+    "type": "Datatable",
+    "title": "Investigate",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "EventTimeStamp": {
+            "label": "Timestamp",
+            "sortable": false,
+            "renderCell": "simple.DateTime"
+        },
+        "ClickID": {
+            "label": "ClickID",
+            "sortable": false
+        },
+        "location": {
+            "label": "Location",
+            "renderCell": "custom.Location"
+        },
+        "advertiser_data.name": {
+            "label": "Advertiser",
+            "sortable": false,
+            "renderCell": "custom.AdvertiserName"
+        },
+        "affiliate_data.name": {
+            "label": "Affiliate",
+            "sortable": false,
+            "renderCell": "custom.AffiliateName"
+        },
+        "campaign_data.name": {
+            "label": "Campaign",
+            "sortable": false,
+            "renderCell": "custom.CampaignName"
+        },
+        "execution_time": {
+            "label": "Execution Time (sec)",
+            "sortable": false
+        }
+    }
+}

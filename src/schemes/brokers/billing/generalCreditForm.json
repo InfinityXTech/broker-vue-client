@@ -1,0 +1,20 @@
+{
+    "type": "Form",
+    "gauth": true,
+    "content": [
+        {
+            "component": "InputField",
+            "data": "amount",
+            "props": {
+                "label": "Credit Amount",
+                "type": "number"
+            }
+        },
+        {
+            "component": "HtmlField",
+            "props": {
+                "html": "<div class=\"field column is-12\"><label>$0 or $100 - $3000</label></div>"
+            }
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "type": "Datatable",
+    "title": "Brokers",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "timestamp": {
+            "label": "Timestamp"
+        },
+        "action_by": {
+            "label": "Account"
+        },
+        "collection": {
+            "label": "Collection"
+        },
+        "action": {
+            "label": "Action"
+        },
+        "primary_key": {
+            "label": "Primary Key"
+        },
+        "main_foreign_key": {
+            "label": "Main Foreign Key"
+        },
+        "json": {
+            "label": "Data",
+            "renderCell": "custom.Data"
+        }
+    }
+}

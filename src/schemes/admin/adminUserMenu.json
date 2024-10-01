@@ -1,0 +1,23 @@
+{
+    "title": "Admin",
+    "children": [
+        {
+            "title": "Back to Users",
+            "to": {
+                "name": "admin"
+            }
+        },
+        {
+            "title": "User information",
+            "to": {
+                "name": "admin-id"
+            }
+        },
+        {
+            "title": "Permissions",
+            "to": {
+                "name": "admin-id-permissions"
+            }
+        }
+    ]
+}

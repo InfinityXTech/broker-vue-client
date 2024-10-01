@@ -1,0 +1,33 @@
+{
+    "type": "Datatable",
+    "title": "Log",
+    "columns": {
+        "timestamp": {
+            "label": "Date",
+            "renderCell": "simple.DateTime"
+        },
+        "primary_key": {
+            "label": "Lead ID",
+            "renderCell": "simple.Id"
+        },
+        "LeadTimestamp": {
+            "label": "Lead Timestamp",
+            "renderCell": "simple.DateTime"
+        },
+        "country": {
+            "label": "Country"
+        },
+        "action_by_data.name": {
+            "label": "Action By"
+        },
+        "category": {
+            "label": "Category"
+        },
+        "active": {
+            "label": "Enabled"
+        },
+        "description": {
+            "label": "Description"
+        }
+    }
+}

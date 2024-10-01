@@ -1,0 +1,122 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "SelectField",
+            "data": "broker_id",
+            "props": {
+                "layout": "",
+                "label": "Broker",
+                "default": true,
+                "options": {
+                    "custom": "custom_brokers"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "integration_id",
+            "props": {
+                "layout": "",
+                "label": "Integration",
+                "default": true,
+                "options": {
+                    "custom": "custom_integrations"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "country_code",
+            "props": {
+                "layout": "",
+                "label": "Country",
+                "default": true,
+                "options": {
+                    "custom": "custom_countries"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "language_code",
+            "props": {
+                "layout": "",
+                "label": "Language",
+                "default": true,
+                "options": {
+                    "custom": "custom_languages"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "cap_type",
+            "props": {
+                "layout": "",
+                "label": "Cap Type",
+                "default": false,
+                "options": [
+                    {
+                        "value": "",
+                        "label": "All"
+                    },
+                    {
+                        "value": "leads",
+                        "label": "Leads"
+                    },
+                    {
+                        "value": "ftd",
+                        "label": "FTD"
+                    }
+                ]
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "enable_traffic",
+            "props": {
+                "layout": "",
+                "label": "Traffic Enabled",
+                "default": false,
+                "options": [
+                    {
+                        "value": "",
+                        "label": "All"
+                    },
+                    {
+                        "value": "1",
+                        "label": "ON"
+                    },
+                    {
+                        "value": "0",
+                        "label": "OFF"
+                    }
+                ]
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "weekends",
+            "props": {
+                "layout": "",
+                "label": "Weekend availability",
+                "default": false,
+                "options": [
+                    {
+                        "value": "",
+                        "label": "All"
+                    },
+                    {
+                        "value": "1",
+                        "label": "ON"
+                    },
+                    {
+                        "value": "0",
+                        "label": "OFF"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "type": "Datatable",
+    "title": "Investigate",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "EventTimeStamp": {
+            "label": "Timestamp",
+            "sortable": false,
+            "renderCell": "simple.DateTime"
+        },
+        "EventType": {
+            "label": "EventType",
+            "sortable": false
+        },
+        "AdvertiserPayout": {
+            "label": "AdvertiserPayout",
+            "sortable": false,
+            "renderCell": "simple.MoneyColor"
+        },
+        "AffiliatePayout": {
+            "label": "AffiliatePayout",
+            "sortable": false,
+            "renderCell": "simple.MoneyColor"
+        },
+        "conversion": {
+            "label": "Conversion",
+            "sortable": false
+        },
+        "execution_time": {
+            "label": "Execution Time (sec)",
+            "sortable": false
+        }
+    }
+}

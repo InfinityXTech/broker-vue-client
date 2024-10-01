@@ -1,0 +1,37 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "name",
+            "props": {
+                "label": "Advertiser Name",
+                "timeSilence": true
+            }
+        },
+        {
+            "component": "StatusField",
+            "data": "status",
+            "props": {
+                "label": "Status",
+                "values": [
+                    {
+                        "value": "1",
+                        "color": "primary",
+                        "label": "Active"
+                    },
+                    {
+                        "value": "0",
+                        "color": "warning",
+                        "label": "Inactive"
+                    },
+                    {
+                        "value": "3",
+                        "color": "info",
+                        "label": "Draft"
+                    }
+                ]
+            }
+        }
+    ]
+}

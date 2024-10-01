@@ -1,0 +1,14 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "SelectField",
+            "data": "finance_email_subscribers",
+            "props": {
+                "label": "Finance Email Subscribers",
+                "options": [],
+                "mode": "tags"
+            }
+        }
+    ]
+}

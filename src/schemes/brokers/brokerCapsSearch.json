@@ -1,0 +1,103 @@
+{
+    "type": "Search",
+    "columns": [
+        {
+            "type": "select",
+            "label": "Broker",
+            "value": "broker._id",
+            "options": {
+                "field": "broker",
+                "key": "_id",
+                "value": "name"
+            }
+        },
+        {
+            "type": "select",
+            "label": "Integration",
+            "value": "integration._id",
+            "options": {
+                "field": "integration",
+                "key": "_id",
+                "value": "name"
+            }
+        },
+        {
+            "type": "select",
+            "label": "Country",
+            "value": "country.code",
+            "options": {
+                "field": "country",
+                "key": "code",
+                "value": "name"
+            }
+        },
+        {
+            "type": "select",
+            "label": "Language",
+            "value": "languages.code",
+            "options": {
+                "field": "languages",
+                "key": "code",
+                "value": "name"
+            }
+        },
+        {
+            "type": "select",
+            "label": "Cap Type",
+            "value": "cap_type",
+            "options": [
+                {
+                    "value": "",
+                    "label": "All"
+                },
+                {
+                    "value": "leads",
+                    "label": "Leads"
+                },
+                {
+                    "value": "ftd",
+                    "label": "FTD"
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "label": "Traffic Enabled",
+            "value": "enable_traffic",
+            "options": [
+                {
+                    "value": "",
+                    "label": "All"
+                },
+                {
+                    "value": "true",
+                    "label": "ON",
+                    "default": true
+                },
+                {
+                    "value": "false",
+                    "label": "OFF"
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "label": "Weekend availability",
+            "value": "weekends",
+            "options": [
+                {
+                    "value": "",
+                    "label": "All"
+                },
+                {
+                    "value": "true",
+                    "label": "ON"
+                },
+                {
+                    "value": "false",
+                    "label": "OFF"
+                }
+            ]
+        }
+    ]
+}

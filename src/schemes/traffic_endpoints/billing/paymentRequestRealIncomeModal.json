@@ -1,0 +1,23 @@
+{
+    "type": "Form",
+    "gauth": true,
+    "content": [
+        {
+            "component": "InputField",
+            "data": "expected_income",
+            "props": {
+                "layout": 6,
+                "label": "Expected Income",
+                "readonly": true
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "real_income",
+            "props": {
+                "layout": 6,
+                "label": "Real Income"
+            }
+        }
+    ]
+}

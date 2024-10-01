@@ -1,0 +1,30 @@
+{
+    "type": "Datatable",
+    "title": "Support",
+    "columns": {
+        "ticket_number": {
+            "label": "Ticket ID",
+            "sortable": false,
+            "renderCell": "custom.Ticket"
+        },
+        "type_name": {
+            "label": "Category",
+            "renderCell": "custom.Category"
+        },
+        "status_name": {
+            "label": "Status"
+        },
+        "created_by_user": {
+            "label": "Created by",
+            "renderCell": "custom.AccountName"
+        },
+        "timestamp": {
+            "label": "Timestamp",
+            "renderCell": "custom.Timestamp"
+        },
+        "assigned_to_user": {
+            "label": "Assigned To",
+            "renderCell": "custom.AssignedName"
+        }
+    }
+}

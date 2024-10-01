@@ -1,0 +1,86 @@
+{
+    "type": "Search",
+    "columns": [
+        {
+            "type": "toggles",
+            "label": "Status",
+            "value": "status",
+            "options": [
+                {
+                    "value": "1",
+                    "label": "Active",
+                    "color": "primary",
+                    "default": true
+                },
+                {
+                    "value": "0",
+                    "color": "warning",
+                    "label": "Inactive"
+                },
+                {
+                    "value": "3",
+                    "color": "grey",
+                    "label": "Draft"
+                }
+            ]
+        },
+        {
+            "type": "toggles",
+            "label": "Tags",
+            "value": "tags",
+            "multiSelect": false,
+            "options": [
+                {
+                    "value": "",
+                    "label": "All",
+                    "color": "primary",
+                    "default": true,
+                    "outlined": true
+                },
+                {
+                    "value": "top",
+                    "color": "primary",
+                    "label": "Top",
+                    "outlined": true,
+                    "icon": {
+                        "name": "mdi:alpha-t-box",
+                        "iconProps": {
+                            "width": 20,
+                            "height": 20,
+                            "color": "#00A9BA"
+                        }
+                    }
+                },
+                {
+                    "value": "exclusive",
+                    "color": "primary",
+                    "label": "Exclusive",
+                    "outlined": true,
+                    "icon": {
+                        "name": "mdi:alpha-e-box",
+                        "iconProps": {
+                            "width": 20,
+                            "height": 20,
+                            "color": "#653DE0"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "label": "Country",
+            "value": "country_value._id",
+            "options": {
+                "field": "country_value",
+                "key": "_id",
+                "value": "name"
+            }
+        },
+        {
+            "type": "input",
+            "label": "Search",
+            "value": "TEXT"
+        }
+    ]
+}

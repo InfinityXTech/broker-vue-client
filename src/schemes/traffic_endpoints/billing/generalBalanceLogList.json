@@ -1,0 +1,18 @@
+{
+    "type": "Datatable",
+    "title": "Balances Log",
+    "columns": {
+        "dt_time": {
+            "label": "Date",
+            "renderCell": "simple.Date"
+        },
+        "balance": {
+            "label": "Balance",
+            "renderCell": "simple.MoneyColor"
+        },
+        "real_balance": {
+            "label": "Real Balance",
+            "renderCell": "custom.RealBalance"
+        }
+    }
+}

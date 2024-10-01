@@ -1,0 +1,137 @@
+{
+    "title": "Broker",
+    "to": {
+        "name": "brokers"
+    },
+    "permission_name": "brokers",
+    "children": [
+        {
+            "title": "Back to Brokers",
+            "to": {
+                "name": "brokers"
+            }
+        },
+        {
+            "title": "General",
+            "access": [
+                "general"
+            ],
+            "to": {
+                "name": "brokers-id"
+            }
+        },
+        {
+            "id": "technical-tabs",
+            "title": "Technical",
+            "class": "technical",
+            "permission_name": "brokers",
+            "children_desktop": false,
+            "children": [
+                {
+                    "title": "API Integrations",
+                    "access": [
+                        "api_integrations"
+                    ],
+                    "to": {
+                        "name": "brokers-id-integrations"
+                    }
+                },
+                {
+                    "title": "Status Management",
+                    "access": [
+                        "status_management"
+                    ],
+                    "to": {
+                        "name": "brokers-id-status_managment"
+                    }
+                },
+                {
+                    "title": "Payouts",
+                    "access": [
+                        "payouts"
+                    ],
+                    "to": {
+                        "name": "brokers-id-payouts"
+                    }
+                },
+                {
+                    "title": "Private Deals",
+                    "access": [
+                        "private_deals"
+                    ],
+                    "to": {
+                        "name": "brokers-id-private_deals"
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Caps Dashboard",
+            "access": [
+                "daily_cap"
+            ],
+            "to": {
+                "name": "brokers-id-caps"
+            }
+        },
+        {
+            "id": "billing-tabs",
+            "title": "Billing",
+            "access": [
+                "is_billing"
+            ],
+            "children_desktop": false,
+            "children": [
+                {
+                    "title": "General & Balances",
+                    "icon": "fas fa-wallet",
+                    "to": {
+                        "name": "brokers-id-billing-general"
+                    }
+                },
+                {
+                    "title": "Billing Entities",
+                    "icon": "lnir lnir-postcard",
+                    "to": {
+                        "name": "brokers-id-billing-entities"
+                    }
+                },
+                {
+                    "title": "Payment Methods",
+                    "icon": "fas fa-credit-card",
+                    "to": {
+                        "name": "brokers-id-billing-methods"
+                    }
+                },
+                {
+                    "title": "Payment Requests",
+                    "icon": "feather:inbox",
+                    "to": {
+                        "name": "brokers-id-billing-requests"
+                    }
+                },
+                {
+                    "title": "Completed Transactions",
+                    "icon": "feather:check-circle",
+                    "to": {
+                        "name": "brokers-id-billing-completed"
+                    }
+                },
+                {
+                    "title": "Adjustments",
+                    "icon": "lnir lnir-pie-chart-dollar",
+                    "to": {
+                        "name": "brokers-id-billing-adjustments"
+                    }
+                },
+                {
+                    "title": "Chargebacks",
+                    "icon": "feather:rotate-ccw",
+                    "to": {
+                        "name": "brokers-id-billing-chargebacks"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,260 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Basic Information"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "name",
+                    "props": {
+                        "label": "Campaign Name",
+                        "timeSilence": true
+                    }
+                },
+                {
+                    "component": "StatusField",
+                    "data": "status",
+                    "props": {
+                        "label": "Status",
+                        "values": [
+                            {
+                                "value": "1",
+                                "color": "primary",
+                                "label": "Active"
+                            },
+                            {
+                                "value": "0",
+                                "color": "warning",
+                                "label": "Inactive"
+                            },
+                            {
+                                "value": "3",
+                                "color": "info",
+                                "label": "Draft"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "TextAreaField",
+                    "data": "description",
+                    "props": {
+                        "label": "Description",
+                        "rows": 2,
+                        "timeSilence": true
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "screenshot_image",
+                    "props": {
+                        "label": "Screenshot"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": ""
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "environment",
+                    "props": {
+                        "label": "Environment",
+                        "default": false,
+                        "required": true,
+                        "options": [
+                            {
+                                "value": "all",
+                                "label": "All"
+                            },
+                            {
+                                "value": "desktop",
+                                "label": "Desktop"
+                            },
+                            {
+                                "value": "mobile",
+                                "label": "Mobile"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "environment",
+                    "props": {
+                        "values": [
+                            "desktop"
+                        ]
+                    },
+                    "children": [
+                        {
+                            "component": "RadioGroupField",
+                            "data": "desktop_operating_system",
+                            "props": {
+                                "label": "Desktop operating system",
+                                "inline": true,
+                                "options": [
+                                    {
+                                        "value": "all",
+                                        "label": "All",
+                                        "default": true
+                                    },
+                                    {
+                                        "label": "Windows",
+                                        "value": "windows"
+                                    },
+                                    {
+                                        "label": "Linux",
+                                        "value": "linux"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "environment",
+                    "props": {
+                        "values": [
+                            "mobile"
+                        ]
+                    },
+                    "children": [
+                        {
+                            "component": "RadioGroupField",
+                            "data": "mobile_operating_system",
+                            "props": {
+                                "label": "Mobile Operating System",
+                                "inline": true,
+                                "options": [
+                                    {
+                                        "value": "all",
+                                        "label": "All",
+                                        "default": true
+                                    },
+                                    {
+                                        "label": "IOS",
+                                        "value": "ios"
+                                    },
+                                    {
+                                        "label": "Android",
+                                        "value": "android"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "SelectField",
+                    "data": "event_type",
+                    "props": {
+                        "label": "Event Type",
+                        "default": false,
+                        "required": true,
+                        "options": [
+                            {
+                                "value": "cpl",
+                                "label": "CPL"
+                            },
+                            {
+                                "value": "cpa",
+                                "label": "CPA"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "event_type",
+                    "props": {
+                        "values": [
+                            "cpa"
+                        ]
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "post_event",
+                            "props": {
+                                "label": "Post Event",
+                                "default": true,
+                                "required": false,
+                                "options": {
+                                    "custom": "marketing_post_events"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "SelectField",
+                    "data": "category",
+                    "props": {
+                        "label": "Category",
+                        "required": false,
+                        "default": true,
+                        "options": {
+                            "dictionary": "marketing_categories"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Tracking"
+            },
+            "children": [
+                {
+                    "component": "ButtonField",
+                    "props": {
+                        "label": "Show Macros",
+                        "click": "show_macros",
+                        "tag": "a"
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "tracking_link",
+                    "props": {
+                        "label": "Tracking Link",
+                        "type": "url",
+                        "timeSilence": true
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "tracking_preview_link",
+                    "props": {
+                        "label": "Tracking Preview Link",
+                        "type": "url",
+                        "timeSilence": true
+                    }
+                },
+                {
+                    "component": "CountryInputPair",
+                    "data": "tracking_country_link",
+                    "props": {
+                        "label": "Tracking Link By Country",
+                        "columnName": "Tracking Link",
+                        "input": {
+                            "type": "url",
+                            "timeSilence": true
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

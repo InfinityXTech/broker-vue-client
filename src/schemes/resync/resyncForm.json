@@ -1,0 +1,33 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "DateRangeField",
+            "data": "timeframe",
+            "props": {
+                "label": "Time Frame",
+                "required": true,
+                "layout": "2"
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "endpoint",
+            "props": {
+                "label": "Traffic Endpoint",
+                "layout": "2",
+                "options": {
+                    "dictionary": "traffic_endpoints"
+                }
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "leadId",
+            "props": {
+                "label": "Lead ID",
+                "layout": "3"
+            }
+        }
+    ]
+}

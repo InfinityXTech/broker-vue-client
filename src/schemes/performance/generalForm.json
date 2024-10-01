@@ -1,0 +1,14 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "DateRangeField",
+            "data": "timeframe",
+            "props": {
+                "layout": "2",
+                "required": true,
+                "label": "Time Frame"
+            }
+        }
+    ]
+}

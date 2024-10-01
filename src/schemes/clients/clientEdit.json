@@ -1,0 +1,266 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Basic Information"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "nickname",
+                    "props": {
+                        "label": "Client Name"
+                    }
+                },
+                {
+                    "component": "StatusField",
+                    "data": "status",
+                    "props": {
+                        "label": "Status"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "CRM"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "crm_domain",
+                    "props": {
+                        "type": "url",
+                        "required": true,
+                        "label": "CRM Domain"
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "api_domain",
+                    "props": {
+                        "type": "url",
+                        "required": true,
+                        "label": "CRM API Domain"
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "logo_small_file",
+                    "props": {
+                        "multiple": false,
+                        "maxSize": 5368709120,
+                        "accept": "image/png, image/gif, image/jpeg, image/jpg",
+                        "label": "Logo"
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "logo_big_file",
+                    "props": {
+                        "multiple": false,
+                        "maxSize": 5368709120,
+                        "accept": "image/png, image/gif, image/jpeg, image/jpg",
+                        "label": "Logo Big"
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "login_background_file",
+                    "props": {
+                        "multiple": false,
+                        "accept": "image/png, image/gif, image/jpeg, image/jpg",
+                        "label": "Login Background"
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "favicon_file",
+                    "props": {
+                        "multiple": false,
+                        "maxSize": 5368709120,
+                        "accept": "image/ico",
+                        "label": "Favicon"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Technical"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "serving_domain",
+                    "props": {
+                        "type": "url",
+                        "label": "Serving Domain"
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "redirect_domain",
+                    "props": {
+                        "type": "url",
+                        "label": "Redirect Domain"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Marketing"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "marketing_affiliates_domain",
+                    "props": {
+                        "type": "url",
+                        "label": "Marketing CRM Domain"
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "marketing_affiliates_api_domain",
+                    "props": {
+                        "type": "url",
+                        "label": "Marketing CRM API Domain"
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "marketing_tracking_domain",
+                    "props": {
+                        "type": "url",
+                        "label": "Marketing Tracking Domain"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Partner"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "partner_domain",
+                    "props": {
+                        "type": "url",
+                        "label": "CRM Domain"
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "partner_api_documentation",
+                    "props": {
+                        "type": "url",
+                        "label": "API Documentation"
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "partner_logo_small_file",
+                    "props": {
+                        "multiple": false,
+                        "maxSize": 5368709120,
+                        "accept": "image/png, image/gif, image/jpeg, image/jpg",
+                        "label": "Logo"
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "partner_logo_big_file",
+                    "props": {
+                        "multiple": false,
+                        "maxSize": 5368709120,
+                        "accept": "image/png, image/gif, image/jpeg, image/jpg",
+                        "label": "Logo Big"
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "partner_login_background_file",
+                    "props": {
+                        "multiple": false,
+                        "accept": "image/png, image/gif, image/jpeg, image/jpg",
+                        "label": "Login Background"
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "partner_favicon_file",
+                    "props": {
+                        "multiple": false,
+                        "maxSize": 5368709120,
+                        "accept": "image/ico",
+                        "label": "Favicon"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Master"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "master_domain",
+                    "props": {
+                        "type": "url",
+                        "label": "CRM Domain"
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "master_logo_small_file",
+                    "props": {
+                        "multiple": false,
+                        "maxSize": 5368709120,
+                        "accept": "image/png, image/gif, image/jpeg, image/jpg",
+                        "label": "Logo"
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "master_logo_big_file",
+                    "props": {
+                        "multiple": false,
+                        "maxSize": 5368709120,
+                        "accept": "image/png, image/gif, image/jpeg, image/jpg",
+                        "label": "Logo Big"
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "master_login_background_file",
+                    "props": {
+                        "multiple": false,
+                        "accept": "image/png, image/gif, image/jpeg, image/jpg",
+                        "label": "Login Background"
+                    }
+                },
+                {
+                    "component": "FilesField",
+                    "data": "master_favicon_file",
+                    "props": {
+                        "multiple": false,
+                        "maxSize": 5368709120,
+                        "accept": "image/ico",
+                        "label": "Favicon"
+                    }
+                }
+            ]
+        }
+    ]
+}

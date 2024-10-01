@@ -1,0 +1,35 @@
+{
+    "type": "Datatable",
+    "title": "Payment Methods",
+    "columns": {
+        "title": {
+            "label": "Payment Method",
+            "sortable": false,
+            "renderCell": "custom.Payment"
+        },
+        "details1": {
+            "label": "Payment Details",
+            "sortable": false,
+            "renderCell": "custom.Details1"
+        },
+        "details2": {
+            "label": "Information",
+            "sortable": false,
+            "renderCell": "custom.Details2"
+        },
+        "notes": {
+            "label": "Notes",
+            "sortable": false
+        },
+        "files": {
+            "label": "Files",
+            "sortable": false,
+            "renderCell": "custom.Files"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

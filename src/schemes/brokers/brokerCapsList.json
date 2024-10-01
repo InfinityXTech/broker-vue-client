@@ -1,0 +1,93 @@
+{
+    "type": "Datatable",
+    "title": "Caps Dashboard",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "custom.Index"
+        },
+        "broker": {
+            "label": "Broker Name",
+            "sortField": "broker.name",
+            "renderCell": "custom.BrokerName"
+        },
+        "country": {
+            "label": "Country",
+            "sortField": "country.name",
+            "renderCell": "custom.Country"
+        },
+        "languages": {
+            "label": "Languages",
+            "renderCell": "custom.Language"
+        },
+        "cpa": {
+            "label": "CPA",
+            "sortable": true,
+            "renderCell": "custom.CPA"
+        },
+        "crg": {
+            "label": "CRG",
+            "sortable": true,
+            "renderCell": "custom.CRG"
+        },
+        "crg_week": {
+            "label": "CRG week",
+            "sortable": true,
+            "renderCell": "custom.FormatBlockedSchedule"
+        },
+        "crg_weekends": {
+            "label": "CRG weekends",
+            "sortable": true,
+            "renderCell": "custom.FormatBlockedSchedule"
+        },
+        "integration": {
+            "label": "Integration",
+            "renderCell": "custom.Integration"
+        },
+        "cap_type": {
+            "label": "Cap Type",
+            "renderCell": "custom.CapType"
+        },
+        "priority": {
+            "label": "Priority"
+        },
+        "live_caps": {
+            "label": "Live Caps",
+            "sortField": "live_caps, daily_cap",
+            "renderCell": "custom.LiveCaps",
+            "totalCalc": "custom.TotalCap"
+        },
+        "stat": {
+            "label": "Total Caps",
+            "renderCell": "custom.TotalCaps"
+        },
+        "enable_traffic": {
+            "label": "Enable Traffic",
+            "sortable": false,
+            "renderCell": "custom.Enabled"
+        },
+        "note": {
+            "label": "Note",
+            "styles": [
+                {
+                    "white-space": "nowrap",
+                    "overflow": "hidden",
+                    "text-overflow": "ellipsis",
+                    "max-width": "100px"
+                }
+            ],
+            "renderCell": "simple.PlaceHolder"
+        },
+        "actions": {
+            "label": "Action",
+            "styles": [
+                {
+                    "min-width": "127px"
+                }
+            ],
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

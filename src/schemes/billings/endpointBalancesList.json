@@ -1,0 +1,32 @@
+{
+    "type": "Datatable",
+    "title": "Endpoints",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "name": {
+            "label": "Endpoint",
+            "renderCell": "custom.EndpointName"
+        },
+        "is_collection": {
+            "label": "Collection",
+            "renderCell": "custom.Collection"
+        },
+        "status": {
+            "label": "Status",
+            "renderCell": "custom.Status"
+        },
+        "account_manager.account_email": {
+            "label": "Account Manager"
+        },
+        "balance": {
+            "label": "Balance",
+            "default": 0,
+            "renderCell": "simple.MoneyColor",
+            "totalCalc": "simple.Sum"
+        }
+    }
+}

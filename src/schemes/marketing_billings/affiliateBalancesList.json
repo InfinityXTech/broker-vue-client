@@ -1,0 +1,32 @@
+{
+    "type": "Datatable",
+    "title": "Affiliates",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "name": {
+            "label": "Affiliate",
+            "renderCell": "custom.AffiliateName"
+        },
+        "is_collection": {
+            "label": "Collection",
+            "renderCell": "custom.Collection"
+        },
+        "status": {
+            "label": "Status",
+            "renderCell": "custom.Status"
+        },
+        "account_manager.account_email": {
+            "label": "Account Manager"
+        },
+        "balance": {
+            "label": "Balance",
+            "default": 0,
+            "renderCell": "simple.MoneyColor",
+            "totalCalc": "simple.Sum"
+        }
+    }
+}

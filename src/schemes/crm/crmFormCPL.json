@@ -1,0 +1,135 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "ConditionalBlock",
+            "data": "broker_cpl",
+            "props": {
+                "function": "toBoolean"
+            },
+            "children": [
+                {
+                    "component": "WideVerticalBlock",
+                    "props": {
+                        "title": "Broker"
+                    },
+                    "children": [
+                        {
+                            "component": "InputField",
+                            "data": "revenue",
+                            "props": {
+                                "type": "number",
+                                "label": "Broker Payout"
+                            }
+                        },
+                        {
+                            "component": "ConditionalBlock",
+                            "data": "isMasterBrandCPL",
+                            "props": {
+                                "function": "toBoolean"
+                            },
+                            "children": [
+                                {
+                                    "component": "InputField",
+                                    "data": "Master_brand_cost",
+                                    "props": {
+                                        "type": "number",
+                                        "label": "Master Brand Payout"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "isCPL",
+            "props": {
+                "function": "toBoolean"
+            },
+            "children": [
+                {
+                    "component": "WideVerticalBlock",
+                    "props": {
+                        "title": "Traffic Endpoint"
+                    },
+                    "children": [
+                        {
+                            "component": "InputField",
+                            "data": "cost",
+                            "props": {
+                                "type": "number",
+                                "label": "Endpoint Payout"
+                            }
+                        },
+                        {
+                            "component": "ConditionalBlock",
+                            "data": "isMasterCPL",
+                            "props": {
+                                "function": "toBoolean"
+                            },
+                            "children": [
+                                {
+                                    "component": "InputField",
+                                    "data": "Mastercost",
+                                    "props": {
+                                        "type": "number",
+                                        "label": "Master Payout"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "component": "SelectField",
+            "data": "reason_change",
+            "props": {
+                "label": "Reason Change",
+                "default": true,
+                "options": {
+                    "dictionary": "reasons_un_payable_leads"
+                }
+            }
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "reason_change",
+            "props": {
+                "values": [
+                    "other"
+                ]
+            },
+            "children": [
+                {
+                    "component": "TextAreaField",
+                    "data": "reason_change2",
+                    "props": {
+                        "label": "Custom Reason Change"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "recomended",
+            "props": {
+                "function": "isEmpty",
+                "not": true
+            },
+            "children": [
+                {
+                    "component": "HtmlField",
+                    "data": "recomended",
+                    "props": {
+                        "label": "Recomended"
+                    }
+                }
+            ]
+        }
+    ]
+}

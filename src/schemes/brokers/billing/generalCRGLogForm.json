@@ -1,0 +1,67 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "DateRangeField",
+            "data": "timeframe",
+            "props": {
+                "layout": "3",
+                "label": "Time Frame"
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "action_by",
+            "props": {
+                "label": "Action By",
+                "layout": "3",
+                "required": false,
+                "default": true,
+                "options": {
+                    "dictionary": "users"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "country_code",
+            "props": {
+                "layout": "3",
+                "label": "Country",
+                "required": false,
+                "default": true,
+                "options": {
+                    "dictionary": "countries"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "scheme_type",
+            "props": {
+                "label": "Scheme Type",
+                "layout": "3",
+                "default": true,
+                "required": false,
+                "options": [
+                    {
+                        "value": "crg_yes",
+                        "label": "CRG Yes"
+                    },
+                    {
+                        "value": "crg_no",
+                        "label": "CRG No"
+                    },
+                    {
+                        "value": "cpl_yes",
+                        "label": "CPL Yes"
+                    },
+                    {
+                        "value": "cpl_no",
+                        "label": "CPL No"
+                    }
+                ]
+            }
+        }
+    ]
+}

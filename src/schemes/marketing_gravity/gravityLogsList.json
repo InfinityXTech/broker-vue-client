@@ -1,0 +1,29 @@
+{
+    "type": "Datatable",
+    "title": "",
+    "columns": {
+        "date": {
+            "label": "Date",
+            "renderCell": "simple.DateTime"
+        },
+        "country": {
+            "label": "Location"
+        },
+        "advertiser": {
+            "key": "advertiser.name",
+            "label": "Advertiser",
+            "renderCell": "custom.AdvertiserName"
+        },
+        "lead_id": {
+            "label": "Lead ID"
+        },
+        "affiliate": {
+            "key": "affiliate.name",
+            "label": "Affiliate",
+            "renderCell": "custom.AffiliateName"
+        },
+        "changed_by": {
+            "label": "Changed By"
+        }
+    }
+}

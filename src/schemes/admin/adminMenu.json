@@ -1,0 +1,41 @@
+{
+    "title": "Admin",
+    "children": [
+        {
+            "title": "Users",
+            "to": {
+                "name": "admin"
+            }
+        },
+        {
+            "title": "General Settings",
+            "to": {
+                "name": "admin-settings"
+            }
+        },
+        {
+            "title": "Logs",
+            "to": {
+                "name": "admin-logs"
+            }
+        },
+        {
+            "title": "Payment Methods (Broker)",
+            "to": {
+                "name": "admin-payment_methods"
+            }
+        },
+        {
+            "title": "Payment Companies",
+            "to": {
+                "name": "admin-payment_companies"
+            }
+        },
+        {
+            "title": "Subscribers",
+            "to": {
+                "name": "admin-subscribers"
+            }
+        }
+    ]
+}

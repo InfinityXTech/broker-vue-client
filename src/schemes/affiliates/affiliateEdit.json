@@ -1,0 +1,49 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Basic Information"
+            },
+            "children": [
+                {
+                    "component": "StatusField",
+                    "data": "status",
+                    "props": {
+                        "label": "Status",
+                        "values": [
+                            {
+                                "value": "1",
+                                "color": "primary",
+                                "label": "Active"
+                            },
+                            {
+                                "value": "0",
+                                "color": "warning",
+                                "label": "Inactive"
+                            },
+                            {
+                                "value": "3",
+                                "color": "info",
+                                "label": "Draft"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "SelectField",
+                    "data": "account_manager",
+                    "props": {
+                        "label": "Account Manager",
+                        "default": true,
+                        "required": false,
+                        "options": {
+                            "dictionary": "account_managers"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

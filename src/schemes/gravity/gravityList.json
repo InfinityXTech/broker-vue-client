@@ -1,0 +1,60 @@
+{
+    "type": "Datatable",
+    "title": "Gravity",
+    "columns": {
+        "name": {
+            "label": "Name",
+            "renderCell": "custom.LeadName"
+        },
+        "location": {
+            "label": "Location",
+            "renderCell": "custom.Location"
+        },
+        "broker": {
+            "key": "broker.name",
+            "label": "Broker",
+            "renderCell": "custom.BrokerName"
+        },
+        "integration": {
+            "key": "integration.name",
+            "label": "Integration"
+        },
+        "email_id": {
+            "label": "Email , Lead ID",
+            "sortable": false,
+            "renderCell": "custom.email_ID"
+        },
+        "broker_status": {
+            "label": "Broker Status"
+        },
+        "funnel_lp": {
+            "label": "Funnel"
+        },
+        "hit_the_redirect": {
+            "label": "Redirected",
+            "renderCell": "custom.Redirected"
+        },
+        "riskScale": {
+            "label": "Risk",
+            "styles": [
+                {
+                    "textAlign": "center"
+                }
+            ],
+            "renderCell": "custom.riskScale"
+        },
+        "endpoint": {
+            "key": "endpoint.name",
+            "label": "Endpoint",
+            "renderCell": "custom.EndpointName"
+        },
+        "timestamp": {
+            "label": "Timestamp",
+            "renderCell": "simple.DateTime"
+        },
+        "actions": {
+            "label": "Actions",
+            "renderCell": "custom.ActionsIcons"
+        }
+    }
+}

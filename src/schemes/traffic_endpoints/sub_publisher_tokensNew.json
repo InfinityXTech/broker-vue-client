@@ -1,0 +1,13 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "sub_publisher",
+            "props": {
+                "label": "Sub Publisher",
+                "required": true
+            }
+        }
+    ]
+}

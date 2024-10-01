@@ -1,0 +1,23 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "cost",
+            "props": {
+                "layout": "12",
+                "label": "Cost",
+                "required": false
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "deposit_revenue",
+            "props": {
+                "layout": "12",
+                "label": "Deposit Revenue",
+                "required": false
+            }
+        }
+    ]
+}

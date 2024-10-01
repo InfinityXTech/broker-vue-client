@@ -1,0 +1,14 @@
+{
+    "type": "Datatable",
+    "title": "Balances Log",
+    "columns": {
+        "timestamp": {
+            "label": "Date",
+            "renderCell": "simple.Date"
+        },
+        "balance": {
+            "label": "Balance",
+            "renderCell": "simple.MoneyColor"
+        }
+    }
+}

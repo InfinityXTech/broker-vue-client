@@ -1,0 +1,22 @@
+{
+    "type": "Datatable",
+    "title": "View Payment Request",
+    "columns": {
+        "nomination": {
+            "label": "Nomination",
+            "renderCell": "simple.Html"
+        },
+        "count": {
+            "label": "Count"
+        },
+        "cost": {
+            "label": "Revenue",
+            "renderCell": "simple.MoneyColor"
+        },
+        "total": {
+            "label": "Total",
+            "renderCell": "simple.MoneyColor",
+            "totalCalc": "simple.Sum"
+        }
+    }
+}

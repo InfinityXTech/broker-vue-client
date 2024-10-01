@@ -1,0 +1,10 @@
+{
+    "type": "Search",
+    "columns": [
+        {
+            "type": "input",
+            "placeholder": "Search...",
+            "value": "TEXT"
+        }
+    ]
+}

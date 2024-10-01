@@ -1,0 +1,25 @@
+{
+    "type": "Search",
+    "columns": [
+        {
+            "type": "select",
+            "label": "Country",
+            "value": "country.code",
+            "options": {
+                "field": "country",
+                "key": "code",
+                "value": "name"
+            }
+        },
+        {
+            "type": "select",
+            "label": "Language",
+            "value": "language.code",
+            "options": {
+                "field": "language",
+                "key": "code",
+                "value": "name"
+            }
+        }
+    ]
+}

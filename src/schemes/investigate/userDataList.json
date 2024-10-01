@@ -1,0 +1,49 @@
+{
+    "type": "Datatable",
+    "title": "",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "first_name": {
+            "label": "First Name",
+            "sortable": false
+        },
+        "last_name": {
+            "label": "Last Name",
+            "sortable": false
+        },
+        "email": {
+            "label": "Email",
+            "sortable": false
+        },
+        "phone": {
+            "label": "Phone",
+            "sortable": false
+        },
+        "location": {
+            "label": "Location",
+            "renderCell": "custom.Location"
+        },
+        "publisher_click": {
+            "label": "ClickId",
+            "sortable": false
+        },
+        "funnel_lp": {
+            "label": "Funnel",
+            "sortable": false
+        },
+        "endpoint.name": {
+            "label": "Endpoint",
+            "sortable": false,
+            "renderCell": "custom.Endpoint"
+        },
+        "Timestamp": {
+            "label": "Timestamp",
+            "sortable": false,
+            "renderCell": "simple.DateTime"
+        }
+    }
+}

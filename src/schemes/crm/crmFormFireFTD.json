@@ -1,0 +1,12 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "ToggleSwitchField",
+            "data": "fake_deposit",
+            "props": {
+                "label": "Fake Deposit"
+            }
+        }
+    ]
+}

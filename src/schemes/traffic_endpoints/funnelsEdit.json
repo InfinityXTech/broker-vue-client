@@ -1,0 +1,40 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Funnels"
+            },
+            "children": [
+                {
+                    "component": "ToggleBlock",
+                    "data": "funnels",
+                    "props": {
+                        "label": "Replace Funnel List",
+                        "big": true
+                    },
+                    "children": [
+                        {
+                            "component": "FunnelList",
+                            "data": "replace_funnel_list",
+                            "props": {
+                                "label": "",
+                                "readonly": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "SelectField",
+                    "data": "blocked_funnels",
+                    "props": {
+                        "label": "Funnels Black List",
+                        "options": [],
+                        "mode": "tags"
+                    }
+                }
+            ]
+        }
+    ]
+}

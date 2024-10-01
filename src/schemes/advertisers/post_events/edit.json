@@ -1,0 +1,19 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "name",
+            "props": {
+                "label": "Post Event Name"
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "value",
+            "props": {
+                "label": "Post Event Value"
+            }
+        }
+    ]
+}

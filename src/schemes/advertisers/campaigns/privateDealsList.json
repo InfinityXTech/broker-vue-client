@@ -1,0 +1,35 @@
+{
+    "type": "Datatable",
+    "title": "Payouts Management",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "affiliate_data.token": {
+            "label": "Affiliate",
+            "renderCell": "custom.AffiliateName"
+        },
+        "country_name": {
+            "label": "Country"
+        },
+        "language_codes": {
+            "label": "Language",
+            "renderCell": "custom.Language"
+        },
+        "affiliate_payout": {
+            "label": "Affiliate Payout",
+            "renderCell": "simple.MoneyColor"
+        },
+        "enabled": {
+            "label": "Enabled",
+            "renderCell": "custom.Enabled"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

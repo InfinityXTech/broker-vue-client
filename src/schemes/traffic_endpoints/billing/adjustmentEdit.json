@@ -1,0 +1,60 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "SelectField",
+            "data": "amount_sign",
+            "props": {
+                "layout": "6",
+                "label": "Amount",
+                "default": false,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "Positive"
+                    },
+                    {
+                        "value": "-1",
+                        "label": "Negative"
+                    }
+                ]
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "amount",
+            "props": {
+                "layout": "6",
+                "label": "\u00A0",
+                "type": "number"
+            }
+        },
+        {
+            "component": "ToggleBlock",
+            "data": "bi",
+            "props": {
+                "label": "Bi",
+                "access": [
+                    "billing.custom.adjustment_bi.only_traffic_endpoint"
+                ]
+            },
+            "children": [
+                {
+                    "component": "DateField",
+                    "data": "bi_timestamp",
+                    "props": {
+                        "label": "Bi Timestamp"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "TextAreaField",
+            "data": "description",
+            "props": {
+                "label": "Deal Description",
+                "rows": 4
+            }
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "type": "Datatable",
+    "title": "Private Deals Management",
+    "columns": {
+        "_id": {
+            "label": "Name",
+            "sortable": true,
+            "styles": [
+                {
+                    "min-width": "200px"
+                }
+            ],
+            "renderCell": "custom.Name"
+        },
+        "status": {
+            "label": "Status",
+            "sortable": false,
+            "styles": [
+                {
+                    "width": "60px"
+                }
+            ],
+            "default": "0",
+            "renderCell": "simple.StatusTag({1: {color: 'primary', title: 'ACTIVE'}, 0: {color: 'warning', title: 'INACTIVE'}})"
+        },
+        "desc": {
+            "label": "Description",
+            "renderCell": "custom.Description"
+        },
+        "actions": {
+            "label": "Actions",
+            "styles": [
+                {
+                    "width": "155px"
+                }
+            ],
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

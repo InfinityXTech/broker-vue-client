@@ -1,0 +1,106 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "DateRangeField",
+            "data": "timeframe",
+            "props": {
+                "layout": "",
+                "required": true,
+                "label": "Time Frame",
+                "menuClassName": "report-calendar-menu"
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "advertiser",
+            "props": {
+                "layout": "",
+                "label": "Advertiser",
+                "required": false,
+                "mode": "multiselect",
+                "options": {
+                    "dictionary": "advertisers"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "affiliate",
+            "props": {
+                "layout": "",
+                "label": "Affiliate",
+                "required": false,
+                "mode": "multiselect",
+                "options": {
+                    "dictionary": "affiliates"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "country",
+            "props": {
+                "layout": "",
+                "label": "Country",
+                "mode": "multiselect",
+                "required": false,
+                "options": {
+                    "dictionary": "countries"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "language",
+            "props": {
+                "layout": "",
+                "label": "Language",
+                "mode": "multiselect",
+                "required": false,
+                "options": {
+                    "dictionary": "languages"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "account_manager",
+            "props": {
+                "layout": "",
+                "label": "Account Managers",
+                "required": false,
+                "mode": "multiselect",
+                "options": {
+                    "dictionary": "account_managers"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "pivot",
+            "props": {
+                "mode": "multiple",
+                "layout": "12",
+                "label": "Pivot",
+                "required": false,
+                "options": {
+                    "custom": "marketing_pivot"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "metrics",
+            "props": {
+                "mode": "multiple",
+                "layout": "12",
+                "label": "Metrics",
+                "required": false,
+                "options": {
+                    "custom": "marketing_metrics"
+                }
+            }
+        }
+    ]
+}

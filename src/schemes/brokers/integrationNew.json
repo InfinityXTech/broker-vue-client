@@ -1,0 +1,22 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "name",
+            "props": {
+                "label": "Integration Name"
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "apivendor",
+            "props": {
+                "label": "API Vendor",
+                "options": {
+                    "dictionary": "integrations"
+                }
+            }
+        }
+    ]
+}

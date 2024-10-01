@@ -1,0 +1,23 @@
+RewriteEngine On
+RewriteBase /
+
+# <FilesMatch "\.(html|htm|php)$">
+#     <IfModule mod_expires.c> 		
+#         ExpiresActive Off 	
+#     </IfModule> 
+#     <IfModule mod_headers.c>
+#         FileETag None
+#         Header unset ETag
+#         Header unset Pragma
+#         Header unset Cache-Control
+#         Header unset Last-Modified
+#         Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+#         Header set Pragma "no-cache"
+#         Header set Expires "Tue, 01 Jan 1980 1:00:00 GMT"
+#     </IfModule>
+# </FilesMatch>
+
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]

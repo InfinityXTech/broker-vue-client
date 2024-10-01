@@ -1,0 +1,109 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": ""
+            },
+            "children": [
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Broker CRG Deal"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "broker_changed_crg_percentage_id",
+                            "props": {
+                                "label": "CRG Deals",
+                                "default": false,
+                                "options": {
+                                    "custom": "custom_broker_crg_percentage_id"
+                                }
+                            }
+                        },
+                        {
+                            "component": "SelectField",
+                            "data": "broker_changed_crg_payout",
+                            "props": {
+                                "label": "Payout",
+                                "default": false,
+                                "options": {
+                                    "custom": "custom_broker_crg_payout"
+                                }
+                            }
+                        },
+                        {
+                            "component": "ConditionalBlock",
+                            "data": "broker_changed_crg_payout",
+                            "props": {
+                                "values": [
+                                    "other"
+                                ]
+                            },
+                            "children": [
+                                {
+                                    "component": "InputField",
+                                    "data": "broker_changed_crg_payout_manual",
+                                    "props": {
+                                        "label": "Custom Payout"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Traffic Endpoint CRG Deal"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "changed_crg_percentage_id",
+                            "props": {
+                                "label": "CRG Deals",
+                                "default": false,
+                                "options": {
+                                    "custom": "custom_crg_percentage_id"
+                                }
+                            }
+                        },
+                        {
+                            "component": "SelectField",
+                            "data": "changed_crg_payout",
+                            "props": {
+                                "label": "Payout",
+                                "default": false,
+                                "options": {
+                                    "custom": "custom_crg_payout"
+                                }
+                            }
+                        },
+                        {
+                            "component": "ConditionalBlock",
+                            "data": "changed_crg_payout",
+                            "props": {
+                                "values": [
+                                    "other"
+                                ]
+                            },
+                            "children": [
+                                {
+                                    "component": "InputField",
+                                    "data": "changed_crg_payout_manual",
+                                    "props": {
+                                        "label": "Custom Payout"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

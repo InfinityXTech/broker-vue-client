@@ -1,0 +1,19 @@
+{
+    "type": "Datatable",
+    "title": "Marketing Suite",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "key": {
+            "label": "Key",
+            "sortable": false
+        },
+        "value": {
+            "label": "Value",
+            "sortable": false
+        }
+    }
+}

@@ -1,0 +1,155 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "StatusField",
+            "data": "status",
+            "props": {
+                "label": "Status"
+            }
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Basic Information"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "name",
+                    "props": {
+                        "label": "Name"
+                    }
+                },
+                {
+                    "component": "CustomField",
+                    "props": {
+                        "label": "Tracking Link",
+                        "renderFunc": "custom.get_tracking_link"
+                    }
+                },
+                {
+                    "component": "TextAreaField",
+                    "data": "description",
+                    "props": {
+                        "label": "Description",
+                        "rows": 2
+                    }
+                },
+                {
+                    "component": "SelectField",
+                    "data": "countries",
+                    "props": {
+                        "label": "Countries",
+                        "default": false,
+                        "mode": "multiple",
+                        "options": {
+                            "dictionary": "countries"
+                        }
+                    }
+                },
+                {
+                    "component": "ToggleBlock",
+                    "data": "language",
+                    "props": {
+                        "label": "Language",
+                        "big": true
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "languages",
+                            "props": {
+                                "label": "",
+                                "mode": "multiple",
+                                "default": false,
+                                "required": true,
+                                "options": {
+                                    "dictionary": "languages"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Classification",
+                "layout": "12"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "vertical",
+                    "props": {
+                        "label": "Vertical",
+                        "default": false,
+                        "required": true,
+                        "options": {
+                            "dictionary": "marketing_suite_verticals"
+                        }
+                    }
+                },
+                {
+                    "component": "SelectField",
+                    "data": "platform",
+                    "props": {
+                        "label": "Platform",
+                        "default": false,
+                        "mode": "multiple",
+                        "options": {
+                            "dictionary": "marketing_suite_platforms"
+                        }
+                    }
+                },
+                {
+                    "component": "SelectField",
+                    "data": "conversion_type",
+                    "props": {
+                        "label": "Conversion Type",
+                        "default": true,
+                        "required": false,
+                        "options": {
+                            "dictionary": "marketing_suite_conversion_types"
+                        }
+                    }
+                },
+                {
+                    "component": "SelectField",
+                    "data": "ristrictions",
+                    "props": {
+                        "label": "Ristrictions",
+                        "required": false,
+                        "mode": "multiple",
+                        "options": {
+                            "dictionary": "marketing_suite_ristrictions"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ToggleSwitchField",
+            "data": "private",
+            "props": {
+                "label": "Private"
+            }
+        },
+        {
+            "component": "FilesField",
+            "data": "logo_image",
+            "props": {
+                "label": "Logo Image"
+            }
+        },
+        {
+            "component": "FilesField",
+            "data": "screenshot_image",
+            "props": {
+                "label": "Screenshots"
+            }
+        }
+    ]
+}

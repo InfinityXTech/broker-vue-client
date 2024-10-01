@@ -1,0 +1,56 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "name",
+            "props": {
+                "required": true,
+                "label": "Name"
+            }
+        },
+        {
+            "component": "TextAreaField",
+            "data": "description",
+            "props": {
+                "label": "Description",
+                "rows": 2
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "countries",
+            "props": {
+                "label": "Countries",
+                "default": false,
+                "mode": "multiple",
+                "options": {
+                    "dictionary": "countries"
+                }
+            }
+        },
+        {
+            "component": "ToggleBlock",
+            "data": "languages",
+            "props": {
+                "label": "Language",
+                "big": true
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "languages",
+                    "props": {
+                        "label": "",
+                        "mode": "multiple",
+                        "default": false,
+                        "required": true,
+                        "options": {
+                            "dictionary": "languages"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

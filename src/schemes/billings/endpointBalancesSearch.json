@@ -1,0 +1,50 @@
+{
+    "type": "Search",
+    "columns": [
+        {
+            "type": "select",
+            "label": "Probation",
+            "value": "probation",
+            "options": [
+                {
+                    "value": "0",
+                    "label": "No",
+                    "default": true
+                },
+                {
+                    "value": "1",
+                    "label": "Yes"
+                }
+            ]
+        },
+        {
+            "label": "Collection",
+            "type": "select",
+            "value": "billing_manual_status",
+            "options": [
+                {
+                    "value": "",
+                    "label": "All",
+                    "color": "primary"
+                },
+                {
+                    "value": "collection",
+                    "color": "warning",
+                    "label": "Collection",
+                    "default": true
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "label": "Manager",
+            "layout": "narrow",
+            "value": "account_manager_user._id",
+            "options": {
+                "field": "account_manager_user",
+                "key": "_id",
+                "value": "name"
+            }
+        }
+    ]
+}

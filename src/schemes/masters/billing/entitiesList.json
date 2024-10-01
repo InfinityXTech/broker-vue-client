@@ -1,0 +1,47 @@
+{
+    "type": "Datatable",
+    "title": "Billing Entities",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "company_legal_name": {
+            "label": "Company Legal Name"
+        },
+        "country_code": {
+            "label": "Company Country",
+            "renderCell": "custom.Country"
+        },
+        "region": {
+            "label": "Region"
+        },
+        "city": {
+            "label": "City"
+        },
+        "zip_code": {
+            "label": "Zip Code"
+        },
+        "currency_code": {
+            "label": "Currency",
+            "renderCell": "simple.UpperCase"
+        },
+        "vat_id": {
+            "label": "VAT ID"
+        },
+        "registration_number": {
+            "label": "Registration Number"
+        },
+        "file": {
+            "label": "Supporting Files",
+            "default": [],
+            "renderCell": "simple.Files"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

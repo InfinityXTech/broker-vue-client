@@ -1,0 +1,27 @@
+{
+    "type": "Datatable",
+    "title": "Targeting Locations",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "country_name": {
+            "label": "Country"
+        },
+        "payout": {
+            "label": "Region",
+            "renderCell": "custom.Regions"
+        },
+        "enabled": {
+            "label": "Enabled",
+            "renderCell": "custom.Enabled"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

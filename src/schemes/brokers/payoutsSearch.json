@@ -1,0 +1,43 @@
+{
+    "type": "Search",
+    "columns": [
+        {
+            "type": "select",
+            "label": "Country",
+            "value": "country_code",
+            "options": {
+                "key": "country_code",
+                "value": "country_name"
+            }
+        },
+        {
+            "type": "select",
+            "label": "Language",
+            "value": "language_code",
+            "options": {
+                "key": "language_code",
+                "value": "language_name"
+            }
+        },
+        {
+            "type": "select",
+            "label": "Enabled",
+            "value": "enabled",
+            "options": [
+                {
+                    "value": "",
+                    "label": "All",
+                    "default": true
+                },
+                {
+                    "value": "true",
+                    "label": "ON"
+                },
+                {
+                    "value": "false",
+                    "label": "OFF"
+                }
+            ]
+        }
+    ]
+}

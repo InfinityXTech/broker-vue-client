@@ -1,0 +1,40 @@
+{
+    "title": "Performance",
+    "children": [
+        {
+            "title": "General",
+            "icon": "fas fa-wallet",
+            "to": {
+                "name": "performance-general"
+            }
+        },
+        {
+            "title": "Traffic Endpoints",
+            "icon": "lnir lnir-postcard",
+            "to": {
+                "name": "performance-traffic_endpoints"
+            }
+        },
+        {
+            "title": "Brokers",
+            "icon": "fas fa-credit-card",
+            "to": {
+                "name": "performance-brokers"
+            }
+        },
+        {
+            "title": "API Vendors",
+            "icon": "fas fa-credit-card",
+            "to": {
+                "name": "performance-vendors"
+            }
+        },
+        {
+            "title": "Deep Dive",
+            "icon": "feather:inbox",
+            "to": {
+                "name": "performance-deep_dive"
+            }
+        }
+    ]
+}

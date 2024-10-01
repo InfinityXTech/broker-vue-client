@@ -1,0 +1,25 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "SelectField",
+            "data": "traffic_endpoint",
+            "props": {
+                "layout": "",
+                "label": "Traffic Endpoint",
+                "required": true,
+                "options": {
+                    "dictionary": "traffic_endpoints"
+                }
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "parameter",
+            "props": {
+                "label": "Parameter",
+                "required": true
+            }
+        }
+    ]
+}

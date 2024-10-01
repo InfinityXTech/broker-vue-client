@@ -1,0 +1,70 @@
+{
+    "type": "Form",
+    "title": "Leads",
+    "content": [
+        {
+            "component": "SelectField",
+            "data": "task_lps",
+            "props": {
+                "layout": "7",
+                "label": "Task",
+                "required": true,
+                "default": false,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "Sync to new broker"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Create new and Sync to new broker"
+                    }
+                ]
+            }
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "task_lps",
+            "props": {
+                "layout": "7",
+                "values": [
+                    "2"
+                ]
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "endpoint",
+                    "props": {
+                        "label": "Traffic Endpoint",
+                        "required": false,
+                        "default": true,
+                        "options": {
+                            "dictionary": "traffic_endpoints"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ToggleBlock",
+            "props": {
+                "layout": "7",
+                "label": "Interval"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "interval",
+                    "props": {
+                        "label": "",
+                        "type": "number",
+                        "max": 200,
+                        "onlyDigits": true,
+                        "required": false
+                    }
+                }
+            ]
+        }
+    ]
+}

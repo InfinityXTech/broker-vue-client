@@ -1,0 +1,31 @@
+{
+    "type": "Datatable",
+    "title": "Affiliate Cap",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "affiliate_data.token": {
+            "label": "Affiliate",
+            "renderCell": "custom.Endpoint"
+        },
+        "country_code": {
+            "label": "Country",
+            "renderCell": "custom.Country"
+        },
+        "daily_cap": {
+            "label": "Daily Cap"
+        },
+        "enabled": {
+            "label": "Enabled",
+            "renderCell": "custom.Enabled"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

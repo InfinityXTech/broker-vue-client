@@ -1,0 +1,94 @@
+{
+    "type": "Form",
+    "gauth": true,
+    "content": [
+        {
+            "component": "ColumnBlock",
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "company_legal_name",
+                    "props": {
+                        "label": "Company Legal Name"
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "region",
+                    "props": {
+                        "label": "Full Address"
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "zip_code",
+                    "props": {
+                        "label": "Zip Code"
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "vat_id",
+                    "props": {
+                        "label": "VAT ID"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ColumnBlock",
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "country_code",
+                    "props": {
+                        "label": "Company Country",
+                        "default": false,
+                        "options": {
+                            "dictionary": "countries"
+                        }
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "city",
+                    "props": {
+                        "label": "City"
+                    }
+                },
+                {
+                    "component": "SelectField",
+                    "data": "currency_code",
+                    "props": {
+                        "label": "Currency",
+                        "default": false,
+                        "options": [
+                            {
+                                "value": "usd",
+                                "label": "USD"
+                            },
+                            {
+                                "value": "eur",
+                                "label": "EURO"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "registration_number",
+                    "props": {
+                        "label": "Registration Number"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "FilesField",
+            "data": "files",
+            "props": {
+                "label": "Screenshots"
+            }
+        }
+    ]
+}

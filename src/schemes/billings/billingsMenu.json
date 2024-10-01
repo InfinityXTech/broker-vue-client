@@ -1,0 +1,56 @@
+{
+    "title": "Billings",
+    "permission_name": "billings",
+    "children": [
+        {
+            "title": "Overall",
+            "icon": "fas fa-wallet",
+            "access": [
+                "overall"
+            ],
+            "to": {
+                "name": "billings-overall"
+            }
+        },
+        {
+            "title": "Pending Payments",
+            "icon": "lnir lnir-postcard",
+            "access": [
+                "pending_payments"
+            ],
+            "to": {
+                "name": "billings-pending_payments"
+            }
+        },
+        {
+            "title": "Brokers Balances",
+            "icon": "fas fa-credit-card",
+            "access": [
+                "brokers_balances"
+            ],
+            "to": {
+                "name": "billings-brokers_balances"
+            }
+        },
+        {
+            "title": "Endpoint Balances",
+            "icon": "feather:inbox",
+            "access": [
+                "endpoint_balances"
+            ],
+            "to": {
+                "name": "billings-endpoint_balances"
+            }
+        },
+        {
+            "title": "Financial Approves",
+            "icon": "feather:inbox",
+            "access": [
+                "financial_approves"
+            ],
+            "to": {
+                "name": "billings-financial_approves"
+            }
+        }
+    ]
+}

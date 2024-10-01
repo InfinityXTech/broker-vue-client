@@ -1,0 +1,32 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "SelectField",
+            "data": "country_code",
+            "props": {
+                "label": "Country",
+                "default": false,
+                "options": {
+                    "dictionary": "countries"
+                }
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "advertiser_payout",
+            "props": {
+                "label": "Advertiser Payout",
+                "type": "number"
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "affiliate_payout",
+            "props": {
+                "label": "Affiliate Payout",
+                "type": "number"
+            }
+        }
+    ]
+}

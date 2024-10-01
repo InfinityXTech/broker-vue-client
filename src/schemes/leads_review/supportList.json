@@ -1,0 +1,22 @@
+{
+    "type": "Datatable",
+    "title": "Support",
+    "columns": {
+        "ticketNumber": {
+            "label": "Ticket ID",
+            "sortable": false,
+            "renderCell": "custom.Ticket"
+        },
+        "status_name": {
+            "label": "Status"
+        },
+        "created_by_user": {
+            "label": "Created by",
+            "renderCell": "custom.AccountName"
+        },
+        "timestamp": {
+            "label": "Timestamp",
+            "renderCell": "simple.DateTime"
+        }
+    }
+}

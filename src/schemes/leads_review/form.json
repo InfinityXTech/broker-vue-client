@@ -1,0 +1,63 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "DateRangeField",
+            "data": "timeframe",
+            "props": {
+                "layout": "2",
+                "required": false,
+                "label": "Time Frame",
+                "menuClassName": "report-calendar-menu"
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "traffic_endpoint",
+            "props": {
+                "layout": "2",
+                "label": "Traffic Endpoint",
+                "required": false,
+                "default": true,
+                "options": {
+                    "dictionary": "traffic_endpoints"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "broker",
+            "props": {
+                "layout": "2",
+                "label": "Broker",
+                "required": false,
+                "default": true,
+                "options": {
+                    "dictionary": "brokers"
+                }
+            }
+        },
+        {
+            "component": "TogglesField",
+            "data": "review_status",
+            "props": {
+                "label": "Status",
+                "layout": "2",
+                "options": [
+                    {
+                        "value": "unchecked",
+                        "label": "Unchecked",
+                        "color": "primary",
+                        "default": true
+                    },
+                    {
+                        "value": "1",
+                        "label": "Checked",
+                        "color": "primary",
+                        "default": false
+                    }
+                ]
+            }
+        }
+    ]
+}

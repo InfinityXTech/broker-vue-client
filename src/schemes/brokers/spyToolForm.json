@@ -1,0 +1,49 @@
+{
+    "type": "Form",
+    "title": "Depositors",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "lead_id",
+            "props": {
+                "layout": "12",
+                "label": "Lead ID",
+                "required": false
+            }
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "lead_id",
+            "props": {
+                "layout": "12",
+                "function": "toBoolean"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "broker",
+                    "props": {
+                        "layout": "12",
+                        "label": "Broker",
+                        "required": false,
+                        "options": {
+                            "custom": "custom_brokers"
+                        }
+                    }
+                },
+                {
+                    "component": "SelectField",
+                    "data": "integration",
+                    "props": {
+                        "layout": "12",
+                        "label": "Integration",
+                        "required": false,
+                        "options": {
+                            "custom": "custom_integrations"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Reporting"
+            },
+            "children": [
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "statusReporting",
+                    "props": {
+                        "label": "Allow access to reporting"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Deposits"
+            },
+            "children": [
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "statusDeposit",
+                    "props": {
+                        "label": "Report Deposits Manually"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Redirect Logic"
+            },
+            "children": [
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "redirect_24_7",
+                    "props": {
+                        "label": "Redirect 24/7"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Login Credentials"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "account_password",
+                    "props": {
+                        "label": "API Password",
+                        "readonly": true
+                    }
+                }
+            ]
+        }
+    ]
+}

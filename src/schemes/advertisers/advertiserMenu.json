@@ -1,0 +1,92 @@
+{
+    "title": "Advertisers",
+    "to": {
+        "name": "advertisers"
+    },
+    "permission_name": "marketing_advertisers",
+    "children": [
+        {
+            "title": "Back to Advertisers",
+            "to": {
+                "name": "advertisers"
+            }
+        },
+        {
+            "title": "Campaigns",
+            "access": [
+                "campaigns"
+            ],
+            "to": {
+                "name": "advertisers-advertiserId-campaigns"
+            }
+        },
+        {
+            "title": "Post Events",
+            "access": [
+                "post_events"
+            ],
+            "to": {
+                "name": "advertisers-advertiserId-post_events"
+            }
+        },
+        {
+            "id": "billing-tabs",
+            "title": "Billing",
+            "access": [
+                "is_billing"
+            ],
+            "children_desktop": false,
+            "children": [
+                {
+                    "title": "General & Balances",
+                    "icon": "fas fa-wallet",
+                    "to": {
+                        "name": "advertisers-advertiserId-billing-general"
+                    }
+                },
+                {
+                    "title": "Billing Entities",
+                    "icon": "lnir lnir-postcard",
+                    "to": {
+                        "name": "advertisers-advertiserId-billing-entities"
+                    }
+                },
+                {
+                    "title": "Payment Methods",
+                    "icon": "fas fa-credit-card",
+                    "to": {
+                        "name": "advertisers-advertiserId-billing-methods"
+                    }
+                },
+                {
+                    "title": "Payment Requests",
+                    "icon": "feather:inbox",
+                    "to": {
+                        "name": "advertisers-advertiserId-billing-requests"
+                    }
+                },
+                {
+                    "title": "Completed Transactions",
+                    "icon": "feather:check-circle",
+                    "to": {
+                        "name": "advertisers-advertiserId-billing-completed"
+                    }
+                },
+                {
+                    "title": "Adjustments",
+                    "icon": "lnir lnir-pie-chart-dollar",
+                    "to": {
+                        "name": "advertisers-advertiserId-billing-adjustments"
+                    }
+                },
+                {
+                    "title": "Chargebacks",
+                    "icon": "feather:rotate-ccw",
+                    "to": {
+                        "name": "advertisers-advertiserId-billing-chargebacks"
+                    }
+                }
+            ]
+        }
+    ]
+}

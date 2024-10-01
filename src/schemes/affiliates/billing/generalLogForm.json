@@ -1,0 +1,17 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "SelectField",
+            "data": "collection",
+            "props": {
+                "layout": "",
+                "label": "Type Of Log",
+                "required": false,
+                "options": {
+                    "custom": "log_collections"
+                }
+            }
+        }
+    ]
+}

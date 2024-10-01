@@ -1,0 +1,29 @@
+{
+    "type": "Datatable",
+    "title": "Brokers",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "name": {
+            "label": "Error Type",
+            "renderCell": "custom.Name"
+        },
+        "count": {
+            "label": "Count",
+            "default": 0
+        },
+        "cr": {
+            "label": "% of Traffic",
+            "default": 0,
+            "renderCell": "simple.Percent"
+        },
+        "actions": {
+            "label": "",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

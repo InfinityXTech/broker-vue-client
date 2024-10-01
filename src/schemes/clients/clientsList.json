@@ -1,0 +1,25 @@
+{
+    "type": "Datatable",
+    "title": "Brokers",
+    "columns": {
+        "_id": {
+            "label": "ID",
+            "sortable": false,
+            "styles": [
+                {
+                    "textAlign": "center"
+                }
+            ],
+            "renderCell": "simple.Index"
+        },
+        "status": {
+            "label": "Status",
+            "sortable": false,
+            "renderCell": "simple.StatusTag"
+        },
+        "nickname": {
+            "label": "Client",
+            "renderCell": "custom.ClientName"
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Time"
+            },
+            "children": [
+                {
+                    "component": "DateField",
+                    "data": "time_start",
+                    "props": {
+                        "layout": "3",
+                        "label": "Start"
+                    }
+                },
+                {
+                    "component": "DateField",
+                    "data": "time_end",
+                    "props": {
+                        "layout": "3",
+                        "label": "End"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Work Time"
+            },
+            "children": [
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "layout": "8",
+                        "label": "Schedule"
+                    },
+                    "children": [
+                        {
+                            "component": "ScheduleField",
+                            "data": "blocked_schedule"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "SubPublisher"
+            },
+            "children": [
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "force_sub_publisher",
+                    "props": {
+                        "label": "Force SubPublisher"
+                    }
+                }
+            ]
+        }
+    ]
+}

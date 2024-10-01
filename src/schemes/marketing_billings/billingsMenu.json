@@ -1,0 +1,56 @@
+{
+    "title": "Billings",
+    "permission_name": "marketing_billings",
+    "children": [
+        {
+            "title": "Overall",
+            "icon": "fas fa-wallet",
+            "access": [
+                "overall"
+            ],
+            "to": {
+                "name": "marketing_billings-overall"
+            }
+        },
+        {
+            "title": "Pending Payments",
+            "icon": "lnir lnir-postcard",
+            "access": [
+                "pending_payments"
+            ],
+            "to": {
+                "name": "marketing_billings-pending_payments"
+            }
+        },
+        {
+            "title": "Advertisers Balances",
+            "icon": "fas fa-credit-card",
+            "access": [
+                "advertisers_balances"
+            ],
+            "to": {
+                "name": "marketing_billings-advertisers_balances"
+            }
+        },
+        {
+            "title": "Affiliates Balances",
+            "icon": "feather:inbox",
+            "access": [
+                "affiliates_balances"
+            ],
+            "to": {
+                "name": "marketing_billings-affiliates_balances"
+            }
+        },
+        {
+            "title": "Financial Approves",
+            "icon": "feather:inbox",
+            "access": [
+                "financial_approves"
+            ],
+            "to": {
+                "name": "marketing_billings-financial_approves"
+            }
+        }
+    ]
+}

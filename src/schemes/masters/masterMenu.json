@@ -1,0 +1,92 @@
+{
+    "title": "Master",
+    "to": {
+        "name": "masters"
+    },
+    "permission_name": "masters",
+    "children": [
+        {
+            "title": "Back to Masters",
+            "to": {
+                "name": "masters"
+            }
+        },
+        {
+            "title": "General",
+            "access": [
+                "general"
+            ],
+            "to": {
+                "name": "masters-id"
+            }
+        },
+        {
+            "title": "Payouts",
+            "access": [
+                "payouts"
+            ],
+            "to": {
+                "name": "masters-id-payouts"
+            }
+        },
+        {
+            "id": "billing-tabs",
+            "title": "Billing",
+            "access": [
+                "billing"
+            ],
+            "children_desktop": false,
+            "children": [
+                {
+                    "title": "General & Balances",
+                    "icon": "fas fa-wallet",
+                    "to": {
+                        "name": "masters-id-billing-general"
+                    }
+                },
+                {
+                    "title": "Billing Entities",
+                    "icon": "lnir lnir-postcard",
+                    "to": {
+                        "name": "masters-id-billing-entities"
+                    }
+                },
+                {
+                    "title": "Payment Methods",
+                    "icon": "fas fa-credit-card",
+                    "to": {
+                        "name": "masters-id-billing-methods"
+                    }
+                },
+                {
+                    "title": "Payment Requests",
+                    "icon": "feather:inbox",
+                    "to": {
+                        "name": "masters-id-billing-requests"
+                    }
+                },
+                {
+                    "title": "Completed Transactions",
+                    "icon": "feather:check-circle",
+                    "to": {
+                        "name": "masters-id-billing-completed"
+                    }
+                },
+                {
+                    "title": "Adjustments",
+                    "icon": "lnir lnir-pie-chart-dollar",
+                    "to": {
+                        "name": "masters-id-billing-adjustments"
+                    }
+                },
+                {
+                    "title": "Chargebacks",
+                    "icon": "feather:rotate-ccw",
+                    "to": {
+                        "name": "masters-id-billing-chargebacks"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "type": "Datatable",
+    "title": "CRM",
+    "columns": {
+        "select": {
+            "label": "ID",
+            "sortable": false,
+            "styles": [
+                {
+                    "textAlign": "center"
+                }
+            ],
+            "renderCell": "custom.Id"
+        },
+        "name": {
+            "label": "Name",
+            "renderCell": "custom.LeadName"
+        },
+        "email_id": {
+            "label": "Email , Lead ID",
+            "sortable": false,
+            "renderCell": "custom.email_ID"
+        },
+        "location": {
+            "label": "Location",
+            "renderCell": "custom.Location"
+        },
+        "endpoint": {
+            "key": "endpoint.name",
+            "label": "Endpoint",
+            "renderCell": "custom.EndpointName"
+        },
+        "funnel_lp": {
+            "styles": [
+                {
+                    "white-space": "nowrap",
+                    "overflow": "hidden",
+                    "text-overflow": "ellipsis",
+                    "max-width": "100px"
+                }
+            ],
+            "label": "Funnel",
+            "renderCell": "simple.PlaceHolder"
+        },
+        "sub_publisher": {
+            "label": "Sub publisher"
+        },
+        "Timestamp": {
+            "label": "Timestamp",
+            "renderCell": "simple.DateTime"
+        }
+    }
+}

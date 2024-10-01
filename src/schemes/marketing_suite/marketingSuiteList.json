@@ -1,0 +1,43 @@
+{
+    "type": "Datatable",
+    "title": "Marketing Suite",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "token": {
+            "label": "Token",
+            "renderCell": "custom.Token"
+        },
+        "name": {
+            "label": "Name",
+            "renderCell": "custom.Name"
+        },
+        "languages": {
+            "label": "Languages",
+            "renderCell": "custom.Languages"
+        },
+        "created_on": {
+            "label": "Created On",
+            "renderCell": "simple.DateTime"
+        },
+        "status": {
+            "label": "Status",
+            "renderCell": "simple.StatusTag({1: {color: 'primary', title: 'ACTIVE'}, 0: {color: 'warning', title: 'INACTIVE'}, 2: {color: 'grey', title: 'ARCHIVED'}})"
+        },
+        "clicks": {
+            "label": "Clicks",
+            "default": 0
+        },
+        "leads": {
+            "label": "Leads",
+            "default": 0
+        },
+        "ftd": {
+            "label": "FTD's",
+            "default": 0
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "ConditionalBlock",
+            "data": "payment_method",
+            "props": {
+                "function": "payment_method_required"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "payment_method",
+                    "props": {
+                        "label": "Payment method",
+                        "default": false,
+                        "options": {
+                            "custom": "traffic_endpoint_payment_methods"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "payment_method",
+            "props": {
+                "function": "transaction_id_required"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "transaction_id",
+                    "props": {
+                        "label": "Transaction ID"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ConditionalBlock",
+            "data": "payment_method",
+            "props": {
+                "function": "transaction_id_required"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "hash_url",
+                    "props": {
+                        "label": "Hash Url"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "DateField",
+            "data": "date_pay",
+            "props": {
+                "label": "Date Pay"
+            }
+        },
+        {
+            "component": "FilesField",
+            "data": "final_approve_files",
+            "props": {
+                "label": "Screenshots"
+            }
+        }
+    ]
+}

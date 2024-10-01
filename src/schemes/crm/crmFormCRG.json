@@ -1,0 +1,187 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": ""
+            },
+            "children": [
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Broker CRG Deal",
+                        "change": "broker_change_crg_function"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "broker_crg_percentage_id",
+                            "props": {
+                                "label": "CRG Deals",
+                                "default": false,
+                                "options": {
+                                    "custom": "custom_broker_crg_percentage_id"
+                                }
+                            }
+                        },
+                        {
+                            "component": "SelectField",
+                            "data": "broker_crg_payout",
+                            "props": {
+                                "label": "Payout",
+                                "default": false,
+                                "options": {
+                                    "custom": "custom_broker_crg_payout"
+                                }
+                            }
+                        },
+                        {
+                            "component": "ConditionalBlock",
+                            "data": "broker_crg_payout",
+                            "props": {
+                                "values": [
+                                    "other"
+                                ]
+                            },
+                            "children": [
+                                {
+                                    "component": "InputField",
+                                    "data": "broker_crg_payout_manual",
+                                    "props": {
+                                        "label": "Custom Payout"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "broker_crg_percentage_id",
+                    "props": {
+                        "function": "broker_reason_change_crg_conditional"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "broker_reason_change_crg",
+                            "props": {
+                                "label": "Reason change CRG",
+                                "default": true,
+                                "options": {
+                                    "dictionary": "reasons_un_payable_leads"
+                                }
+                            }
+                        },
+                        {
+                            "component": "ConditionalBlock",
+                            "data": "broker_reason_change_crg",
+                            "props": {
+                                "values": [
+                                    "other"
+                                ]
+                            },
+                            "children": [
+                                {
+                                    "component": "TextAreaField",
+                                    "data": "broker_reason_change_crg2",
+                                    "props": {
+                                        "label": "Custom Reason change CRG"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Traffic Endpoint CRG Deal",
+                        "change": "change_crg_function"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "crg_percentage_id",
+                            "props": {
+                                "label": "CRG Deals",
+                                "default": false,
+                                "options": {
+                                    "custom": "custom_crg_percentage_id"
+                                }
+                            }
+                        },
+                        {
+                            "component": "SelectField",
+                            "data": "crg_payout",
+                            "props": {
+                                "label": "Payout",
+                                "default": false,
+                                "options": {
+                                    "custom": "custom_crg_payout"
+                                }
+                            }
+                        },
+                        {
+                            "component": "ConditionalBlock",
+                            "data": "crg_payout",
+                            "props": {
+                                "values": [
+                                    "other"
+                                ]
+                            },
+                            "children": [
+                                {
+                                    "component": "InputField",
+                                    "data": "crg_payout_manual",
+                                    "props": {
+                                        "label": "Custom Payout"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "crg_percentage_id",
+                    "props": {
+                        "function": "reason_change_crg_conditional"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "reason_change_crg",
+                            "props": {
+                                "label": "Reason change CRG",
+                                "default": true,
+                                "options": {
+                                    "dictionary": "reasons_un_payable_leads"
+                                }
+                            }
+                        },
+                        {
+                            "component": "ConditionalBlock",
+                            "data": "reason_change_crg",
+                            "props": {
+                                "values": [
+                                    "other"
+                                ]
+                            },
+                            "children": [
+                                {
+                                    "component": "TextAreaField",
+                                    "data": "reason_change_crg2",
+                                    "props": {
+                                        "label": "Custom Reason change CRG"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

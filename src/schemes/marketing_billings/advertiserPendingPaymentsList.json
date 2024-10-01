@@ -1,0 +1,33 @@
+{
+    "type": "Datatable",
+    "title": "Advertisers",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "advertiser.name": {
+            "label": "Advertiser",
+            "renderCell": "custom.AdvertiserName"
+        },
+        "timestamp": {
+            "label": "Timestamp"
+        },
+        "from": {
+            "label": "From"
+        },
+        "to": {
+            "label": "To"
+        },
+        "type": {
+            "label": "type"
+        },
+        "total": {
+            "label": "Total",
+            "default": 0,
+            "renderCell": "simple.MoneyColor",
+            "totalCalc": "simple.Sum"
+        }
+    }
+}

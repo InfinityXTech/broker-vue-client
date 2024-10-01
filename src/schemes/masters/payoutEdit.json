@@ -1,0 +1,41 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "payout",
+            "props": {
+                "label": "Payout",
+                "required": true,
+                "type": "number"
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "cost_type",
+            "props": {
+                "label": "Cost Type",
+                "default": false,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "CPA"
+                    },
+                    {
+                        "value": "2",
+                        "label": "CPL"
+                    }
+                ]
+            }
+        },
+        {
+            "component": "TextAreaField",
+            "data": "description",
+            "props": {
+                "required": true,
+                "label": "Why you wanna change payout?",
+                "rows": 5
+            }
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": ""
+            },
+            "children": [
+                {
+                    "component": "RadioGroupField",
+                    "data": "type",
+                    "props": {
+                        "label": "Query Type",
+                        "options": [
+                            {
+                                "color": "primary",
+                                "label": "Emails",
+                                "value": "emails",
+                                "default": true
+                            },
+                            {
+                                "color": "warning",
+                                "label": "Broker lead ID",
+                                "value": "leads"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "TextAreaField",
+                    "data": "data",
+                    "props": {
+                        "label": "",
+                        "rows": 10
+                    }
+                }
+            ]
+        }
+    ]
+}

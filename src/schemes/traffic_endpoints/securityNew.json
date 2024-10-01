@@ -1,0 +1,12 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "ip",
+            "props": {
+                "label": "IP"
+            }
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "type": "Datatable",
+    "title": "",
+    "columns": {
+        "date": {
+            "label": "Date",
+            "renderCell": "simple.DateTime"
+        },
+        "status": {
+            "label": "Status"
+        },
+        "broker_status": {
+            "label": "Broker Status"
+        }
+    }
+}

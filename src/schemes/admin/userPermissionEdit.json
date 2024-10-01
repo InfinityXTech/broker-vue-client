@@ -1,0 +1,1260 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "ToggleBlock",
+            "props": {
+                "label": "Brokers"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "permissions.brokers.access",
+                    "props": {
+                        "label": "Access",
+                        "layout": "3",
+                        "default": true,
+                        "required": false,
+                        "options": [
+                            {
+                                "value": "all",
+                                "label": "All Access"
+                            },
+                            {
+                                "value": "view",
+                                "label": "View"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.brokers.is_only_assigned",
+                    "props": {
+                        "layout": "8",
+                        "label": "Only assigned"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.brokers.daily_cap",
+                    "props": {
+                        "layout": "2",
+                        "label": "Caps Dashboard"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.brokers.unpayable_leads",
+                    "public_features": [
+                        "PV38"
+                    ],
+                    "props": {
+                        "layout": "2",
+                        "label": "UnPayable Leads"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.brokers.api_integrations",
+                    "props": {
+                        "layout": "2",
+                        "label": "API Integrations"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.brokers.payouts",
+                    "props": {
+                        "layout": "2",
+                        "label": "Payouts"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.brokers.private_deals",
+                    "props": {
+                        "layout": "2",
+                        "label": "Private Deals"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.brokers.tools",
+                    "props": {
+                        "layout": "2",
+                        "label": "Broker Tools"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.brokers.allocate_am",
+                    "props": {
+                        "layout": "2",
+                        "label": "Allocate AM"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.brokers.is_billing",
+                    "public_features": [
+                        "PV38"
+                    ],
+                    "props": {
+                        "layout": "2",
+                        "label": "Billing"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "obsolete": true,
+                    "data": "permissions.brokers.general",
+                    "props": {
+                        "layout": "2",
+                        "label": "General"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "private_features": [
+                        "XT30"
+                    ],
+                    "data": "permissions.brokers.status_management",
+                    "props": {
+                        "layout": "2",
+                        "label": "Status Management"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ToggleBlock",
+            "props": {
+                "label": "Traffic Endpoint"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "permissions.traffic_endpoint.access",
+                    "props": {
+                        "label": "Access",
+                        "layout": "3",
+                        "default": true,
+                        "required": false,
+                        "options": [
+                            {
+                                "value": "all",
+                                "label": "All Access"
+                            },
+                            {
+                                "value": "view",
+                                "label": "View"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.traffic_endpoint.is_only_assigned",
+                    "props": {
+                        "layout": "8",
+                        "label": "Only assigned"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.traffic_endpoint.unpayable_leads",
+                    "public_features": [
+                        "PV38"
+                    ],
+                    "props": {
+                        "layout": "2",
+                        "label": "UnPayable Leads"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.traffic_endpoint.allocate_am",
+                    "props": {
+                        "layout": "2",
+                        "label": "Allocate AM"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.traffic_endpoint.integration",
+                    "props": {
+                        "layout": "2",
+                        "label": "API Integrations"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.traffic_endpoint.payouts",
+                    "props": {
+                        "layout": "2",
+                        "label": "Payouts"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.traffic_endpoint.private_deals",
+                    "props": {
+                        "layout": "2",
+                        "label": "Private Deals"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.traffic_endpoint.restrictions",
+                    "props": {
+                        "layout": "2",
+                        "label": "Optimization"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.traffic_endpoint.funnels",
+                    "private_features": [
+                        "OK93"
+                    ],
+                    "props": {
+                        "layout": "2",
+                        "label": "Funnels"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.traffic_endpoint.is_scrub_permission",
+                    "private_features": [
+                        "LM99"
+                    ],
+                    "props": {
+                        "layout": "2",
+                        "label": "Scrub"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.traffic_endpoint.feed_visualization",
+                    "props": {
+                        "layout": "2",
+                        "label": "Feed Visualization"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.traffic_endpoint.is_billing",
+                    "public_features": [
+                        "PV38"
+                    ],
+                    "props": {
+                        "layout": "2",
+                        "label": "Billing"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "obsolete": true,
+                    "data": "permissions.traffic_endpoint.marketing_suite",
+                    "props": {
+                        "layout": "2",
+                        "label": "Marketing Suite"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "obsolete": true,
+                    "data": "permissions.traffic_endpoint.lead_analysis",
+                    "props": {
+                        "layout": "2",
+                        "label": "Lead Analysis"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "obsolete": true,
+                    "data": "permissions.traffic_endpoint.broker_simulator",
+                    "props": {
+                        "layout": "4",
+                        "label": "Broker Simulator"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "obsolete": true,
+                    "data": "permissions.traffic_endpoint.general",
+                    "props": {
+                        "layout": "2",
+                        "label": "General"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "obsolete": true,
+                    "data": "permissions.traffic_endpoint.setup",
+                    "props": {
+                        "layout": "2",
+                        "label": "Integration"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "obsolete": true,
+                    "data": "permissions.traffic_endpoint.security",
+                    "props": {
+                        "layout": "2",
+                        "label": "Security"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ToggleBlock",
+            "public_features": [
+                "OB38"
+            ],
+            "props": {
+                "label": "Masters"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "permissions.masters.access",
+                    "props": {
+                        "label": "Access",
+                        "layout": "3",
+                        "default": true,
+                        "required": false,
+                        "options": [
+                            {
+                                "value": "all",
+                                "label": "All Access"
+                            },
+                            {
+                                "value": "view",
+                                "label": "View"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.masters.is_only_assigned",
+                    "props": {
+                        "layout": "8",
+                        "label": "Only assigned"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.masters.payouts",
+                    "props": {
+                        "layout": "2",
+                        "label": "Payouts"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.masters.allocate_am",
+                    "props": {
+                        "layout": "2",
+                        "label": "Allocate AM"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.masters.billing",
+                    "public_features": [
+                        "OB38"
+                    ],
+                    "props": {
+                        "layout": "2",
+                        "label": "Billing"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "obsolete": true,
+                    "data": "permissions.masters.general",
+                    "props": {
+                        "layout": "2",
+                        "label": "General"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ToggleBlock",
+            "obsolete": true,
+            "props": {
+                "label": "Planning"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "permissions.planning.access",
+                    "props": {
+                        "label": "Access",
+                        "layout": "3",
+                        "default": true,
+                        "required": false,
+                        "options": [
+                            {
+                                "value": "all",
+                                "label": "All Access"
+                            },
+                            {
+                                "value": "add",
+                                "label": "Add"
+                            },
+                            {
+                                "value": "edit",
+                                "label": "Edit"
+                            },
+                            {
+                                "value": "view",
+                                "label": "View"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.planning.is_only_assigned",
+                    "props": {
+                        "layout": "3",
+                        "label": "Only assigned"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ToggleBlock",
+            "props": {
+                "label": "Gravity"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "permissions.gravity.access",
+                    "props": {
+                        "label": "Access",
+                        "layout": "3",
+                        "default": true,
+                        "required": false,
+                        "options": [
+                            {
+                                "value": "all",
+                                "label": "All Access"
+                            },
+                            {
+                                "value": "view",
+                                "label": "View"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "obsolete": true,
+                    "data": "permissions.gravity.is_only_assigned",
+                    "props": {
+                        "layout": "2",
+                        "label": "Only assigned"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.gravity.auto_approve",
+                    "props": {
+                        "layout": "2",
+                        "label": "Auto Approve"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.gravity.manual_approve",
+                    "private_features": [
+                        "CY50"
+                    ],
+                    "props": {
+                        "layout": "2",
+                        "label": "Manual Approve"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.gravity.tech_issue",
+                    "props": {
+                        "layout": "2",
+                        "label": "Tech Issue"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.gravity.tech_issue",
+                    "private_features": [
+                        "SB10"
+                    ],
+                    "props": {
+                        "layout": "2",
+                        "label": "High Risk FTD’s"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ToggleBlock",
+            "props": {
+                "label": "CRM"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "permissions.crm.access",
+                    "props": {
+                        "label": "Access",
+                        "layout": "3",
+                        "default": true,
+                        "required": false,
+                        "options": [
+                            {
+                                "value": "all",
+                                "label": "All Access"
+                            },
+                            {
+                                "value": "view",
+                                "label": "View"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "obsolete": true,
+                    "data": "permissions.crm.is_only_assigned",
+                    "props": {
+                        "layout": "8",
+                        "label": "Only assigned"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.crm.depositors",
+                    "props": {
+                        "layout": "2",
+                        "label": "Depositors"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.crm.leads",
+                    "props": {
+                        "layout": "2",
+                        "label": "Leads"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.crm.mismatch",
+                    "props": {
+                        "layout": "2",
+                        "label": "Mismatch"
+                    }
+                },
+                {
+                    "component": "ConditionalBlock",
+                    "data": "permissions.crm.access",
+                    "props": {
+                        "values": [
+                            "all"
+                        ]
+                    },
+                    "children": [
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.crm.manage_crg",
+                            "props": {
+                                "layout": "2",
+                                "label": "Manage CRG"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.crm.manage_ftd",
+                            "props": {
+                                "layout": "2",
+                                "label": "Manage FTD"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.crm.manage_test_lead",
+                            "props": {
+                                "layout": "2",
+                                "label": "Manage Test Lead"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.crm.view_user_log",
+                            "props": {
+                                "layout": "2",
+                                "label": "View User Log"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.crm.resync",
+                            "private_features": [
+                                "CK21"
+                            ],
+                            "props": {
+                                "layout": "2",
+                                "label": "Resync"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.crm.lead_notifications",
+                            "public_features": [
+                                "NC82"
+                            ],
+                            "props": {
+                                "layout": "2",
+                                "label": "Lead Notifications"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.crm.fraud_detection",
+                    "public_features": [
+                        "SB10"
+                    ],
+                    "props": {
+                        "layout": "2",
+                        "label": "Fraud Detection"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ToggleBlock",
+            "props": {
+                "label": "Quality Reports"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "permissions.quality_reports.access",
+                    "props": {
+                        "label": "Access",
+                        "layout": "3",
+                        "default": true,
+                        "required": false,
+                        "options": [
+                            {
+                                "value": "all",
+                                "label": "All Access"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "obsolete": true,
+                    "data": "permissions.quality_reports.is_only_assigned",
+                    "props": {
+                        "layout": "2",
+                        "label": "Only assigned"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ToggleBlock",
+            "props": {
+                "label": "Reports"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "permissions.reports.access",
+                    "props": {
+                        "label": "Access",
+                        "layout": "3",
+                        "default": true,
+                        "required": true,
+                        "options": [
+                            {
+                                "value": "all",
+                                "label": "All Access"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "obsolete": true,
+                    "data": "permissions.reports.is_only_assigned",
+                    "props": {
+                        "layout": "2",
+                        "label": "Only assigned"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ToggleBlock",
+            "private_features": [
+                "WU64"
+            ],
+            "props": {
+                "label": "Click Reports"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "permissions.click_reports.access",
+                    "props": {
+                        "label": "Access",
+                        "layout": "3",
+                        "default": true,
+                        "required": true,
+                        "options": [
+                            {
+                                "value": "all",
+                                "label": "All Access"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.click_reports.is_only_assigned",
+                    "props": {
+                        "layout": "2",
+                        "label": "Only assigned"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ToggleBlock",
+            "public_features": [
+                "PV38"
+            ],
+            "props": {
+                "label": "Billings"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "permissions.billings.access",
+                    "props": {
+                        "label": "Access",
+                        "layout": "3",
+                        "default": true,
+                        "required": true,
+                        "options": [
+                            {
+                                "value": "all",
+                                "label": "All Access"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "obsolete": true,
+                    "data": "permissions.billings.is_only_assigned",
+                    "props": {
+                        "layout": "8",
+                        "label": "Only assigned"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.billings.overall",
+                    "props": {
+                        "layout": "2",
+                        "label": "Overall"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.billings.pending_payments",
+                    "props": {
+                        "layout": "2",
+                        "label": "Pending Payments"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "obsolete": true,
+                    "data": "permissions.billings.brokers_balances",
+                    "props": {
+                        "layout": "2",
+                        "label": "Brokers Balances"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "obsolete": true,
+                    "data": "permissions.billings.endpoint_balances",
+                    "props": {
+                        "layout": "2",
+                        "label": "Endpoint Balances"
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.billings.financial_approves",
+                    "props": {
+                        "layout": "2",
+                        "label": "Financial Approves"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ToggleBlock",
+            "private_features": [
+                "YB2"
+            ],
+            "props": {
+                "label": "Performance"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "permissions.performance.access",
+                    "props": {
+                        "label": "Access",
+                        "layout": "3",
+                        "default": true,
+                        "required": false,
+                        "options": [
+                            {
+                                "value": "all",
+                                "label": "All Access"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "obsolete": true,
+                    "data": "permissions.performance.is_only_assigned",
+                    "props": {
+                        "layout": "2",
+                        "label": "Only assigned"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ToggleBlock",
+            "obsolete": true,
+            "props": {
+                "label": "Support"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "permissions.support.access",
+                    "props": {
+                        "label": "Access",
+                        "layout": "3",
+                        "default": true,
+                        "required": false,
+                        "options": [
+                            {
+                                "value": "all",
+                                "label": "All Access"
+                            },
+                            {
+                                "value": "add",
+                                "label": "Add"
+                            },
+                            {
+                                "value": "edit",
+                                "label": "Edit"
+                            },
+                            {
+                                "value": "view",
+                                "label": "View"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "ToggleSwitchField",
+                    "data": "permissions.support.is_only_assigned",
+                    "props": {
+                        "layout": "8",
+                        "label": "Only assigned"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ToggleBlock",
+            "obsolete": true,
+            "props": {
+                "label": "Leads Review"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "permissions.leads_review.access",
+                    "props": {
+                        "label": "Access",
+                        "layout": "3",
+                        "default": true,
+                        "required": false,
+                        "options": [
+                            {
+                                "value": "all",
+                                "label": "All Access"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "component": "ToggleBlock",
+            "obsolete": true,
+            "props": {
+                "label": "Leads Review Support"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "permissions.leads_review_support.access",
+                    "props": {
+                        "label": "Access",
+                        "layout": "3",
+                        "default": true,
+                        "required": false,
+                        "options": [
+                            {
+                                "value": "all",
+                                "label": "All Access"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "public_features": [
+                "GA26"
+            ],
+            "props": {
+                "title": "Marketing",
+                "label": "Marketing"
+            },
+            "children": [
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Advertisers"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "permissions.marketing_advertisers.access",
+                            "props": {
+                                "label": "Access",
+                                "layout": "3",
+                                "default": true,
+                                "required": false,
+                                "options": [
+                                    {
+                                        "value": "all",
+                                        "label": "All Access"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "obsolete": true,
+                            "data": "permissions.marketing_advertisers.is_only_assigned",
+                            "props": {
+                                "layout": "8",
+                                "label": "Only assigned"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.marketing_advertisers.campaigns",
+                            "props": {
+                                "layout": "3",
+                                "label": "Campaigns"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.marketing_advertisers.post_events",
+                            "props": {
+                                "layout": "3",
+                                "label": "Post Events"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.marketing_advertisers.unpayable_leads",
+                            "props": {
+                                "layout": "3",
+                                "label": "UnPayable Leads"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.marketing_advertisers.is_billing",
+                            "props": {
+                                "layout": "3",
+                                "label": "Billing"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Affiliates"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "permissions.marketing_affiliates.access",
+                            "props": {
+                                "label": "Access",
+                                "layout": "3",
+                                "default": true,
+                                "required": false,
+                                "options": [
+                                    {
+                                        "value": "all",
+                                        "label": "All Access"
+                                    },
+                                    {
+                                        "value": "add",
+                                        "label": "Add"
+                                    },
+                                    {
+                                        "value": "edit",
+                                        "label": "Edit"
+                                    },
+                                    {
+                                        "value": "view",
+                                        "label": "View"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.marketing_affiliates.is_only_assigned",
+                            "props": {
+                                "layout": "8",
+                                "label": "Only assigned"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.marketing_affiliates.general",
+                            "props": {
+                                "layout": "3",
+                                "label": "General"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.marketing_affiliates.credentials",
+                            "props": {
+                                "layout": "3",
+                                "label": "Credentials"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.marketing_affiliates.technical",
+                            "props": {
+                                "layout": "3",
+                                "label": "Technical"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.marketing_affiliates.unpayable_leads",
+                            "props": {
+                                "layout": "3",
+                                "label": "UnPayable Leads"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.marketing_affiliates.is_billing",
+                            "props": {
+                                "layout": "3",
+                                "label": "Billing"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Longtail Applications"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "permissions.marketing_applications.access",
+                            "props": {
+                                "label": "Access",
+                                "layout": "3",
+                                "default": true,
+                                "required": false,
+                                "options": [
+                                    {
+                                        "value": "all",
+                                        "label": "All Access"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Report"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "permissions.marketing_reports.access",
+                            "props": {
+                                "label": "Access",
+                                "layout": "3",
+                                "default": true,
+                                "required": false,
+                                "options": [
+                                    {
+                                        "value": "all",
+                                        "label": "All Access"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Billing"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "permissions.marketing_billings.access",
+                            "props": {
+                                "label": "Access",
+                                "layout": "3",
+                                "default": true,
+                                "required": false,
+                                "options": [
+                                    {
+                                        "value": "all",
+                                        "label": "All Access"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.marketing_billings.is_only_assigned",
+                            "props": {
+                                "layout": "8",
+                                "label": "Only assigned"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.marketing_billings.overall",
+                            "props": {
+                                "layout": "2",
+                                "label": "Overall"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.marketing_billings.pending_payments",
+                            "props": {
+                                "layout": "2",
+                                "label": "Pending Payments"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.marketing_billings.advertisers_balances",
+                            "props": {
+                                "layout": "2",
+                                "label": "Advertisers Balances"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.marketing_billings.affiliates_balances",
+                            "props": {
+                                "layout": "2",
+                                "label": "Affiliates Balances"
+                            }
+                        },
+                        {
+                            "component": "ToggleSwitchField",
+                            "data": "permissions.marketing_billings.financial_approves",
+                            "props": {
+                                "layout": "2",
+                                "label": "Financial Approves"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Gravity"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "permissions.marketing_gravity.access",
+                            "props": {
+                                "label": "Access",
+                                "layout": "3",
+                                "default": true,
+                                "required": false,
+                                "options": [
+                                    {
+                                        "value": "all",
+                                        "label": "All Access"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "type": "Datatable",
+    "title": "Logs",
+    "columns": {
+        "timestamp": {
+            "label": "Date",
+            "renderCell": "simple.DateTime"
+        },
+        "action": {
+            "label": "Action"
+        },
+        "data": {
+            "label": "Data",
+            "renderCell": "simple.Html"
+        },
+        "changed_by": {
+            "label": "Changed by"
+        }
+    }
+}

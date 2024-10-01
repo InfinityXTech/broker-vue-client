@@ -1,0 +1,31 @@
+{
+    "type": "Datatable",
+    "title": "Post Events",
+    "columns": {
+        "_id": {
+            "label": "ID",
+            "sortable": false,
+            "styles": [
+                {
+                    "textAlign": "center"
+                }
+            ],
+            "renderCell": "simple.Index"
+        },
+        "name": {
+            "label": "Name"
+        },
+        "value": {
+            "label": "Value"
+        },
+        "created_at": {
+            "label": "Created",
+            "renderCell": "simple.DateTime"
+        },
+        "action": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

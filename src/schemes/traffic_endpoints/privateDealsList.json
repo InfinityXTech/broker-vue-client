@@ -1,0 +1,62 @@
+{
+    "type": "Datatable",
+    "title": "Private Deals Management",
+    "columns": {
+        "_id": {
+            "label": "Name",
+            "sortable": true,
+            "styles": "width:250px",
+            "renderCell": "custom.Name"
+        },
+        "status": {
+            "label": "Status",
+            "sortable": false,
+            "default": "0",
+            "renderCell": "simple.StatusTag({1: {color: 'primary', title: 'ACTIVE'}, 0: {color: 'warning', title: 'INACTIVE'}})"
+        },
+        "type": {
+            "label": "Type",
+            "sortField": "deal_type_str",
+            "renderCell": "custom.DealType"
+        },
+        "min_crg": {
+            "label": "Min CRG",
+            "renderCell": "simple.Percent"
+        },
+        "payout": {
+            "label": "Payout",
+            "renderCell": "simple.Money"
+        },
+        "country_code": {
+            "label": "Country",
+            "renderCell": "custom.Country"
+        },
+        "language_code": {
+            "label": "Languages",
+            "renderCell": "custom.Language"
+        },
+        "limited_leads": {
+            "label": "Limited Leads",
+            "renderCell": "custom.LeadsLimitation"
+        },
+        "end_date": {
+            "label": "Limited Time",
+            "default": "None",
+            "renderCell": "simple.Date"
+        },
+        "stat.leads": {
+            "label": "Leads"
+        },
+        "stat.ftds": {
+            "label": "FTD's"
+        },
+        "stat.cr": {
+            "label": "CR"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

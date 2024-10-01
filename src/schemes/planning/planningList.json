@@ -1,0 +1,32 @@
+{
+    "type": "Datatable",
+    "title": "Planning Simulation",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "broker": {
+            "key": "broker.name",
+            "label": "Broker",
+            "renderCell": "custom.BrokerName"
+        },
+        "geos": {
+            "label": "Geos",
+            "renderCell": "custom.renderBTNModal"
+        },
+        "regulations": {
+            "label": "Regulations",
+            "renderCell": "custom.renderBTNModal"
+        },
+        "restricted_traffics": {
+            "label": "Restricted Traffic",
+            "renderCell": "custom.renderBTNModal"
+        },
+        "crg_deals": {
+            "label": "CRG Deals",
+            "renderCell": "custom.renderBTNModal"
+        }
+    }
+}

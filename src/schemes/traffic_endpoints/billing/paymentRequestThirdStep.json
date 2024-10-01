@@ -1,0 +1,30 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "FilesField",
+            "data": "master_approve_files",
+            "props": {
+                "label": "Invoice (Screenshots) *",
+                "required": true
+            }
+        },
+        {
+            "component": "FilesField",
+            "data": "proof_screenshots",
+            "props": {
+                "label": "Proof (Screenshots) *",
+                "required": true
+            }
+        },
+        {
+            "component": "TextAreaField",
+            "data": "proof_description",
+            "props": {
+                "label": "Description *",
+                "required": true,
+                "rows": 2
+            }
+        }
+    ]
+}

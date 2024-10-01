@@ -1,0 +1,101 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Basic Information"
+            },
+            "children": [
+                {
+                    "component": "StatusField",
+                    "data": "status",
+                    "props": {
+                        "label": "Status"
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "nickname",
+                    "props": {
+                        "label": "Master Name",
+                        "timeSilence": true
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Basic Deal"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "fixed_price_cpl",
+                    "props": {
+                        "label": "Fixed Price CPL",
+                        "type": "number"
+                    }
+                },
+                {
+                    "component": "CustomField",
+                    "props": {
+                        "label": "Type Of Calculation",
+                        "renderFunc": "custom.TypeOfCalculation"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Platform Credentials"
+            },
+            "children": [
+                {
+                    "component": "RadioGroupField",
+                    "data": "master_status",
+                    "props": {
+                        "label": "Master Partner Status",
+                        "options": [
+                            {
+                                "color": "primary",
+                                "label": "Approved",
+                                "value": 1
+                            },
+                            {
+                                "color": "danger",
+                                "label": "Waiting For Approval",
+                                "value": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "token",
+                    "props": {
+                        "label": "Token",
+                        "readonly": true
+                    }
+                },
+                {
+                    "component": "CustomField",
+                    "props": {
+                        "label": "Reset Password",
+                        "renderFunc": "custom.ResetPassword"
+                    }
+                },
+                {
+                    "component": "ImgField",
+                    "data": "qr_code",
+                    "props": {
+                        "label": "Two Factor Authenticator",
+                        "width": 70
+                    }
+                }
+            ]
+        }
+    ]
+}

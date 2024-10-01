@@ -1,0 +1,41 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "name",
+            "props": {
+                "label": "Integration Name"
+            }
+        },
+        {
+            "component": "StatusField",
+            "data": "status",
+            "props": {
+                "label": "Integration Status"
+            }
+        },
+        {
+            "component": "ApiVendorSettings",
+            "data": "apivendor",
+            "props": {
+                "label": "API Vendor"
+            }
+        },
+        {
+            "component": "ToggleBlock",
+            "props": {
+                "label": "Our Redirect"
+            },
+            "children": [
+                {
+                    "component": "InputField",
+                    "data": "redirect_url",
+                    "props": {
+                        "label": "Redirect Url"
+                    }
+                }
+            ]
+        }
+    ]
+}

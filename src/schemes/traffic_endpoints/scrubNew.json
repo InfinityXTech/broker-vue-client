@@ -1,0 +1,30 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "SelectField",
+            "data": "country_code",
+            "props": {
+                "label": "Country",
+                "default": false,
+                "required": true,
+                "options": {
+                    "dictionary": "countries"
+                }
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "payout",
+            "props": {
+                "label": "%",
+                "required": true,
+                "default": 0,
+                "min": 0,
+                "max": 100,
+                "onlyDigits": true,
+                "type": "number"
+            }
+        }
+    ]
+}

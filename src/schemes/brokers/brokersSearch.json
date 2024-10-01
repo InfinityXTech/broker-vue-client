@@ -1,0 +1,84 @@
+{
+    "type": "Search",
+    "columns": [
+        {
+            "type": "toggles",
+            "label": "Status",
+            "value": "status",
+            "options": [
+                {
+                    "value": "1",
+                    "label": "Active",
+                    "color": "primary",
+                    "default": true
+                },
+                {
+                    "value": "0",
+                    "color": "warning",
+                    "label": "Inactive"
+                },
+                {
+                    "value": "2",
+                    "color": "grey",
+                    "label": "Archived"
+                }
+            ]
+        },
+        {
+            "label": "Collection",
+            "type": "select",
+            "value": "billing_manual_status",
+            "options": [
+                {
+                    "value": "",
+                    "label": "All",
+                    "color": "primary",
+                    "default": true
+                },
+                {
+                    "value": "collection",
+                    "color": "warning",
+                    "label": "Collection"
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "label": "API Vendor",
+            "layout": "narrow",
+            "value": "integration_data.integration._id",
+            "options": {
+                "field": "integration_data.integration",
+                "key": "_id",
+                "value": "name"
+            }
+        },
+        {
+            "type": "select",
+            "label": "Tags",
+            "layout": "narrow",
+            "value": "tag_management._id",
+            "options": {
+                "field": "tag_management",
+                "key": "_id",
+                "value": "name"
+            }
+        },
+        {
+            "type": "select",
+            "label": "Manager",
+            "layout": "narrow",
+            "value": "account_manager_user._id",
+            "options": {
+                "field": "account_manager_user",
+                "key": "_id",
+                "value": "name"
+            }
+        },
+        {
+            "type": "input",
+            "label": "Search",
+            "value": "TEXT"
+        }
+    ]
+}

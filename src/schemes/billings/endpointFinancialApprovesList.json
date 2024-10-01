@@ -1,0 +1,35 @@
+{
+    "type": "Datatable",
+    "title": "Endpoint",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "final_status_changed_date": {
+            "label": "Timestamp",
+            "renderCell": "simple.DateTime"
+        },
+        "traffic_endpoint_data": {
+            "label": "Endpoint",
+            "renderCell": "custom.EndpointName"
+        },
+        "transaction_id": {
+            "label": "Transaction ID"
+        },
+        "final_status_date_pay": {
+            "label": "Pay Timestamp",
+            "renderCell": "simple.Date"
+        },
+        "total": {
+            "label": "Total",
+            "default": 0,
+            "renderCell": "simple.MoneyColor",
+            "totalCalc": "simple.Sum"
+        },
+        "final_status_changed_user.name": {
+            "label": "Approved by"
+        }
+    }
+}

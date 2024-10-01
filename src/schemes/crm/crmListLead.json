@@ -1,0 +1,109 @@
+{
+    "type": "Datatable",
+    "title": "CRM",
+    "columns": {
+        "select": {
+            "label": "ID",
+            "sortable": false,
+            "styles": [
+                {
+                    "textAlign": "center"
+                }
+            ],
+            "renderCell": "custom.Id"
+        },
+        "name": {
+            "label": "Name",
+            "renderCell": "custom.LeadName"
+        },
+        "email_id": {
+            "label": "Email , Lead ID",
+            "sortable": false,
+            "renderCell": "custom.email_ID"
+        },
+        "location": {
+            "label": "Location",
+            "renderCell": "custom.Location"
+        },
+        "endpoint": {
+            "key": "endpoint.name",
+            "label": "Endpoint",
+            "renderCell": "custom.EndpointName"
+        },
+        "broker": {
+            "key": "broker.name",
+            "label": "Broker",
+            "renderCell": "custom.BrokerName"
+        },
+        "broker_lead_id": {
+            "styles": [
+                {
+                    "fontSize": "11px",
+                    "white-space": "nowrap",
+                    "overflow": "hidden",
+                    "text-overflow": "ellipsis",
+                    "max-width": "100px"
+                }
+            ],
+            "label": "Broker Lead ID",
+            "renderCell": "simple.PlaceHolder"
+        },
+        "integration": {
+            "key": "integration.name",
+            "label": "Integration"
+        },
+        "status": {
+            "label": "Status"
+        },
+        "broker_status": {
+            "label": "Broker Status",
+            "styles": [
+                {
+                    "textAlign": "center"
+                }
+            ],
+            "renderCell": "custom.StatusHistory"
+        },
+        "funnel_lp": {
+            "styles": [
+                {
+                    "white-space": "nowrap",
+                    "overflow": "hidden",
+                    "text-overflow": "ellipsis",
+                    "max-width": "100px"
+                }
+            ],
+            "label": "Funnel",
+            "renderCell": "simple.PlaceHolder"
+        },
+        "sub_publisher": {
+            "styles": [
+                {
+                    "white-space": "nowrap",
+                    "overflow": "hidden",
+                    "text-overflow": "ellipsis",
+                    "max-width": "100px"
+                }
+            ],
+            "label": "Sub publisher",
+            "renderCell": "simple.PlaceHolder"
+        },
+        "hit_the_redirect": {
+            "label": "Redirected",
+            "renderCell": "custom.Redirected"
+        },
+        "riskScale": {
+            "label": "Risk",
+            "styles": [
+                {
+                    "textAlign": "center"
+                }
+            ],
+            "renderCell": "custom.riskScale"
+        },
+        "Timestamp": {
+            "label": "Timestamp",
+            "renderCell": "simple.DateTime"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "type": "Datatable",
+    "title": "Chargebacks",
+    "columns": {
+        "company_legal_name": {
+            "label": "Company Legal Name"
+        },
+        "country.title": {
+            "label": "Company Country"
+        },
+        "region": {
+            "label": "Region"
+        },
+        "city": {
+            "label": "City"
+        },
+        "zip_code": {
+            "label": "Zip Code"
+        },
+        "currency.title": {
+            "label": "Currency"
+        },
+        "vat_id": {
+            "label": "VAT ID"
+        },
+        "registration_number": {
+            "label": "Registration Number"
+        },
+        "files": {
+            "label": "Supporting Files",
+            "renderCell": "simple.Files"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

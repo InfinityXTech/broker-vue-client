@@ -1,0 +1,45 @@
+{
+    "type": "Datatable",
+    "title": "Gravity",
+    "columns": {
+        "advertiser": {
+            "key": "advertiser.name",
+            "label": "Advertiser",
+            "renderCell": "custom.AdvertiserName"
+        },
+        "affiliate": {
+            "key": "affiliate.name",
+            "label": "Affiliate",
+            "renderCell": "custom.AffiliateName"
+        },
+        "campaign": {
+            "key": "campaign.name",
+            "label": "Campaign",
+            "renderCell": "custom.CampaignName"
+        },
+        "location": {
+            "label": "Location",
+            "renderCell": "custom.Location"
+        },
+        "click_id": {
+            "label": "Click ID"
+        },
+        "riskScale": {
+            "label": "Risk",
+            "styles": [
+                {
+                    "textAlign": "center"
+                }
+            ],
+            "renderCell": "custom.riskScale"
+        },
+        "timestamp": {
+            "label": "Timestamp",
+            "renderCell": "simple.DateTime"
+        },
+        "actions": {
+            "label": "Actions",
+            "renderCell": "custom.ActionsIcons"
+        }
+    }
+}

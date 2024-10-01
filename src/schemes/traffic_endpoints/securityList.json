@@ -1,0 +1,16 @@
+{
+    "type": "Datatable",
+    "title": "Security (IP White Listing)",
+    "columns": {
+        "ip": {
+            "label": "IP",
+            "default": "",
+            "renderCell": "custom.IP"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}

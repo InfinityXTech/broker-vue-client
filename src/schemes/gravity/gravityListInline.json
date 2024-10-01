@@ -1,0 +1,13 @@
+{
+    "type": "Datatable",
+    "title": "Gravity",
+    "columns": {
+        "description": {
+            "renderCell": "custom.Description"
+        },
+        "actions": {
+            "label": "Actions",
+            "renderCell": "custom.ActionsIcons"
+        }
+    }
+}

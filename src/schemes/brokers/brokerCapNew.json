@@ -1,0 +1,254 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "InputField",
+            "data": "broker_name",
+            "props": {
+                "layout": "3",
+                "label": "Broker",
+                "readonly": true
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "integration",
+            "props": {
+                "layout": "3",
+                "label": "Integration",
+                "default": false,
+                "options": {
+                    "custom": "active_integrations"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "country_code",
+            "props": {
+                "layout": "3",
+                "label": "Country",
+                "default": false,
+                "options": {
+                    "dictionary": "countries"
+                }
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "cap_type",
+            "props": {
+                "layout": "3",
+                "label": "Cap Type",
+                "default": false,
+                "options": [
+                    {
+                        "value": "leads",
+                        "label": "Leads"
+                    },
+                    {
+                        "value": "ftd",
+                        "label": "FTD"
+                    }
+                ]
+            }
+        },
+        {
+            "component": "InputField",
+            "data": "daily_cap",
+            "props": {
+                "layout": "3",
+                "label": "Daily Cap"
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "priority",
+            "props": {
+                "layout": "3",
+                "label": "Priority",
+                "default": false,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "General"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 - Lowest"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 - Low"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 - Medium"
+                    },
+                    {
+                        "value": "4",
+                        "label": "4 - High"
+                    },
+                    {
+                        "value": "5",
+                        "label": "5 - Highest"
+                    }
+                ]
+            }
+        },
+        {
+            "component": "SelectField",
+            "data": "language_code",
+            "props": {
+                "layout": "6",
+                "label": "Languages",
+                "options": {
+                    "dictionary": "languages"
+                },
+                "mode": "multiple"
+            }
+        },
+        {
+            "component": "TextAreaField",
+            "data": "note",
+            "props": {
+                "layout": "6",
+                "label": "Note",
+                "rows": 3
+            }
+        },
+        {
+            "component": "ToggleBlock",
+            "props": {
+                "layout": "8",
+                "label": "Schedule"
+            },
+            "children": [
+                {
+                    "component": "ScheduleField",
+                    "data": "blocked_schedule"
+                }
+            ]
+        },
+        {
+            "component": "ColumnBlock",
+            "props": {
+                "layout": "4"
+            },
+            "children": [
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Endpoint Restrictions"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "restrict_type",
+                            "props": {
+                                "label": "Endpoint Restriction Type",
+                                "default": false,
+                                "options": [
+                                    {
+                                        "value": "black",
+                                        "label": "Black List"
+                                    },
+                                    {
+                                        "value": "white",
+                                        "label": "White List"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "component": "SelectField",
+                            "data": "restrict_endpoints",
+                            "props": {
+                                "label": "Traffic Endpoints",
+                                "options": {
+                                    "dictionary": "traffic_endpoints"
+                                },
+                                "mode": "multiple"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "component": "ToggleBlock",
+                    "props": {
+                        "label": "Funnel Restrictions"
+                    },
+                    "children": [
+                        {
+                            "component": "SelectField",
+                            "data": "blocked_funnels_type",
+                            "props": {
+                                "label": "Funnel Restriction Type",
+                                "default": false,
+                                "options": [
+                                    {
+                                        "value": "black",
+                                        "label": "Black List"
+                                    },
+                                    {
+                                        "value": "white",
+                                        "label": "White List"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "component": "SelectField",
+                            "data": "blocked_funnels",
+                            "props": {
+                                "label": "Funnels",
+                                "options": [],
+                                "mode": "tags"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "component": "WideVerticalBlock",
+            "props": {
+                "title": "Traffic Endpoint",
+                "layout": "8"
+            },
+            "children": [
+                {
+                    "component": "CapAllocationTable",
+                    "data": {
+                        "totalCap": "daily_cap",
+                        "modelValue": "endpoint_dailycaps"
+                    },
+                    "props": {
+                        "title": "Cap Allocation",
+                        "layout": "12"
+                    }
+                },
+                {
+                    "component": "CapPrioritiesTable",
+                    "data": {
+                        "modelValue": "endpoint_priorities"
+                    },
+                    "props": {
+                        "title": "Cap Priorities",
+                        "layout": "12"
+                    }
+                }
+            ]
+        },
+        {
+            "component": "CapAllocationChart",
+            "data": {
+                "totalCap": "daily_cap",
+                "modelValue": "endpoint_dailycaps"
+            },
+            "props": {
+                "layout": "4"
+            }
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "type": "Form",
+    "content": [
+        {
+            "component": "ColumnBlock",
+            "props": {
+                "layout": "6"
+            },
+            "children": [
+                {
+                    "component": "SelectField",
+                    "data": "payment_request_type",
+                    "props": {
+                        "label": "Payment Request Type",
+                        "default": false,
+                        "required": true,
+                        "options": [
+                            {
+                                "value": "payment",
+                                "label": "Payment"
+                            },
+                            {
+                                "value": "prepayment",
+                                "label": "Prepayment"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "component": "InputField",
+                    "data": "amount",
+                    "props": {
+                        "label": "Amount",
+                        "type": "number"
+                    }
+                }
+            ]
+        }
+    ]
+}

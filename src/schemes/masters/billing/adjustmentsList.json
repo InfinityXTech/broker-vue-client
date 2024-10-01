@@ -1,0 +1,27 @@
+{
+    "type": "Datatable",
+    "title": "Adjustments",
+    "columns": {
+        "_id": {
+            "label": "#",
+            "sortable": false,
+            "renderCell": "simple.Index"
+        },
+        "created_at": {
+            "label": "Timestamp",
+            "renderCell": "simple.DateTime"
+        },
+        "amount": {
+            "label": "Sum",
+            "renderCell": "simple.MoneyColor"
+        },
+        "description": {
+            "label": "Description"
+        },
+        "actions": {
+            "label": "Actions",
+            "sortable": false,
+            "renderCell": "custom.Actions"
+        }
+    }
+}
